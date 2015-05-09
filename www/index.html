@@ -28,6 +28,12 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
+        <script src="js/velocidadscroll.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.css">
         <script type="text/javascript">
       document.addEventListener("deviceready", onDeviceReady, false);
       // PhoneGap esta listo
@@ -82,6 +88,19 @@
         </script>
     </head>
     <body>
+        <header>
+          <div class="menu_bar">
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-list fa-2x "></i> <article class="logo3"></article></a>
+          </div>
+   
+          <nav class="menu2">
+              <ul>
+                  <li><a href="index.php"><span class="icon-house"></span>Inicio</a></li>
+                  <li><a href="tienda.php"><span class="icon-suitcase"></span>Productos</a></li>
+              </ul>
+          </nav>
+          <section class="cerrador"></section>
+        </header>
         <div class="app">
             <h1>PhoneGap</h1>
             <a href="dos.html">dos</a>
@@ -95,5 +114,7 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     </body>
 </html>
