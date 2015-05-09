@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ffasil" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Ffasil</name>
+    <name>ffasil</name>
     <description>
-        Aplicacion de ffasil
+        Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="desarrollotricolor@gmail.com" href="http://desarrollotricolor.com.ve">
-        Desarrollo Tricolor
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />

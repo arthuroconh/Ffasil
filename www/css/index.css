@@ -113,22 +113,3 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
-}
-
-/* Note: Design for a width of 320px */
-
-@media only screen and (max-width: 767px) {
-
-
-}
-
-/* Note: Design for a width of 480px */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {  
-
-
-}
