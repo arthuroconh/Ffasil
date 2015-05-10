@@ -1,9 +1,8 @@
 .cerrador{
 	position: absolute;
 	width:40%;
-	height: 91.55%;
+	height: 100%;
 	right: -100%;
-	top:8.45%;
 	display: none;
 	background-color: #000;
 	opacity: 0.5;
@@ -19,7 +18,7 @@ header .menu2 {
 	margin:60px auto;
 	background:#979797;
 	overflow-y: scroll;
-	z-index: 90000;
+	z-index: 700;
 		-webkit-transition: all 0.4s;
 		-moz-transition: all 0.4s;
 		-o-transition: all 0.4s;
@@ -93,7 +92,7 @@ header nav ul li a: {
 		width:100%;
 		z-index:1;
 		height:71px;
-	z-index: 800000;
+	z-index: 90000;
 	}
  
 	.menu_bar .bt-menu {
