@@ -4,7 +4,7 @@
 	height: 91.55%;
 	right: -100%;
 	top:8.45%;
-	display: block;
+	display: none;
 	background-color: #000;
 	opacity: 0.5;
 		-webkit-transition: all 0.8s ease;
@@ -92,7 +92,7 @@ header nav ul li a: {
 		z-index:1;
 		height:71px;
 	z-index: 800000;
-	box-shadow: 0px 1px 5px black;
+	box-shadow: 1px 0px 5px black;
 	}
  
 	.menu_bar .bt-menu {
@@ -113,12 +113,8 @@ header nav ul li a: {
 		font-size:40px;
 	}
 header{
-	background: #2980b9;
 	width:100%;
 	float: left;
-	height: 50px;
-	position: relative;
 	top: 0;	
-	z-index: 100;
 	font-size: 150% !important;
 }

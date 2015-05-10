@@ -4,8 +4,9 @@ var contador = 1;
 function main(){
 	$('.menu_bar').click(function(){
 		// $('nav').toggle(); 
- 
+ 	
 		if(contador == 1){
+			$('.cerrador').css("display","block");
 			$('.menu2').animate({
 				left: '0'
 			});
@@ -22,6 +23,8 @@ function main(){
 			$('.cerrador').animate({
 				right: '-100%'
 			});
+			
+			$('.cerrador').css("display","none");
 		} 
 	});
 	$('.cerrador').click(function(){
@@ -42,6 +45,7 @@ function main(){
 			$('.cerrador').animate({
 				right: '-100%'
 			});
+			$('.cerrador').css("display","none");
 		} 
 	});
  
