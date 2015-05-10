@@ -47,7 +47,7 @@ header nav ul li h1 {
 	font-size: 200% !important;
 }
 header nav ul li a:hover {
-	background:#979797;
+	background:#000;
 }
 header nav ul li a:visited {
 	background:#979797;
@@ -55,7 +55,9 @@ header nav ul li a:visited {
 header nav ul li a:active {
 	background:#000;
 }
-
+header nav ul li a: {
+	background:#000;
+}
 .cerrador{
 	display: none;
 	right: -100%;
