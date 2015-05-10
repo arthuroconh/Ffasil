@@ -88,7 +88,7 @@ header nav ul li a: {
 		display:block;
 		float: left;
 		top: -2px;
-		background-color:orange;
+		background-color:#f59c34;
 		width:100%;
 		z-index:1;
 		height:71px;
@@ -98,7 +98,7 @@ header nav ul li a: {
 	.menu_bar .bt-menu {
 		display:block;
 		padding:5px;
-		background:orange;
+		background:#f59c34;
 		color:#fff;
 		text-decoration:none;
 		font-weight: bold;
