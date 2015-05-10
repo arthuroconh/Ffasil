@@ -49,9 +49,6 @@ header nav ul li h1 {
 header nav ul li a:hover {
 	background:#000;
 }
-header nav ul li a:visited {
-	background:#979797;
-}
 header nav ul li a:active {
 	background:#000;
 }
