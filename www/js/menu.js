@@ -9,7 +9,6 @@ function main(){
 			$('.menu2').animate({
 				left: '0'
 			});
-			$('.cerrador').css("display","block");
 			$('.cerrador').animate({
 				right: '0'
 			});
@@ -20,7 +19,6 @@ function main(){
 			$('.menu2').animate({
 				left: '-100%'
 			});
-			$('.cerrador').css("display","none");
 			$('.cerrador').animate({
 				right: '-100%'
 			});
@@ -31,7 +29,6 @@ function main(){
 			$('.menu2').animate({
 				left: '0'
 			});
-			$('.cerrador').css("display","block");
 			$('.cerrador').animate({
 				right: '0'
 			});
@@ -42,7 +39,6 @@ function main(){
 			$('.menu2').animate({
 				left: '-100%'
 			});
-			$('.cerrador').css("display","none");
 			$('.cerrador').animate({
 				right: '-100%'
 			});

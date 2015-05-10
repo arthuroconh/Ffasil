@@ -19,7 +19,18 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
+@font-face {
+    font-family: 'sousesregular';
+    src: url('fonts/souses-webfont.eot');
+    src: url('fonts/souses-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/souses-webfont.woff2') format('woff2'),
+         url('fonts/souses-webfont.woff') format('woff'),
+         url('fonts/souses-webfont.ttf') format('truetype'),
+         url('fonts/souses-webfont.svg#sousesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
@@ -45,7 +56,13 @@ body {
     width:100%;
     overflow-x:hidden; 
 }
-
+.titulo{
+    font-family: 'sousesregular';
+    padding: 0px !important;
+    margin-top: -8%;
+    text-transform:lowercase;
+    font-weight: 100;
+}
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
