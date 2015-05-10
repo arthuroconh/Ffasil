@@ -79,6 +79,12 @@ body {
     z-index: 10;                                  /* offset horizontal: half of text area width */
 }
 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+    display: none;
+}
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
