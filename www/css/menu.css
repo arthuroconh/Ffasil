@@ -103,18 +103,9 @@ header nav ul li a: {
 		text-decoration:none;
 		font-weight: bold;
 		font-size:30px;
-		-webkit-box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		box-sizing:border-box;
 	}
  
 	.menu_bar span {
 		float:left;
 		font-size:40px;
 	}
-header{
-	width:100%;
-	float: left;
-	top: 0;	
-	font-size: 150% !important;
-}

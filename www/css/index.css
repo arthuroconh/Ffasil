@@ -59,9 +59,11 @@ body {
 .titulo{
     font-family: 'sousesregular';
     padding: 0px !important;
-    margin-top: -8%;
+    margin-top: -50px;
     text-transform:lowercase;
     font-weight: 100;
+    font-size: 180%;
+    color: #fff;
 }
 /* Portrait layout (default) */
 .app {
