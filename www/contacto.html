@@ -91,7 +91,7 @@
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo">ffasil.com</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo">Cont&aacute;ctenos</center>
           </div>
    
           <nav class="menu2">
@@ -144,14 +144,22 @@
               </ul>
           </nav>
         </header>
-        <div style="clear:both"></div>
+        <div style="clear:booth"></div>
           <section class="cajaccion">
-            <a href="buscar.html"><article>Buscar</article></a>
-            <a href="contacto.html"><article>Cont&aacute;ctenos</article></a>
-            <a href="terminos.html"><article>T&eacute;rminos y Condiciones</article></a>
-            <a href="iniciar.html"><article>Iniciar Sesi&oacute;n</article></a>
-            <a href="registro.html"><article>Registrarse</article></a>
+            <article class="texto">Llene el siguiente formulario y en breve nuestro personal se pondr&aacute; en contacto con usted.</article>
+            <form>
+            <label>Nombre</label>
+              <input type="text" id="nombre" name="nombre" required="required">
+            <label>Asunto</label>
+              <input type="text" id="asunto" name="asunto" required="required">
+            <label>Email</label>
+              <input type="email" id="email" name="email" required="required">
+            <label>Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+              <input type="submit" value="Enviar" id="enviarr">
+            </form>
           </section>
+
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
