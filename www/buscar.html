@@ -86,8 +86,17 @@
       }
       //FIN BOTON ATRAS ANDROID
         </script>
+        <script type="text/javascript">
+           
+          $(document).ready(function(){
+            
+            $('#page_effect').fadeIn(800);
+              
+          });
+
+        </script>
     </head>
-    <body>
+    <body >
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
@@ -145,7 +154,7 @@
           </nav>
         </header>
         <div style="clear:booth"></div>
-          <section class="cajaccion">
+          <section class="cajaccion" id="page_effect" style="display:none;">
           <form>
           <input list="browsers" id="busqueda" name="busqueda">
 
