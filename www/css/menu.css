@@ -89,8 +89,9 @@ header nav ul li a: {
 		float: left;
 		top: -2px;
 		background-color:#f59c34;
-		width:100%;
+		width:120%;
 		z-index:1;
+		left: -5px;
 		height:71px;
 	z-index: 90000;
 	}
