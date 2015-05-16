@@ -95,6 +95,14 @@
           });
 
         </script>
+        <script type="text/javascript">
+            $('#cargando').ready(function(){
+  
+                $('#cargando').ajaxStart(function() {
+                    $(this).show();
+                });
+            });
+        </script>
     </head>
     <body>
           <section class="cerrador"></section>
