@@ -34,6 +34,45 @@
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
+<script type="text/javascript">
+    window.addEventListener('native.keyboardshow', function (e) {
+    var deviceHeight = window.innerHeight;
+    var keyboardHeight = e.keyboardHeight;
+    var deviceHeightAdjusted = deviceHeight - keyboardHeight;//device height adjusted
+    deviceHeightAdjusted = deviceHeightAdjusted < 0 ? (deviceHeightAdjusted * -1) : deviceHeightAdjusted;//only positive number
+    document.getElementById('page').style.height = deviceHeightAdjusted + 'px';//set page height
+    document.getElementById('page').setAttribute('keyBoardHeight', keyboardHeight);//save keyboard height
+});
+</script>
+<script type="text/javascript">
+var inputs = document.querySelectorAll('input');//select all input
+var n = inputs.length;
+for (var i = 0; i < n; i++) {
+    var input = inputs[i];
+    input.addEventListener('focus', function (e) {//add event focus
+        var inp = this; 
+       //wait 0.6 seconds to scroll down to the input has focus
+        setTimeout(function () {
+            try {
+                //if the keyboard is open
+                if (cordova.plugins.Keyboard.isVisible) {
+                    var padding = 15;
+                    var targetPosition = parseInt($$(inp).offset().top + padding);
+                    var keyboardHeight = parseInt(document.getElementById('page').getAttribute('keyBoardHeight'));//get keyboard height   
+
+                    //if the input is hidden by the keyboard,scroll to the input 
+                    if (targetPosition >= keyboardHeight) {
+                        padding *=5;
+                        document.getElementById('page').scrollTop = targetPosition - padding;
+                    }
+                }
+            } catch (ex) {
+                alert(ex.message);
+            }
+        }, 600);
+    }, true);
+</script>
+
         <script type="text/javascript">
       document.addEventListener("deviceready", onDeviceReady, false);
       // PhoneGap esta listo
@@ -95,6 +134,12 @@
           });
 
         </script>
+    <style type="text/css">
+      .page-content {    
+        height: 100%;
+        overflow: auto;
+      }
+    </style>
     </head>
     <body>
           <section class="cerrador"></section>
@@ -154,6 +199,7 @@
           </nav>
         </header>
         <div style="clear:booth"></div>
+<div id="page" class="page-content">
           <section class="cajaccion" id="page_effect" style="display:none;">
             <article class="texto">Llene el siguiente formulario y en breve nuestro personal se pondr&aacute; en contacto con usted.</article>
             <form>
@@ -168,6 +214,8 @@
               <input type="submit" value="Enviar" id="enviarr">
             </form>
           </section>
+</div> 
+
 
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
