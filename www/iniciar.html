@@ -100,7 +100,7 @@
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo">ffasil.com</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">ffasil.com</center>
           </div>
    
           <nav class="menu2">
@@ -161,7 +161,7 @@
             <label>Contrase&ntilde;a</label>
               <input type="text" id="contra" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
-              <input type="submit" value="Enviar" id="enviarrr">
+              <input type="button" value="Enviar" id="enviarrr"  onclick="iniciar();">
             </form>
           </section>
             <div id="deviceready" class="blink">
@@ -170,9 +170,25 @@
             </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+
+        <script type="text/javascript"> 
+        //El registro al servicio de google lo hacemos automáticamente 
+        app.initialize(); 
+        function iniciar(){  
+                var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'http://www.desarrollotricolor.com.ve/busqueda/inicio.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){}, 
+                            success:function(data){
+                            $("#user").html("<p>"+data+"'</p>");
+                            }
+                        });
+
+        } 
+        </script> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     </body>
