@@ -47,12 +47,13 @@
         //BOTON ATRAS ANDROID
         document.addEventListener("backbutton", onBackKeyDown, false);
           if (window.localStorage.getItem("usuario")!='') {
-                                  var usuario = window.localStorage.getItem("usuario");
-                                  var clave = window.localStorage.getItem("clave");
-                                  $( "#user" ).empty();
+                                  usuario = window.localStorage.getItem("usuario");
+                                  clave = window.localStorage.getItem("clave");
                                   $("#user").append(usuario);
 
-        };     
+        } else{
+          $("#user").append("ffasil.com");
+        }     
         
       }  
       

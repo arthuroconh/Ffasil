@@ -49,10 +49,11 @@
               if (window.localStorage.getItem("usuario")!='') {
                                   var usuario = window.localStorage.getItem("usuario");
                                   var clave = window.localStorage.getItem("clave");
-                                  $( "#user" ).empty();
                                   $("#user").append(usuario);
 
-        };     
+        } else{
+          $("#user").append("ffasil.com");
+        }     
       }  
       
       //BOTON MENU
@@ -109,7 +110,9 @@
                 });
             });
         </script>
-        <script type="text/javascript"> 
+        <script type="text/javascript">
+        var usuario;
+        var clave;
         function iniciar(){ 
                 var dato = $('#formulario').serialize();
                     $.ajax({ 
@@ -124,8 +127,8 @@
                             var cla = data[1];
                             window.localStorage.setItem("usuario", usu);
                             window.localStorage.setItem("clave", cla);
-                                  var usuario = window.localStorage.getItem("usuario");
-                                  var clave = window.localStorage.getItem("clave");
+                                  usuario = window.localStorage.getItem("usuario");
+                                  clave = window.localStorage.getItem("clave");
                                   // value is now equal to "value" 
                             $( "#user" ).empty();
                             $("#user").append(usuario);
@@ -139,7 +142,7 @@
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">ffasil.com</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user"></center>
           </div>
    
           <nav class="menu2">
