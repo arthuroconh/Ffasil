@@ -95,6 +95,15 @@
           });
 
         </script>
+        <script type="text/javascript">
+        if (window.localStorage.getItem("usuario")!='') {
+                                  var usuario = window.localStorage.getItem("usuario");
+                                  var clave = window.localStorage.getItem("clave");
+                                  $( "#user" ).empty();
+                                  $("#user").append(usuario);
+
+        };               
+        </script>
     </head>
     <body>
           <section class="cerrador"></section>
