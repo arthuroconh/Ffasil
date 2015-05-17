@@ -46,7 +46,13 @@
         document.addEventListener("menubutton", onMenuKeyDown, false);  
         //BOTON ATRAS ANDROID
         document.addEventListener("backbutton", onBackKeyDown, false);
-        
+              if (window.localStorage.getItem("usuario")!='') {
+                                  var usuario = window.localStorage.getItem("usuario");
+                                  var clave = window.localStorage.getItem("clave");
+                                  $( "#user" ).empty();
+                                  $("#user").append(usuario);
+
+        };     
       }  
       
       //BOTON MENU
