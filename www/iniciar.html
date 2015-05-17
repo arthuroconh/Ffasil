@@ -103,6 +103,31 @@
                 });
             });
         </script>
+        <script type="text/javascript"> 
+        function iniciar(){ 
+                var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'http://desarrollotricolor.com.ve/busqueda/inicio.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){}, 
+                            success:function(data){
+                            alert("Usuario: "+data[0]+" Clave: "+data[1]);
+                            var usu=data[0];
+                            var cla = data[1];
+                            window.localStorage.setItem("usuario", usu);
+                            window.localStorage.setItem("clave", cla);
+                                  var usuario = window.localStorage.getItem("usuario");
+                                  var clave = window.localStorage.getItem("clave");
+                                  // value is now equal to "value" 
+                            $( "#user" ).empty();
+                            $("#user").append(clave);
+                            }
+                        });
+
+        } 
+        </script> 
     </head>
     <body>
           <section class="cerrador"></section>
@@ -162,14 +187,17 @@
           </nav>
         </header>
         <div style="clear:booth"></div>
+        <div id="cargando" style="display:none;">
+            <img src="load.gif">
+        </div>
           <section class="cajaccion"  id="page_effect" style="display:none;">
-            <form>
+            <form id="formulario" name="formulario" method="post">
             <label>Nombre de usuario</label>
               <input type="text" id="nombre" name="nombre" required="required">
             <label>Contrase&ntilde;a</label>
               <input type="text" id="contra" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
-              <input type="button" value="Enviar" id="enviarrr"  onclick="iniciar();">
+              <button type="button" onclick="iniciar();" id="enviarrr">Enviar</button> 
             </form>
           </section>
             <div id="deviceready" class="blink">
@@ -182,20 +210,7 @@
         <script type="text/javascript"> 
         //El registro al servicio de google lo hacemos automáticamente 
         app.initialize(); 
-        function iniciar(){  
-                var dato = $('#formulario').serialize();
-                    $.ajax({ 
-                            url:'http://www.desarrollotricolor.com.ve/busqueda/inicio.php', 
-                            type:'POST', 
-                            data:dato, 
-                            dataType:'json', 
-                            error:function(jqXHR,text_status,strError){}, 
-                            success:function(data){
-                            $("#user").html("<p>"+data+"'</p>");
-                            }
-                        });
 
-        } 
         </script> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
