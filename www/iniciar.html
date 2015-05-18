@@ -34,6 +34,70 @@
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
+
+        <script type="text/javascript">
+             
+            document.addEventListener("deviceready", onDeviceReady, false);
+             
+            var db;
+             
+            function onDeviceReady() {
+                db = window.openDatabase("Database", "1.0", "Cordova Demo", 2*1024*1024);
+                db.transaction(createDB, errorCB, successCB);
+     
+            }
+         
+            function createDB(tx) {
+                //tx.executeSql('DROP TABLE IF EXISTS DEMO');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (usu, cla)');
+             
+            }
+         
+            function errorCB(err) {
+                alert("Error processing SQL: "+err.code);
+            }
+         
+            function successCB() {
+               // alert("YEAH!!!!");
+            }
+         
+            function insertDB(tx) {
+                var _title = $("[name='title']").val();
+                var _image = $("[name='image']").val();
+                var _description = $("[name='description']").val();
+                var sql = 'INSERT INTO DEMO (title, image, description) VALUES (?,?,?)';
+                tx.executeSql(sql, [_title,_image,_description], sucessQueryDB, errorCB);
+ 
+            }
+         
+            function sucessQueryDB(tx) {     
+                tx.executeSql('SELECT * FROM DEMO', [], renderList, errorCB);
+            }
+         
+            function renderList(tx,results) {
+                var htmlstring = '';
+                 
+                var len = results.rows.length;
+                 
+                for (var i=0; i<len; i++){
+                    htmlstring += '<li>' + results.rows.item(i).title + '</li>';
+                     
+                }
+                 
+                $('#resultList').html(htmlstring);
+                $('#resultList').listview('refresh');
+                 
+                 
+            }
+ 
+            function submitForm() {
+                db.transaction(insertDB, errorCB);
+                $.mobile.changePage( "#page2", { reverse: false, transition: "slide" } );
+                return false;
+            }
+ 
+ 
+        </script>
         <script type="text/javascript">
         var usuario;
         var clave;
@@ -46,17 +110,20 @@
         menuDiv = document.querySelector("#menu"); 
         //BOTON MENU ANDROID
         document.addEventListener("menubutton", onMenuKeyDown, false);  
-        //BOTON ATRAS ANDROID
+        //BOTON ATRAS ANDROID 
         document.addEventListener("backbutton", onBackKeyDown, false);
-              if (window.localStorage.getItem("usuario")!='') {
-                                  var usuario = window.localStorage.getItem("usuario");
-                                  var clave = window.localStorage.getItem("clave");
+        tx.executeSql('SELECT * FROM DEMO', [], errorCB);
+        var len = results.rows.length;
+
+              if (len!='') {
+                                  var usuario = results.rows.item(1).usu;
+                                  var clave = results.rows.item(1).cla;
                                   $("#user").append(usuario);
 
         } else{
           $("#user").append("ffasil.com");
         }     
-      }  
+      } 
       
       //BOTON MENU
       var menuOpen = true;
@@ -124,11 +191,20 @@
                             success:function(data){
                             alert("Usuario: "+data[0]+" Clave: "+data[1]);
                             var usu=data[0];
-                            var cla = data[1];
-                            window.localStorage.setItem("usuario", usu);
-                            window.localStorage.setItem("clave", cla);
-                                  usuario = window.localStorage.getItem("usuario");
-                                  clave = window.localStorage.getItem("clave");
+                            var cla = data[1];                
+                            var sql = 'INSERT INTO DEMO (usu, cla) VALUES (?,?)';
+                            tx.executeSql(sql, [usu,cla], sucessQueryDB, errorCB);
+                            tx.executeSql('SELECT * FROM DEMO', [], errorCB);
+                            var len = results.rows.length;
+
+                                  if (len!='') {
+                                                      var usuario = results.rows.item(1).usu;
+                                                      var clave = results.rows.item(1).cla;
+                                                      $("#user").append(usuario);
+
+                            } else{
+                              $("#user").append("ffasil.com");
+                            } 
                             }
                         });
 
