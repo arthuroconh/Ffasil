@@ -35,11 +35,12 @@
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
         <script type="text/javascript">
+        var usuario;
+        var clave;
       document.addEventListener("deviceready", onDeviceReady, false);
       // PhoneGap esta listo
       function onDeviceReady() {
-        var usuario;
-        var clave;
+
         
         //DIV DEL MENU
         menuDiv = document.querySelector("#menu"); 
@@ -112,8 +113,6 @@
             });
         </script>
         <script type="text/javascript">
-        var usuario;
-        var clave;
         function iniciar(){ 
                 var dato = $('#formulario').serialize();
                     $.ajax({ 
