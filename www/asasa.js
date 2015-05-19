@@ -25,7 +25,7 @@ function creaNuevaDB (tx) {
 		"usuario VARCHAR(80))";
 	tx.executeSql(sql);
 
-	tx.executeSql("INSERT INTO sesion(id,usuario) VALUES("+window.localStorage.getItem('clave')","+window.localStorage.getItem('usuario')")");
+	tx.executeSql("INSERT INTO sesion(id,usuario) VALUES('"+window.localStorage.getItem('clave')+"','"+window.localStorage.getItem('usuario')+"')");
 }
 
 function creaSuccess () {
