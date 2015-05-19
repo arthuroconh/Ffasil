@@ -55,8 +55,7 @@
           function creaNuevaDB (tx) {
             tx.executeSql('DROP TABLE IF EXISTS sesion');
             
-            var sql = "CREATE TABLE IF NOT EXISTS sesion("+"id INTEGER PRIMARY KEY,"+
-              "usuario VARCHAR(80))";
+            var sql = "CREATE TABLE IF NOT EXISTS sesion(id INTEGER PRIMARY KEY, usuario VARCHAR(80))";
             tx.executeSql(sql);
 
             tx.executeSql("INSERT INTO sesion(id,usuario) VALUES('1','dsfdfdfds')");
