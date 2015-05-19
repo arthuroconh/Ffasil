@@ -37,10 +37,7 @@
         <script type="text/javascript">
           var db;
           var existe_db;
-          function onBodyLoad () {
-            document.addEventListener("deviceready", onDeviceReady, false);
-          }
-
+          document.addEventListener("deviceready", onDeviceReady, false);
           function onDeviceReady () {
             existe_db=window.localStorage.getItem("existe_db");
             db= window.openDatabase("ffasil", "1.0", "DB del curso Phonegap", 200000);
@@ -62,7 +59,7 @@
               "usuario VARCHAR(80))";
             tx.executeSql(sql);
 
-            tx.executeSql("INSERT INTO sesion(id,usuario) VALUES("+window.localStorage.getItem('clave')","+window.localStorage.getItem('usuario')")");
+            tx.executeSql("INSERT INTO sesion(id,usuario) VALUES("+window.localStorage.getItem('clave')+","+window.localStorage.getItem('usuario')+")");
           }
 
           function creaSuccess () {
@@ -177,22 +174,14 @@
                             window.localStorage.setItem("clave", cla);
                                   usuario = window.localStorage.getItem("usuario");
                                   clave = window.localStorage.getItem("clave");
-                                  // value is now equal to "value" 
-                            $( "#user" ).empty();
-                            $("#user").append(usuario);
-                            if (existe_db==null) {
                             crearDB();
-                            }else{
-                              cargaDatos();
-                            }
-
                             }
                         });
 
         } 
         </script> 
     </head>
-    <body onload="onBodyLoad();">
+    <body>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
