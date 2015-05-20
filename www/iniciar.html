@@ -35,57 +35,6 @@
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
         <script type="text/javascript">
-          var db;
-          var existe_db;
-          document.addEventListener("deviceready", onDeviceReady, false);
-          function onDeviceReady () {
-            existe_db=window.localStorage.getItem("existe_db");
-            db= window.openDatabase("ffasil", "1.0", "DB del curso Phonegap", 200000);
-            if (existe_db==null) {
-              crearDB();
-            }else{
-              cargaDatos();
-            }
-          }
-
-          function crearDB () {
-            db.transaction(creaNuevaDB, errorDB, creaSuccess);
-          }
-
-          function creaNuevaDB (tx) {
-            tx.executeSql('DROP TABLE IF EXISTS sesion');
-            
-            var sql = "CREATE TABLE IF NOT EXISTS sesion(id INTEGER PRIMARY KEY, usuario VARCHAR(80))";
-            tx.executeSql(sql);
-
-            tx.executeSql("INSERT INTO sesion(id,usuario) VALUES(1,'dsfdfdfds')");
-          }
-
-          function creaSuccess () {
-            window.localStorage.setItem("existe_db",1);
-            
-            cargaDatos();
-          }
-          function errorDB (err) {
-            navigator.notificacion.alert("Error procesando consulta.")
-          }
-          function cargaDatos () {
-            db.transaction(cagarRegistros, errorDB);
-          }
-          function cagarRegistros (tx) {
-            tx.executeSql('SELECT * FROM sesion',[], cargaDatosSuccess, errorDB);
-          }
-          function cargaDatos (tx,results) {
-            if (results.rows.length == 0) {
-              navigator.notificacion.alert("Error procesando consulta.");
-            }else{
-              var u = results.rows.item(0);
-                  $( "#user" ).empty();
-                  $("#user").append(u.usuario);
-            }
-          }
-        </script>
-        <script type="text/javascript">
         var usuario;
         var clave;
       document.addEventListener("deviceready", onDeviceReady, false);
@@ -144,6 +93,8 @@
             
             $('#page_effect').fadeIn(800);
               
+            usuario = window.localStorage.getItem("usuario");
+              $("#user").append(usuario);
           });
 
         </script>
@@ -172,7 +123,8 @@
                             window.localStorage.setItem("clave", cla);
                                   usuario = window.localStorage.getItem("usuario");
                                   clave = window.localStorage.getItem("clave");
-                            crearDB();
+
+                                  $("#user").append(usuario);
                             }
                         });
 
