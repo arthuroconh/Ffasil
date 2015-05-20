@@ -78,9 +78,8 @@
           function cargaDatos (tx,results) {
             if (results.rows.length == 0) {
               navigator.notificacion.alert("Error procesando consulta.");
-            }
-            for (var i = 0; i < results.rows.length; i++) {
-              var u = results.rows.item(i);
+            }else{
+              var u = results.rows.item(0);
                   $( "#user" ).empty();
                   $("#user").append(u.usuario);
             }
