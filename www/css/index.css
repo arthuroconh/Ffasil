@@ -55,7 +55,7 @@ body {
     display: block;
 }
 #sesionon article{
-    height: 70px;
+    height: 65px;
 }
 .titulo{
     font-family: 'sousesregular';
@@ -434,7 +434,7 @@ h1 {
     width: 100%;
     background: #D9D9D9;
     font-size: 200%;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 10%;
     box-sizing: border-box;
 }
@@ -700,7 +700,7 @@ label{
 }
 
 #sesionon article{
-    height: 165px;
+    height: 160px;
 }
 
 #busq{
