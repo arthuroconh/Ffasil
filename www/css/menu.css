@@ -104,6 +104,9 @@ header nav ul li a: {
 		text-decoration:none;
 		font-weight: bold;
 		font-size:30px;
+	}	
+	.menu_bar .bt-menu:active {
+		color:#000;
 	}
  
 	.menu_bar span {
@@ -130,7 +133,6 @@ header nav ul li a: {
     position: fixed;
     width: 90%;
     height: 75%;
-    display: block;
     margin-top:230px;
     float: left;
     font-size: 26px;
@@ -149,13 +151,23 @@ header nav ul li a: {
 		font-weight: bold;
 		font-size:60px;
 	}
+	.menu_bar .bt-menu:active {
+		display:block;
+		padding:10px;
+		background:#f59c34;
+		color:#000;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:60px;
+		width: 10%;
+	}
 	.titulo {
 	  font-family: 'sousesregular';
 	  padding: 0px !important;
 	  margin-top: -140px;
 	  margin-right: 15%;
 	  font-weight: 100;
-	  font-size: 180%;
+	  font-size: 130%;
 	  color: #fff;
 	}
 header .menu2 {

@@ -130,7 +130,12 @@ for (var i = 0; i < n; i++) {
           $(document).ready(function(){
             
             $('#page_effect').fadeIn(800);
-              
+            usuario = window.localStorage.getItem("usuario");
+            if (usuario<=0) {
+              $("#user").append("ffasil.com");
+            }else{
+              $("#user").append(usuario);
+            }
           });
 
         </script>

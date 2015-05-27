@@ -87,9 +87,18 @@
            
           $(document).ready(function(){
             
-            $('#page_effect').fadeIn(800);
             usuario = window.localStorage.getItem("usuario");
-              $("#user").append(usuario);
+            if (usuario<=0) {
+              $("#user").append("ffasil.com");
+              $('#sesionoff').fadeIn(800);
+              $("#sesionoff").removeClass("escondido");
+              $("#sesionoff").addClass("visible");
+            }else{
+              $("#user").append(usuario);              
+              $('#sesionon').fadeIn(800);
+              $("#sesionon").removeClass("escondido");
+              $("#sesionon").addClass("visible");
+            }
           });
 
         </script>
@@ -152,12 +161,23 @@
           </nav>
         </header>
         <div style="clear:both"></div>
-          <section class="cajaccion" id="page_effect" style="display:none;">
+          <section class="cajaccion escondido" id="sesionoff">
             <a href="buscar.html"><article>Buscar</article></a>
             <a href="contacto.html"><article>Cont&aacute;ctenos</article></a>
             <a href="terminos.html"><article>T&eacute;rminos y Condiciones</article></a>
             <a href="iniciar.html"><article>Iniciar Sesi&oacute;n</article></a>
             <a href="registro.html"><article>Registrarse</article></a>
+          </section>
+          <section class="cajaccion escondido" id="sesionon">
+            <a href="buscar.html"><article>Buscar</article></a>
+            <a href="perfil.html"><article>Perfil</article></a>
+            <a href="publicar.html"><article>Publicar</article></a>
+            <a href="publicaciones.html"><article>Mis Publicaciones</article></a>
+            <a href="compras.html"><article>Mis Compras</article></a>
+            <a href="ventas.html"><article>Mis Ventas</article></a>
+            <a href="reputaciion.html"><article>Reputaci&oacute;n</article></a>
+            <a href="comentarios.html"><article>Comentarios</article></a>
+            <a href="cambiarcontra.html"><article>Cambiar Contrase&ntilde;a</article></a>
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

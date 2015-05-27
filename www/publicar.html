@@ -91,21 +91,57 @@
           $(document).ready(function(){
             
             $('#page_effect').fadeIn(800);
+            id = window.localStorage.getItem("id");
             usuario = window.localStorage.getItem("usuario");
-            if (usuario<=0) {
-              $("#user").append("ffasil.com");
-            }else{
-              $("#user").append(usuario);
-            }
+            $("#id").append(id);
+            $("#cargando").removeClass("escondido"); 
+            $("#cargando").addClass("visible"); 
+          var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'cargaperfil.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){
+                            }, 
+                            success:function(data){
+                            var nombre=data[0];
+                            var apellido=data[1];
+                            var carnet=data[2];
+                            var nit=data[3];
+                            var telefono=data[4];
+                            var pagina=data[5];
+                            var postal=data[6];
+                            var pais=data[7];
+                            var depart=data[8];
+                            var direccion=data[9];
+                            $("#nombre").append(nombre);
+                            $("#apellido").append(apellido);
+                            $("#carnet").append(carnet);
+                            $("#nit").append(nit);
+                            $("#telefono").append(telefono);
+                            $("#pagina").append(pagina);
+                            $("#postal").append(postal);
+                            $("#pais").append(pais);
+                            $("#depart").append(depart);
+                            
+                            $("#cargando").removeClass("visible"); 
+                            $("#cargando").addClass("escondido"); 
+                            }
+                        });
+
           });
 
         </script>
     </head>
     <body >
+    <form id="formulario" name="formulario" method="post" class="escondido">
+      <textarea id="id" name="id"></textarea>
+    </form>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user"></center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Tipo de publicaci&oacute;n</center>
           </div>
    
           <nav class="menu2">
@@ -159,54 +195,44 @@
           </nav>
         </header>
         <div style="clear:booth"></div>
-          <section class="cajaccion" id="page_effect" style="display:none;">
-          <form>
-          <input list="browsers" id="busqueda" name="busqueda" placeholder="Buscar">
-
-          <datalist id="browsers">
-            <option value="Accesorios para vehículos">
-            <option value="Aeronáutica">
-            <option value="Agropecuaria y Campo">
-            <option value="Alimentos y Bebidas">
-            <option value="Animales y Mascotas">
-            <option value="Arte y Antigüedades">
-            <option value="Artículos militares y de seguridad">
-            <option value="Cámaras y accesorios">
-            <option value="Celulares y Accesorios">
-            <option value="Computación">
-            <option value="Consolas y videojuegos">
-            <option value="Deportes y Fitness">
-            <option value="Electrodomésticos">
-            <option value="Electrónicos, audio y video">
-            <option value="Entretenimiento y Ocio">
-            <option value="Equipamiento Industrial">
-            <option value="Inmuebles, bienes raíces">
-            <option value="Instrumentos Musicales">
-            <option value="Inversiones y Negocios">
-            <option value="Joyas y Relojes">
-            <option value="Juegos y juguetes">
-            <option value="Materiales de Construcción">
-            <option value="Motocicletas">
-            <option value="Música y Videos">
-            <option value="Niños">
-            <option value="Restaurantes y Locales">
-            <option value="Salud y Belleza">
-            <option value="Vehículos">
-            <option value="Viajes y Turismo">
-            <option value="Otros">
-            <option value="Belleza y Cuidado Personal">
-            <option value="Clases y Capacitaciones">
-            <option value="Fiestas y Eventos">
-            <option value="Importaciones">
-            <option value="Imprenta y Letreros">
-            <option value="Mantenimiento del Hogar">
-            <option value="Mantenimiento Vehículos">
-            <option value="Servicio Técnico">
-            <option value="Transporte y Mudanzas">
-            <option value="Viajes">
-          </datalist>
-          <input type="submit" id="busq" value="ir">
-          </form>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section class="cajapublica" id="page_effect" style="display:none; overflow:scroll;">
+            <article class="publicacion"> 
+              <center><article class="tutulopublicar">ANUNCIO L&Iacute;DER</article></center>
+               <div class="imagenpub"><img src="img/lider-01.png"></div>
+              <article class="publicont" id="lider">Anuncio L&#205;DER es un espacio privilegiado de publicidad que se encuentra en la secci&#243;n de men&#250; principal y categor&#237;as, le permite al usuario que el cliente visite su p&#225;gina web en caso de tenerla, adem&#225;s la comunidad FFASIL se encarga de aumentar la publicidad de su anuncio a trav&#233;s de las principales redes sociales.</article>
+              <form id="formulario" name="formulario" method="post">
+                <input type="text" id="anuncio" name="anuncio" value="1" style="display:none">
+                <input type="button" id="botonpub" value="Crear publicaci&oacute;n">
+              </form>
+            </article>
+            <article class="publicacion"> 
+              <center><article class="tutulopublicar">ANUNCIO HABITUAL</article></center>
+              <div class="imagenpub"><img src="img/habitual-01.png"></div>
+              <article class="publicont" id="habitual">Anuncio HABITUAL es una publicaci&#243;n destinada a productos y servicios, pudiendo determinar la categor&#237;a en la cual publicar, cada publicaci&#243;n tiene una duraci&#243;n de 70 d&#237;as, ideal para el joven emprendedor permiti&#233;ndole adquirir reputaci&#243;n dentro de la comunidad FFASIL.</article>
+              <form id="formulario" name="formulario" method="post">
+                <input type="text" id="anuncio" name="anuncio" value="2" style="display:none">
+                <input type="button" id="botonpub" value="Crear publicaci&oacute;n">
+              </form>
+            </article>
+            <article class="publicacion"> 
+              <center><article class="tutulopublicar">ANUNCIO CASUAL</article></center>
+               <div class="imagenpub"><img src="img/casual-01.png"></div>
+              <article class="publicont" id="casual">Al ingresar a nuestra comunidad tienes derecho a un anuncio CASUAL, que es de car&#225;cter gratuito. El anuncio tiene una duraci&#243;n de 7 d&#237;as y s&#243;lo podr&#225;s publicar una vez por mes. Ideal para quienes buscan una venta r&#225;pida.</article>
+              <form id="formulario" name="formulario" method="post">
+                <input type="text" id="anuncio" name="anuncio" value="3" style="display:none">
+                <input type="button" id="botonpub" value="Crear publicaci&oacute;n">
+              </form>
+            </article>
+            <article class="publicacion"> 
+              <article class="publicont" id="casual">Recuerde que:<br><br>
+              <p>Es un requisito publicar los productos con el precio real de venta.</p>
+              <p>Procura colocar fotos reales, eso evitar&aacute; malos entendidos entre las partes.</p>
+              <p>No olvides leer las pol&iacute;ticas y condiciones que rigen nuestra comunidad haciendo clic en el &iacute;cono superior derecho.</p>
+              </article>
+            </article>
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

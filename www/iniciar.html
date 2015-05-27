@@ -92,9 +92,12 @@
           $(document).ready(function(){
             
             $('#page_effect').fadeIn(800);
-              
             usuario = window.localStorage.getItem("usuario");
+            if (usuario<=0) {
+              $("#user").append("ffasil.com");
+            }else{
               $("#user").append(usuario);
+            }
           });
 
         </script>
@@ -110,21 +113,19 @@
         function iniciar(){ 
                 var dato = $('#formulario').serialize();
                     $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/busqueda/inicio.php', 
+                            url:'http://desarrollotricolor.com.ve/inicio.php', 
                             type:'POST', 
                             data:dato, 
                             dataType:'json', 
                             error:function(jqXHR,text_status,strError){}, 
                             success:function(data){
-                            alert("Usuario: "+data[0]+" Clave: "+data[1]);
                             var usu=data[0];
-                            var cla = data[1];
+                            var id = data[1];
                             window.localStorage.setItem("usuario", usu);
-                            window.localStorage.setItem("clave", cla);
+                            window.localStorage.setItem("id", id);
                                   usuario = window.localStorage.getItem("usuario");
-                                  clave = window.localStorage.getItem("clave");
-
-                                  $("#user").append(usuario);
+                                  clave = window.localStorage.getItem("id");
+                            window.location.href = "index.html";
                             }
                         });
 
@@ -189,9 +190,6 @@
           </nav>
         </header>
         <div style="clear:booth"></div>
-        <div id="cargando" style="display:none;">
-            <img src="load.gif">
-        </div>
           <section class="cajaccion"  id="page_effect" style="display:none;">
             <form id="formulario" name="formulario" method="post">
             <label>Nombre de usuario</label>
