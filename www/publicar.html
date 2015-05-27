@@ -94,50 +94,9 @@
             id = window.localStorage.getItem("id");
             usuario = window.localStorage.getItem("usuario");
             $("#id").append(id);
-            $("#cargando").removeClass("escondido"); 
-            $("#cargando").addClass("visible"); 
-          var dato = $('#formulario').serialize();
-                    $.ajax({ 
-                            url:'cargaperfil.php', 
-                            type:'POST', 
-                            data:dato, 
-                            dataType:'json', 
-                            error:function(jqXHR,text_status,strError){
-                            }, 
-                            success:function(data){
-                            var nombre=data[0];
-                            var apellido=data[1];
-                            var carnet=data[2];
-                            var nit=data[3];
-                            var telefono=data[4];
-                            var pagina=data[5];
-                            var postal=data[6];
-                            var pais=data[7];
-                            var depart=data[8];
-                            var direccion=data[9];
-                            $("#nombre").append(nombre);
-                            $("#apellido").append(apellido);
-                            $("#carnet").append(carnet);
-                            $("#nit").append(nit);
-                            $("#telefono").append(telefono);
-                            $("#pagina").append(pagina);
-                            $("#postal").append(postal);
-                            $("#pais").append(pais);
-                            $("#depart").append(depart);
-                            
-                            $("#cargando").removeClass("visible"); 
-                            $("#cargando").addClass("escondido"); 
-                            }
-                        });
-
-          });
-
         </script>
     </head>
     <body >
-    <form id="formulario" name="formulario" method="post" class="escondido">
-      <textarea id="id" name="id"></textarea>
-    </form>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
