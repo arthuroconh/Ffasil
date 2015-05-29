@@ -87,31 +87,23 @@
       //FIN BOTON ATRAS ANDROID
         </script>
         <script type="text/javascript">
-          function irl () {
-             location.href="lider.html";
-           }
-          function irh () {
-             location.href="habitual.html";
-           } 
-          function irc () {
-             location.href="casual.html";
-           } 
-
-
-        </script>
-        <script type="text/javascript">
            
           $(document).ready(function(){
             usuario = window.localStorage.getItem("usuario");
             $('#page_effect').fadeIn(800);
           });
         </script>
+        <script type="text/javascript">
+          function pub () {
+            location.href="publilider.html";
+          }
+        </script>
     </head>
     <body >
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Tipo de publicaci&oacute;n</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Formulario L&Iacute;der</center>
           </div>
    
           <nav class="menu2">
@@ -170,28 +162,14 @@
         </div>
           <section class="cajapublica" id="page_effect" style="display:none; overflow:scroll;">
             <article class="publicacion"> 
-              <center><article class="tutulopublicar">ANUNCIO L&Iacute;DER</article></center>
-               <div class="imagenpub"><img src="img/lider-01.png"></div>
-              <article class="publicont" id="lider">Anuncio L&#205;DER es un espacio privilegiado de publicidad que se encuentra en la secci&#243;n de men&#250; principal y categor&#237;as, le permite al usuario que el cliente visite su p&#225;gina web en caso de tenerla, adem&#225;s la comunidad FFASIL se encarga de aumentar la publicidad de su anuncio a trav&#233;s de las principales redes sociales.</article>
-                <input type="submit" id="botonpub" value="Crear publicaci&oacute;n" onclick="irl();">
-            </article>
-            <article class="publicacion"> 
-              <center><article class="tutulopublicar">ANUNCIO HABITUAL</article></center>
-              <div class="imagenpub"><img src="img/habitual-01.png"></div>
-              <article class="publicont" id="habitual">Anuncio HABITUAL es una publicaci&#243;n destinada a productos y servicios, pudiendo determinar la categor&#237;a en la cual publicar, cada publicaci&#243;n tiene una duraci&#243;n de 70 d&#237;as, ideal para el joven emprendedor permiti&#233;ndole adquirir reputaci&#243;n dentro de la comunidad FFASIL.</article>
-                <input type="submit" id="botonpub" value="Crear publicaci&oacute;n" onclick="irh();">
-            </article>
-            <article class="publicacion"> 
-              <center><article class="tutulopublicar">ANUNCIO CASUAL</article></center>
-               <div class="imagenpub"><img src="img/casual-01.png"></div>
-              <article class="publicont" id="casual">Al ingresar a nuestra comunidad tienes derecho a un anuncio CASUAL, que es de car&#225;cter gratuito. El anuncio tiene una duraci&#243;n de 7 d&#237;as y s&#243;lo podr&#225;s publicar una vez por mes. Ideal para quienes buscan una venta r&#225;pida.</article>
-                <input type="submit" id="botonpub" value="Crear publicaci&oacute;n" onclick="irc();">
-            </article>
-            <article class="publicacion"> 
-              <article class="publicont" id="casual">Recuerde que:<br><br>
-              <p>Es un requisito publicar los productos con el precio real de venta.</p>
-              <p>Procura colocar fotos reales, eso evitar&aacute; malos entendidos entre las partes.</p>
-              <p>No olvides leer las pol&iacute;ticas y condiciones que rigen nuestra comunidad haciendo clic en el &iacute;cono superior derecho.</p>
+              <article class="publicont" id="casual">
+                <form id="formularionuevoproducto" method="POST" action="guardar-producto.php" enctype="multipart/form-data">
+                    <div id="salto"><label>Nombre </label><input type="text" name="pro_nom" required="required"></div>
+                    <div id="salto"><label>Precio</label><input type="number" step="any" id="precio" name="pro_pre" required="required"></div>
+                    <div id="salto"><label>Descripcion</label><input type="text" name="pro_des" required="required"></div>
+                    <div id="salto"><label>Imagen</label><input type="file"  name="pro_img" required="required"></div>
+                    <div id="salto"><input type="submit" value="Guardar" id="Guardar" onclick="comprueba_extension(this.form, this.form.pro_img.value)"></div>                           
+                </form> 
               </article>
             </article>
           </section>

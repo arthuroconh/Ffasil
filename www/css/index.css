@@ -15,6 +15,11 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ROJO e20612
+VERDE 3caa37
+azul 0f70b7
+naranja f29200
+gris dadada
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
@@ -170,6 +175,19 @@ body {
     color: #fff;
 }
 #botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 100%;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
     background: #0f0f0f;
     color: #fff;
 }
@@ -698,7 +716,19 @@ label{
     background: #0f0f0f;
     color: #fff;
 }
-
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
 #sesionon article{
     height: 160px;
 }
@@ -971,6 +1001,19 @@ label{
     color: #fff;
 }
 #botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
     background: #0f0f0f;
     color: #fff;
 }
