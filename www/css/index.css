@@ -83,7 +83,9 @@ body {
 }
 .amplio{
     width: 90% !important;
-    margin-left: 5% !important;
+    margin-left: 1% !important;
+    height: 95% !important;
+    padding-bottom: 190px;
 }
 .cajaccion{
     position: fixed;
@@ -132,6 +134,59 @@ body {
     float: left;
     overflow: scroll;
     margin-left: 2%;   
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;   
+}
+.cajaformulario label{
+    width: 100%;
+    height: 40px;
+    font-size: 22px !important;
+    margin-top: 10px;
+}
+.cajaformulario input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.cajaformulario input[type="FILE"]{
+    width: 65%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 40px !important;
+    box-sizing: border-box;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.btn{
+    border: none;
+    margin-top: 50px;
+    width: 40% !important;
+    margin-right: 5%;
+}
+.btn-success{
+    background:#3caa37;
+}
+.btn-warning{
+    background:#f29200;
+}
+.btn-danger{
+    background:#e20612;
+    margin-bottom: 60px !important;
 }
 .publicacion{
     margin-bottom: 70%;
@@ -286,12 +341,13 @@ body {
 }
 .terminos{
     background: none !important;
-    padding-left: 1% !important;
+    padding-left: 10% !important;
     font-size: 150% !important;
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
     overflow-x:hidden; 
+    padding-bottom: 190px;
 }
 label{
     float: left;
@@ -368,11 +424,12 @@ label{
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
 .terminos{
     background: none !important;
-    padding-left: 1% !important;
+    padding-left: 10% !important;
     font-size: 150% !important;
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
+    padding-bottom: 190px;
 }
     .app {
     }
@@ -439,11 +496,12 @@ h1 {
 @media only screen and (min-width: 300px) and (max-width: 767px) { 
 .terminos{
     background: none !important;
-    padding-left: 1% !important;
+    padding-left: 10% !important;
     font-size: 150% !important;
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
+    padding-bottom: 190px;
 } 
 
 .cajaccion article{
@@ -507,11 +565,12 @@ h1 {
 @media only screen and (max-height: 550px) and (max-width: 1500px) {
 .terminos{
     background: none !important;
-    padding-left: 1% !important;
+    padding-left: 10% !important;
     font-size: 150% !important;
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
+    padding-bottom: 190px;
 }
 .cajaccion{
     position: fixed;
@@ -671,6 +730,69 @@ label{
     overflow: scroll;
     margin-left: 2%;   
 }
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:200px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;   
+}
+.cajaformulario label{
+    width: 100%;
+    height: 100px;
+    font-size: 70px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cajaformulario input{
+    width: 100%;
+    height: 90px;
+    font-size: 60px !important;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 60px !important;
+    margin-bottom:100px;
+}
+.btn{
+    margin-top: 50px;
+    border: none !important;
+    width: 40% !important;
+    margin-right: 5%;
+    height: 200px !important;
+    font-size: 80px !important;
+}
+.btn-success{
+    border: none !important;
+    background:#3caa37 !important;
+}
+.btn-warning{
+    border: none !important;
+    background:#f29200 !important;
+}
+.btn-danger{    
+    border: none !important;
+    background:#e20612 !important;
+    margin-bottom: 60px !important;
+}
+.cajaformulario input[type="FILE"]{
+    width: 55%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 100px !important;
+    box-sizing: border-box;
+}
 .publicacion{
     margin-bottom: 43%;
     width: 100%;
@@ -742,11 +864,12 @@ label{
 
 .terminos{
     background: none !important;
-    padding-left: 1% !important;
+    padding-left: 10% !important;
     font-size: 150% !important;
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
+    padding-bottom: 190px;
 }
 .cajaccion{
     position: fixed;
@@ -959,6 +1082,17 @@ label{
     overflow: scroll;
     margin-left: 2%;   
 }
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;   
+}
+
 .publicacion{
     margin-bottom: 20%;
     width: 100%;
@@ -1016,5 +1150,344 @@ label{
 #botongo:hover{
     background: #0f0f0f;
     color: #fff;
+}
+
+}
+@media only screen and (min-height: 1200px) and (max-width: 800px) {
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:180px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;   
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:200px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;   
+}
+.cajaformulario label{
+    width: 100%;
+    height: 100px;
+    font-size: 50px !important;
+    margin-top: 10px;
+}
+.cajaformulario input{
+    width: 100%;
+    height: 90px;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+}
+.btn{
+    margin-top: 50px;
+    border: none !important;
+    width: 40% !important;
+    margin-right: 5%;
+    height: 200px !important;
+    font-size: 80px !important;
+}
+.btn-success{
+    border: none !important;
+    background:#3caa37 !important;
+}
+.btn-warning{
+    border: none !important;
+    background:#f29200 !important;
+}
+.btn-danger{    
+    border: none !important;
+    background:#e20612 !important;
+    margin-bottom: 60px !important;
+}
+.cajaformulario input[type="FILE"]{
+    width: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 60px !important;
+    box-sizing: border-box;
+}
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 2px;
+    font-size: 50px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:70px;
+
+}
+#botonpub{
+    margin-top: -10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 500%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#sesionon article{
+    height: 100px;
+}
+
+#busq{
+      font-size: 350%;
+}
+#busq:hover{
+      font-size: 350%;
+}
+
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+.cajaccion{
+    position: fixed;
+    width: 90%;
+    height: 75%;
+    margin-top:80px;
+    float: left;
+    margin-left: 5%;
+}
+.cajaccion article{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.texto{
+    background: none !important;
+    padding-left: 1% !important;
+    font-size: 180% !important;
+    margin-bottom: 2% !important;
+}
+label{
+    float: left;
+    width: 100% !important;
+    font-size: 180% !important;
+}
+#nombre1, #asunto1, #email1, #contra1, #carnet1{
+    margin-bottom: 2%;
+    width: 100%;
+    float: left;
+    font-size: 150% !important;
+    height: 90px !important;
+}
+#mensaje{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 130px !important;
+    font-size: 150% !important;
+}
+#enviarr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #3caa37;
+}
+#enviarr:hover{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    color: #fff;
+    background: #898989;
+}
+#reset{
+
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #f29200;
+}
+#reset:hover{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    color: #fff;
+    background: #898989;
+}
+#enviarrr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    color: #fff;
+    background: #898989;
+}
+
+#enviarrr{
+    font-size: 190% !important;
+    margin-top: 7%;
+    width: 30%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    font-size: 190% !important;
+    margin-top: 7%;
+    width: 30%;
+    height: 80px !important;
+    border: none;
+    color: #fff;
+    background: #898989;
+}
+#busqueda{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #D9D9D9;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;   
+    border:none;
+}
+#busqueda:focus{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #869791;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.cajaperfil{
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:200px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;   
+}
+.datoperfil{
+    width: 100%;
+    height: 11%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 2px;
+    font-size: 45px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 38px !important;
+    color: grey; 
+}
+}
+@media only screen and (max-height: 750px) and (max-width: 1300px) {
+.cajaccion{
+    overflow: scroll;
 }
 }

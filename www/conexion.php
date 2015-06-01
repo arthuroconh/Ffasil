@@ -1,6 +1,6 @@
 <?php
-	$conexion=mysql_connect("www.desarrollotricolor.com.ve","desarrol_a","chiquito123.") 
+	$conexion=mysql_connect("localhost","root","") 
 	or die("Problemas en la conexion");
-	mysql_select_db("desarrol_ffasil",$conexion) or
+	mysql_select_db("tienda",$conexion) or
 	die("Problemas en la seleccion de la base de datos");
 ?>

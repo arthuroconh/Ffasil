@@ -100,6 +100,28 @@
           });
 
         </script>
+        <script type="text/javascript">
+        function iniciar(){ 
+                var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'http://desarrollotricolor.com.ve/ffasil/registrarmovil.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){}, 
+                            success:function(data){
+                            var usu=data[0];
+                            var id = data[1];
+                            window.localStorage.setItem("usuario", usu);
+                            window.localStorage.setItem("id", id);
+                                  usuario = window.localStorage.getItem("usuario");
+                                  clave = window.localStorage.getItem("id");
+                            window.location.href = "index.html";
+                            }
+                        });
+
+        } 
+        </script> 
     </head>
     <body>
           <section class="cerrador"></section>
@@ -161,9 +183,11 @@
         <div style="clear:booth"></div>
           <section class="cajaccion" id="page_effect" style="display:none;">
             <form>
+            <label>Usuario</label>
+              <input type="text" id="nombre1" name="usuario" required="required">
             <label>Nombre</label>
               <input type="text" id="nombre1" name="nombre" required="required">
-            <label>Contra</label>
+            <label>Contrase&ntilde;a</label>
               <input type="text" id="contra1" name="contra" required="required">
             <label>Carnet</label>
               <input type="text" id="carnet1" name="carnet" required="required">
