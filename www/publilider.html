@@ -34,6 +34,7 @@
         <script src="js/menu.js"></script>
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="js/imagen.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
         <script type="text/javascript">
       document.addEventListener("deviceready", onDeviceReady, false);
@@ -292,7 +293,10 @@
                       <input type="file" name="portada">
                       <label>Imagen secundar&iacute;a</label>
                       <input type="file" name="portada2">
-                <label for="pagina" class="textoPromedio">Url de su p&aacute;gina web</label>
+                  <input name="button" type="button" onclick="capturePhoto()" value="Take Photo"/>
+                  <input name="button" type="button" onclick="getPhoto();" value="Browse" />
+                  <img src="" width="200px" id="largeImage">
+                <label for="pagina" class="textoPromedio">Url de su p&aacute;gina web (debe comenzar con http:// o https://)</label>
                   <input class="form-control" placeholder="http://example.com" name="pagina" type="text">
                 
                 <label for="" class="textoPromedio">Nombre de contacto</label>
