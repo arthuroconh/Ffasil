@@ -16,6 +16,13 @@ function getPhoto(source) {
         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
     });
 }
+function getPhoto2(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
 
 function uploadPhoto(imageURI) {
     //If you wish to display image on your page in app
@@ -31,8 +38,36 @@ function uploadPhoto(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = '123456';
-    var imagefilename = Number(new Date()) + ".jpg";
+    var userid = window.localStorage.getItem("usuario");;
+    var imagefilename = userid + Number(new Date()) + ".jpg";
+    options.fileName = imagefilename;
+    options.mimeType = "image/jpg";
+
+    var params = new Object();
+    params.imageURI = imageURI;
+    params.userid = sessionStorage.loginuserid;
+    options.params = params;
+    options.chunkedMode = false;
+    var ft = new FileTransfer();
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php";
+    ft.upload(imageURI, url, win, fail, options, true);
+}
+function uploadPhoto2(imageURI) {
+    //If you wish to display image on your page in app
+    // Get image handle
+    var largeImage2 = document.getElementById('largeImage2');
+
+    // Unhide image elements
+    largeImage2.style.display = 'block';
+
+    // Show the captured photo
+    // The inline CSS rules are used to resize the image
+    largeImage2.src = imageURI;
+
+    var options = new FileUploadOptions();
+    options.fileKey = "file";
+    var userid = window.localStorage.getItem("usuario");;
+    var imagefilename = userid + Number(new Date()) + ".jpg";
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
 
