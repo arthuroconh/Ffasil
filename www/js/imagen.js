@@ -42,7 +42,7 @@ function uploadPhoto(imageURI) {
     var imagefilename = userid + Number(new Date()) + ".jpg";
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-
+    $('#nombreimagen').val(imagefilename);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -55,22 +55,22 @@ function uploadPhoto(imageURI) {
 function uploadPhoto2(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
-    var largeImage2 = document.getElementById('largeImage2');
+    var largeImagen = document.getElementById('largeImagen');
 
     // Unhide image elements
-    largeImage2.style.display = 'block';
+    largeImagen.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage2.src = imageURI;
+    largeImagen.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
     var userid = window.localStorage.getItem("usuario");;
-    var imagefilename2 = userid + Number(new Date()) + ".jpg";
-    options.fileName = imagefilename2;
+    var imagefilename = userid + Number(new Date()) + ".jpg";
+    options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-
+    $('#nombreimagen2').val(imagefilename);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -78,15 +78,11 @@ function uploadPhoto2(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php";
-    ft.upload(imageURI, url, win2, fail, options, true);
+    ft.upload(imageURI, url, win, fail, options, true);
 
 }
 //Success callback
 function win(r) {
-    $('#nombreimagen').val(imagefilename);
-}
-function win2(r) {
-    $('#nombreimagen2').val(imagefilename2);
 }
 //Failure callback
 function fail(error) {
