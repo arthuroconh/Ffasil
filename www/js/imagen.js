@@ -67,8 +67,8 @@ function uploadPhoto2(imageURI) {
     var options = new FileUploadOptions();
     options.fileKey = "file";
     var userid = window.localStorage.getItem("usuario");;
-    var imagefilename = userid + Number(new Date()) + ".jpg";
-    options.fileName = imagefilename;
+    var imagefilename2 = userid + Number(new Date()) + ".jpg";
+    options.fileName = imagefilename2;
     options.mimeType = "image/jpg";
 
     var params = new Object();
@@ -78,18 +78,21 @@ function uploadPhoto2(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php";
-    ft.upload(imageURI, url, win, fail, options, true);
+    ft.upload(imageURI, url, win2, fail, options, true);
+
 }
 //Success callback
 function win(r) {
-    alert("Image uploaded successfully!!");
+    $('#nombreimagen').val(imagefilename);
+}
+function win2(r) {
+    $('#nombreimagen2').val(imagefilename2);
 }
 //Failure callback
 function fail(error) {
-    alert("There was an error uploading image");
 }
 // Called if something bad happens.
 // 
 function onFail(message) {
-    alert('Failed because: ' + message);
+    
 }

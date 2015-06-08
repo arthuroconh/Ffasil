@@ -144,6 +144,27 @@
           }
         }
         </script>
+        <script type="text/javascript">
+
+
+        function enviopub() {
+          var dat = $('#formularionuevoproducto').serialize();
+                    $.ajax({ 
+                            url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacion.php',
+                            type:'POST', 
+                            data:dat, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){
+                            }, 
+                            success:function(data){
+                            var img1=data[0];
+                            var img2=data[1];
+                            alert(img1);
+                            }
+                        });
+        }
+
+        </script>
     </head>
     <body >
           <section class="cerrador"></section>
@@ -288,17 +309,20 @@
                   <label for="fechaFin" class="textoPromedio">Fecha de Cierre</label>
                   <label id="cierre"></label>
                   <input type="text" readonly="readonly" value="" name="cierreverdad" id="cierreverdad" style="display:none;">
-                  <label id="pagar"></label>             
-                      <label>Imagen de la Publicaci&oacute;n</label>
-                      <input type="file" name="portada">
-                      <label>Imagen secundar&iacute;a</label>
-                      <input type="file" name="portada2">
-                  <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n" />
-                  <input name="button" type="button" onclick="getPhoto2();" value="Imagen de Secundaria" />
-                  <img src="" width="200px" id="largeImage">
-                  <img src="" width="200px" id="largeImage2">
+                  <label id="pagar"></label>
+                  <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n"  class="botonimagen"/>
+                  <input name="button" type="button" onclick="getPhoto2();" value="Imagen Secundaria" class="botonimagen"/>
+                  <div class="imagenpublicacion">
+                    <img src="" width="200px" id="largeImage">
+                    <input type="text" name="nombreimagen" id="nombreimagen" class="escondido">
+                  </div>
+                  <div  class="imagenpublicacion">
+                    <img src="" width="200px" id="largeImage2">
+                    <input type="text" name="nombreimagen2" id="nombreimagen2" class="escondido">
+                  </div>
+
                 <label for="pagina" class="textoPromedio">Url de su p&aacute;gina web (debe comenzar con http:// o https://)</label>
-                  <input class="form-control" placeholder="http://example.com" name="pagina" type="text">
+                  <input class="form-control" placeholder="http://example.com" name="pagina" type="text" style="margin-top:100px;">
                 
                 <label for="" class="textoPromedio">Nombre de contacto</label>
                   <input class="form-control" placeholder="Nombre de contacto" name="nomb" type="text">
@@ -307,7 +331,7 @@
                 <label for="" class="textoPromedio">Correo electrónico</label>
                   <input class="form-control" placeholder="Correo electronico" name="email" type="email">
 
-                <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub">
+                <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub" onclick="enviopub();">
                 <input type="reset" value="Borrar" name="borrar" class="btn btn-warning">
                 <input type="reset" value="Cancelar" name="cancelar" class="btn btn-danger" onclick="inicio();">
                 </form> 
