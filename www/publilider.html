@@ -106,7 +106,7 @@
         function calculo() {
           var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/ffasil/calculapago.php',
+                            url:'calculapago.php',
                             type:'POST', 
                             data:dat, 
                             dataType:'json', 
@@ -114,6 +114,7 @@
                             }, 
                             success:function(data){
                             var pago=data[0];
+                            pagagada= pago +' Bs';
                             var fechafinal=data[1];
                             var formattedDate = new
                             Date(fechafinal);
@@ -125,6 +126,9 @@
                             $('#cierre').empty();
                             $('#cierre').append(d +"/"+m+"/"+y);
                             $('#cierreverdad').val(fechafinal);
+                            $('#pago').val(pago);
+                            $('#pagar').empty();
+                            $('#pagar').append(pagagada);
                             }
                         });
         }
@@ -314,6 +318,7 @@
                   <label id="cierre"></label>
                   <input type="text" readonly="readonly" value="" name="cierreverdad" id="cierreverdad" style="display:none;" required="required">
                   <label id="pagar"></label>
+                  <input type="text" readonly="readonly" value="" name="pago" id="pago" style="display:none;" required="required">
                   <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n"  class="botonimagen"/>
                   <input name="button" type="button" onclick="getPhoto2();" value="Imagen Secundaria" class="botonimagen"/>
                   <div class="imagenpublicacion">

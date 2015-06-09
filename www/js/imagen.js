@@ -50,7 +50,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+clave;
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
 }
 function uploadPhoto2(imageURI) {
@@ -79,7 +79,7 @@ function uploadPhoto2(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();    
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+clave;
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
 
 }
