@@ -153,11 +153,10 @@
         <script type="text/javascript">
 
         function enviopub() {
-
+          if ($('#ubicacion').val()!='' && $('#cate').val()!=''  && $('#nombre').val()!=''  && $('#fechIni').val()!=''  && $('#duracion').val()!=''  && $('#cuanto').val()!=''  && $('#nombreimagen').val()!=''  && $('#pagina').val()!=''  && $('#nomb').val()!=''  && $('#phone').val()!='' && $('#email').val()!='') {
             $('#cargando').removeClass('escondido');
             $('#cargando').addClass('visible');
-          var dat = $('#formularionuevoproducto').serialize();
-
+            var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({ 
                             url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacion.php',
                             type:'POST', 
@@ -172,6 +171,10 @@
                             location.href="pago.html";
                             }
                         });
+          }
+          else{
+            alert('Llene los campos.');
+          }
         }
 
         </script>
@@ -334,14 +337,14 @@
                   </div>
 
                 <label for="pagina" class="textoPromedio">Url de su p&aacute;gina web (debe comenzar con http:// o https://)</label>
-                  <input class="form-control" placeholder="http://example.com" name="pagina" type="text" style="margin-top:100px;">
+                  <input class="form-control" placeholder="http://example.com" name="pagina" id="pagina"  type="text" style="margin-top:100px;">
                 
                 <label for="" class="textoPromedio">Nombre de contacto</label>
-                  <input class="form-control" placeholder="Nombre de contacto" name="nomb" type="text" required="required">
+                  <input class="form-control" placeholder="Nombre de contacto" name="nomb" id="nomb" type="text" required="required">
                 <label for="" class="textoPromedio">Teléfono de contacto</label>
-                  <input class="form-control" placeholder="Telefono de contacto" name="phone" type="text" required="required">
+                  <input class="form-control" placeholder="Telefono de contacto" name="phone" id="phone" type="text" required="required">
                 <label for="" class="textoPromedio">Correo electrónico</label>
-                  <input class="form-control" placeholder="Correo electronico" name="email" type="email" required="required">
+                  <input class="form-control" placeholder="Correo electronico" name="email" id="email type="email" required="required">
 
                 <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub" onclick="enviopub();">
                 <input type="reset" value="Borrar" name="borrar" class="btn btn-warning">
