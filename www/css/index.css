@@ -81,6 +81,19 @@ body {
     -webkit-animation:fade 3000ms infinite;
     display: none;
 }
+    #cargando{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando img{
+        margin-top: 35%;
+        margin-left: 40%;
+        width:20%;
+    }
 .amplio{
     width: 90% !important;
     margin-left: 1% !important;

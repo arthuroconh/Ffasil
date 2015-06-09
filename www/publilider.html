@@ -152,9 +152,12 @@
         </script>
         <script type="text/javascript">
 
-
         function enviopub() {
+
+            $('#cargando').removeClass('escondido');
+            $('#cargando').addClass('visible');
           var dat = $('#formularionuevoproducto').serialize();
+
                     $.ajax({ 
                             url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacion.php',
                             type:'POST', 
@@ -163,10 +166,10 @@
                             error:function(jqXHR,text_status,strError){
                             }, 
                             success:function(data){
-                            var img1=data[0];
-                            var img2=data[1];
-                            alert(img1);
-                            alert(img2);
+                            $('#cargando').removeClass('visible');
+                            $('#cargando').addClass('escondido');
+                            alert('Creado satisfactoriamente');
+                            location.href="pago.html";
                             }
                         });
         }
