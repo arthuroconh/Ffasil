@@ -27,6 +27,7 @@ function getPhoto2(source) {
 function uploadPhoto(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
+    clave = window.localStorage.getItem("id");
     var largeImage = document.getElementById('largeImage');
 
     // Unhide image elements
@@ -49,12 +50,13 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php";
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+clave;
     ft.upload(imageURI, url, win, fail, options, true);
 }
 function uploadPhoto2(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
+    clave = window.localStorage.getItem("id");
     var largeImagen = document.getElementById('largeImagen');
 
     // Unhide image elements
@@ -76,8 +78,8 @@ function uploadPhoto2(imageURI) {
     params.userid = sessionStorage.loginuserid;
     options.params = params;
     options.chunkedMode = false;
-    var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php";
+    var ft = new FileTransfer();    
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+clave;
     ft.upload(imageURI, url, win, fail, options, true);
 
 }

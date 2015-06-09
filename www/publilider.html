@@ -92,7 +92,9 @@
            
           $(document).ready(function(){
             usuario = window.localStorage.getItem("usuario");
+            clave = window.localStorage.getItem("id");
             $('#page_effect').fadeIn(800);
+            $('#idusuario').val(clave);
           });
         </script>
         <script type="text/javascript">
@@ -231,16 +233,17 @@
           <section class="cajaformulario" id="page_effect" style="display:none; overflow:scroll;">
             <article class="publicacion"> 
               <article class="publicont" id="casual">
-                <form id="formularionuevoproducto" method="POST" action="guardar-producto.php" enctype="multipart/form-data">
+                <form id="formularionuevoproducto" method="POST" action="guardar-producto.php" enctype="multipart/form-data" required="required">
+                  <input name="idusuario" id="idusuario" style="display:none;">
                   <label>Ubicaci&oacute;n</label>
-                    <select id="ubicacion" name="ubicacion" onchange="categoria();">  
+                    <select id="ubicacion" name="ubicacion" onchange="categoria();" required="required">  
                       <option value="">Seleccione la ubicación a publicar</option>
                       <option value="Principal">Menú principal</option>
                       <option value="Categoria">Menú por categorías</option>
                     </select>
 
                   <label id="cat" class="escondido"> Categor&iacute;a</label>
-                    <select name="cat" id="cate" class="form-control escondido">
+                    <select name="cat" id="cate" class="form-control escondido" required="required">
                       <option value="">Seleccione la categor&#237;a</option>
                       <optgroup label="Categor&#237;a">
                                     <option value="1">Accesorios para veh&#237;culos</option>
@@ -297,19 +300,19 @@
                     </select>
                  
                   <label for="namePub">T&#237;tulo de la publicaci&#243;n</label>
-                    <input id="nombre" placeholder="Titulo" name="nombre" type="text">
+                    <input id="nombre" placeholder="Titulo" name="nombre" type="text" required="required">
                   <label>Fecha de inicio</label>
-                    <input class="form-control" id="fechIni" placeholder="DD-MM-AAAA" style="margin-top:1em;" name="fechIni" type="date" value="" onchange="calculo();">
+                    <input class="form-control" id="fechIni" placeholder="DD-MM-AAAA" style="margin-top:1em;" name="fechIni" type="date" value="" onchange="calculo();" required="required">
                   
                   <input value="1" placeholder="Lider" name="tipo" id="tipo" style="display:none;">
                   <label for="duration" class="textoPromedio">Duraci&oacute;n</label>
-                    <input id="duracion" name="duracion" type="number" onchange="calculo();">
+                    <input id="duracion" name="duracion" type="number" onchange="calculo();" required="required">
 
                     <select class="form-control fech" id="cuanto" requied="required" name="time" onchange="calculo();"><option value="" selected="selected">Seleccione el per&iacute;odo</option><option value="1">D&iacute;a(s)</option><option value="7">Semana(s)</option><option value="30">Mes(es)</option></select>
                   
                   <label for="fechaFin" class="textoPromedio">Fecha de Cierre</label>
                   <label id="cierre"></label>
-                  <input type="text" readonly="readonly" value="" name="cierreverdad" id="cierreverdad" style="display:none;">
+                  <input type="text" readonly="readonly" value="" name="cierreverdad" id="cierreverdad" style="display:none;" required="required">
                   <label id="pagar"></label>
                   <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n"  class="botonimagen"/>
                   <input name="button" type="button" onclick="getPhoto2();" value="Imagen Secundaria" class="botonimagen"/>
@@ -326,11 +329,11 @@
                   <input class="form-control" placeholder="http://example.com" name="pagina" type="text" style="margin-top:100px;">
                 
                 <label for="" class="textoPromedio">Nombre de contacto</label>
-                  <input class="form-control" placeholder="Nombre de contacto" name="nomb" type="text">
+                  <input class="form-control" placeholder="Nombre de contacto" name="nomb" type="text" required="required">
                 <label for="" class="textoPromedio">Teléfono de contacto</label>
-                  <input class="form-control" placeholder="Telefono de contacto" name="phone" type="text">
+                  <input class="form-control" placeholder="Telefono de contacto" name="phone" type="text" required="required">
                 <label for="" class="textoPromedio">Correo electrónico</label>
-                  <input class="form-control" placeholder="Correo electronico" name="email" type="email">
+                  <input class="form-control" placeholder="Correo electronico" name="email" type="email" required="required">
 
                 <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub" onclick="enviopub();">
                 <input type="reset" value="Borrar" name="borrar" class="btn btn-warning">
