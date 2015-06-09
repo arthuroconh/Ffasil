@@ -41,9 +41,10 @@ function uploadPhoto(imageURI) {
     options.fileKey = "file";
     var userid = window.localStorage.getItem("usuario");;
     var imagefilename = userid + Number(new Date()) + ".jpg";
+    var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(imagefilename);
+    $('#nombreimagen').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -70,9 +71,10 @@ function uploadPhoto2(imageURI) {
     options.fileKey = "file";
     var userid = window.localStorage.getItem("usuario");;
     var imagefilename = userid + Number(new Date()) + ".jpg";
+    var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen2').val(imagefilename);
+    $('#nombreimagen2').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
