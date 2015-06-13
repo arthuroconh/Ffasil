@@ -16,6 +16,13 @@ function getPhoto(source) {
         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
     });
 }
+function getPhoto1(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto2, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
 function getPhoto2(source) {
     // Retrieve image file location from specified source
     navigator.camera.getPicture(uploadPhoto2, onFail, { quality: 50,
@@ -140,18 +147,19 @@ function uploadPhoto2(imageURI) {
     ft.upload(imageURI, url, win, fail, options, true);
 
 }
+
 function uploadPhoto3(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImagen3 = document.getElementById('largeImage3');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImagen3.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImagen3.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -169,21 +177,21 @@ function uploadPhoto3(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win3, fail, options, true);
-                            $('#cargando2').addClass('visible');
-                            $('#cargando2').removeClass('escondido');
+                            $('#cargando3').addClass('visible');
+                            $('#cargando3').removeClass('escondido');
 }
 function uploadPhoto4(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage4 = document.getElementById('largeImage4');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage4.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage4.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -201,21 +209,21 @@ function uploadPhoto4(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win4, fail, options, true);
-                            $('#cargando3').addClass('visible');
-                            $('#cargando3').removeClass('escondido');
+                            $('#cargando4').addClass('visible');
+                            $('#cargando4').removeClass('escondido');
 }
 function uploadPhoto5(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage5 = document.getElementById('largeImage5');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage5.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage5.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -233,21 +241,21 @@ function uploadPhoto5(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win5, fail, options, true);
-                            $('#cargando4').addClass('visible');
-                            $('#cargando4').removeClass('escondido');
+                            $('#cargando5').addClass('visible');
+                            $('#cargando5').removeClass('escondido');
 }
 function uploadPhoto6(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage6 = document.getElementById('largeImage6');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage6.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage6.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -265,21 +273,21 @@ function uploadPhoto6(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win6, fail, options, true);
-                            $('#cargando5').addClass('visible');
-                            $('#cargando5').removeClass('escondido');
+                            $('#cargando6').addClass('visible');
+                            $('#cargando6').removeClass('escondido');
 }
 function uploadPhoto7(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage7 = document.getElementById('largeImage7');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage7.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage7.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -297,21 +305,21 @@ function uploadPhoto7(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win7, fail, options, true);
-                            $('#cargando6').addClass('visible');
-                            $('#cargando6').removeClass('escondido');
+                            $('#cargando7').addClass('visible');
+                            $('#cargando7').removeClass('escondido');
 }
 function uploadPhoto8(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage8 = document.getElementById('largeImage8');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage8.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage8.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -329,21 +337,21 @@ function uploadPhoto8(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win8, fail, options, true);
-                            $('#cargando7').addClass('visible');
-                            $('#cargando7').removeClass('escondido');
+                            $('#cargando8').addClass('visible');
+                            $('#cargando8').removeClass('escondido');
 }
 function uploadPhoto9(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage9 = document.getElementById('largeImage9');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage9.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage9.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -361,21 +369,21 @@ function uploadPhoto9(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win9, fail, options, true);
-                            $('#cargando8').addClass('visible');
-                            $('#cargando8').removeClass('escondido');
+                            $('#cargando9').addClass('visible');
+                            $('#cargando9').removeClass('escondido');
 }
 function uploadPhoto10(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
     clave = window.localStorage.getItem("id");
-    var largeImage = document.getElementById('largeImage');
+    var largeImage10 = document.getElementById('largeImage10');
 
     // Unhide image elements
-    largeImage.style.display = 'block';
+    largeImage10.style.display = 'block';
 
     // Show the captured photo
     // The inline CSS rules are used to resize the image
-    largeImage.src = imageURI;
+    largeImage10.src = imageURI;
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -393,37 +401,37 @@ function uploadPhoto10(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win10, fail, options, true);
-                            $('#cargando9').addClass('visible');
-                            $('#cargando9').removeClass('escondido');
+                            $('#cargando10').addClass('visible');
+                            $('#cargando10').removeClass('escondido');
 }
 //Success callback
 function win(r) {    
 }
 function win3(r) {    
-                            $('#cargando2').removeClass('visible');
-                            $('#cargando2').addClass('escondido');
-}
-function win4(r) {    
                             $('#cargando3').removeClass('visible');
                             $('#cargando3').addClass('escondido');
-}function win5(r) {    
+}
+function win4(r) {    
                             $('#cargando4').removeClass('visible');
                             $('#cargando4').addClass('escondido');
-}function win6(r) {    
+}function win5(r) {    
                             $('#cargando5').removeClass('visible');
                             $('#cargando5').addClass('escondido');
-}function win7(r) {    
+}function win6(r) {    
                             $('#cargando6').removeClass('visible');
                             $('#cargando6').addClass('escondido');
-}function win8(r) {    
+}function win7(r) {    
                             $('#cargando7').removeClass('visible');
                             $('#cargando7').addClass('escondido');
-}function win9(r) {    
+}function win8(r) {    
                             $('#cargando8').removeClass('visible');
                             $('#cargando8').addClass('escondido');
-}function win10(r) {    
+}function win9(r) {    
                             $('#cargando9').removeClass('visible');
                             $('#cargando9').addClass('escondido');
+}function win9(r) {    
+                            $('#cargando10').removeClass('visible');
+                            $('#cargando10').addClass('escondido');
 }
 //Failure callback
 function fail(error) {
