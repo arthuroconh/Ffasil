@@ -23,7 +23,62 @@ function getPhoto2(source) {
         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
     });
 }
-
+function getPhoto3(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto3, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto4(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto4, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto5(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto5, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto6(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto6, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto7(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto7, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto8(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto8, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto9(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto9, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+function getPhoto10(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto10, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
 function uploadPhoto(imageURI) {
     //If you wish to display image on your page in app
     // Get image handle
@@ -87,8 +142,40 @@ function uploadPhoto2(imageURI) {
     ft.upload(imageURI, url, win, fail, options, true);
 
 }
+function uploadPhoto3(imageURI) {
+    //If you wish to display image on your page in app
+    // Get image handle
+    clave = window.localStorage.getItem("id");
+    var largeImage = document.getElementById('largeImage');
+
+    // Unhide image elements
+    largeImage.style.display = 'block';
+
+    // Show the captured photo
+    // The inline CSS rules are used to resize the image
+    largeImage.src = imageURI;
+
+    var options = new FileUploadOptions();
+    options.fileKey = "file";
+    var userid = window.localStorage.getItem("usuario");;
+    var imagefilename = userid + Number(new Date()) + ".jpg";
+    var ruta = userid + "/" + imagefilename;
+    options.fileName = imagefilename;
+    options.mimeType = "image/jpg";
+    $('#nombreimagen').val(ruta);
+    var params = new Object();
+    params.imageURI = imageURI;
+    params.userid = sessionStorage.loginuserid;
+    options.params = params;
+    options.chunkedMode = false;
+    var ft = new FileTransfer();
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    ft.upload(imageURI, url, win3, fail, options, true);
+                            $('#cargando2').addClass('visible');
+                            $('#cargando2').removeClass('escondido');
+}
 //Success callback
-function win(r) {    
+function win3(r) {    
                             $('#cargando2').removeClass('visible');
                             $('#cargando2').addClass('escondido');
 }
