@@ -53,6 +53,8 @@ function uploadPhoto(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
+                            $('#cargando2').addClass('visible');
+                            $('#cargando2').removeClass('escondido');
 }
 function uploadPhoto2(imageURI) {
     //If you wish to display image on your page in app
@@ -86,7 +88,9 @@ function uploadPhoto2(imageURI) {
 
 }
 //Success callback
-function win(r) {
+function win(r) {    
+                            $('#cargando2').removeClass('visible');
+                            $('#cargando2').addClass('escondido');
 }
 //Failure callback
 function fail(error) {
