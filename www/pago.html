@@ -89,7 +89,9 @@
             
             usuario = window.localStorage.getItem("usuario");
             publicac = window.localStorage.getItem("publicacion");
+            clave = window.localStorage.getItem("id");
               $("#idpublica").val(publicac);
+              $("#usuario").val(clave);
             if (usuario<=0) {
               $("#user").append("ffasil.com");
               $('#sesionoff').fadeIn(800);
@@ -191,27 +193,20 @@
         function pagar() {                                
 
           var dat =$('#formulario').serialize();
+                            $('#cargando').addClass('visible');
+                            $('#cargando').removeClass('escondido');
                                   $.ajax({ 
-                                    url:'http://desarrollotricolor.com.ve/ffasil/datosbanco.php',
+                                    url:'http://desarrollotricolor.com.ve/ffasil/registrapago.php',
                                     type:'POST', 
                                     data:dat, 
                                     dataType:'json', 
                                     error:function(jqXHR,text_status,strError){
                                     }, 
                                     success:function(data){
-                                      if (data[0]==null) {
-                                      $( "#datos" ).empty(); 
-                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1></h1><br><br>" );
+                                      alert('Pago enviado a revisi&oacute;n')
                                           $("#cargando").removeClass('visible');
                                           $("#cargando").addClass('escondido');
-                                      }
-                                      else{
-                                      a=data[0];
-                                      $( "#datos" ).empty();
-                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1>"+a+"</h1><br><br>" );
-                                          $("#cargando").removeClass('visible');
-                                          $("#cargando").addClass('escondido');
-                                      }
+                                          location.href="index.html";
                                     }
                         });
         }
@@ -299,6 +294,7 @@
 
             <div id="pagoabierta" class="escondido" style="margin-top:50px; margin-bottom:50px;">
               <input type="text" name="publicacion" id="idpublica" style="display:none; margin-top:-100px;">
+              <input type="text" name="usuario" id="usuario" style="display:none; margin-top:-100px;">
               <label>Banco Emisor</label>
                         <br><br><br><input type="text" class="form-control" name="emisor" >
               <label>Fecha de transacci&oacute;n</label>
