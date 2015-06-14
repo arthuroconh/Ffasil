@@ -134,163 +134,31 @@
         }
         </script>
         <script type="text/javascript">
-        function abrirformulario() {
-            $('#cargando').removeClass('escondido');
-            $('#cargando').addClass('visible');
+        function categoria() {
 
-            $('#subcat').empty();
-            var qq=[];
-            var mm= [];
-            var dat = $('#formularionuevoproducto').serialize();
-                    $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/ffasil/cargasub.php',
-                            type:'POST', 
-                            data:dat, 
-                            dataType:'json', 
-                            error:function(jqXHR,text_status,strError){
-                            }, 
-                            success:function(data){
-                            $('#cargando').removeClass('visible');
-                            $('#cargando').addClass('escondido');
-                                      if (data != 0) {
+          if ($('#ubicacion').val()=='Categoria') {
+            $('#cat').removeClass('escondido');
+            $('#cat').addClass('visible');
+            $('#cate').removeClass('escondido');
+            $('#cate').addClass('visible');
+          }else{
 
-                                          $( "#subcat" ).append( "<option id='selecciona'>Seleccionar</option>" );
-                                          for (i=0;i<data.length;i++){ 
-                                            $( "#subcat" ).append( "<option id='"+i+"'>"+data[i]+" </option>" );
-                                            qq[i]=i;
-                                          }
-                                      }
-                            }
-                        });
-
-                                      if ($('#cate').val()=='34') {
-
-                                          $.ajax({ 
-                                          url:'http://desarrollotricolor.com.ve/ffasil/cargamarca.php',
-                                          type:'POST', 
-                                          data:dat, 
-                                          dataType:'json', 
-                                          error:function(jqXHR,text_status,strError){
-                                          }, 
-                                          success:function(data){
-                                          $('#cargando').removeClass('visible');
-                                          $('#cargando').addClass('escondido');
-                                                    if (data != 0) {
-
-                                                        $( "#veiMarca" ).append( "<option id='selecciona'>Seleccionar</option>" );
-                                                        for (i=0;i<data.length;i++){ 
-                                                          $( "#veiMarca" ).append( "<option id='marca"+i+"'>"+data[i]+" </option>" );
-                                                          mm[i]='marca'+i;
-                                                        }
-
-                                          $("#vehiculo").removeClass('escondido');
-                                          $("#vehiculo").addClass('visible');
-                                          }
-                                         } 
-                                        
-                                     });
-
-                                  $.ajax({ 
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidmarca.php',
-                                    type:'POST', 
-                                    data:dat, 
-                                    dataType:'json', 
-                                    error:function(jqXHR,text_status,strError){
-                                    }, 
-                                    success:function(data){      
-                                        for (i=0;i<data.length;i++){
-                                          $("#"+mm[i]).val(data[i]);
-                                        }
-
-                                        mm=[];
-                                      }
-                                    
-                                  });
-
-                                    }
-
-                                  $.ajax({ 
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidsub.php',
-                                    type:'POST', 
-                                    data:dat, 
-                                    dataType:'json', 
-                                    error:function(jqXHR,text_status,strError){
-                                    }, 
-                                    success:function(data){      
-                                        for (i=0;i<data.length;i++){
-                                          $("#"+qq[i]).val(data[i]);
-                                        }
-                                          $("#contieneformulario1").removeClass('escondido');
-                                          $("#contieneformulario1").addClass('visible');
-
-                                        qq=[];
-                                      }
-                                    
-                                  });
-        }
-        </script>
-        <script type="text/javascript">
-
-
-        function cargarmodelo() {
-            var jj= [];
-            var datos = $('#formularionuevoproducto').serialize();
-            $('#veiModel').empty();
-          
-
-                                          $.ajax({ 
-                                          url:'http://desarrollotricolor.com.ve/ffasil/cargamodelo.php',
-                                          type:'POST', 
-                                          data:datos, 
-                                          dataType:'json', 
-                                          error:function(jqXHR,text_status,strError){
-                                          }, 
-                                          success:function(data){
-                                          $('#cargando').removeClass('visible');
-                                          $('#cargando').addClass('escondido');
-                                                    if (data != 0) {
-
-                                                        $("#veiModel").append( "<option id='selecciona'>Seleccionar</option>" );
-                                                        for (i=0;i<data.length;i++){ 
-                                                          $("#veiModel").append( "<option id='model"+i+"'>"+data[i]+" </option>" );
-                                                          jj[i]='model'+i;
-                                                        }
-                                          }
-                                         } 
-                                        
-                                     });
-
-
-                                  $.ajax({ 
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidmodelo.php',
-                                    type:'POST', 
-                                    data:datos, 
-                                    dataType:'json', 
-                                    error:function(jqXHR,text_status,strError){
-                                    }, 
-                                    success:function(data){      
-                                        for (i=0;i<data.length;i++){
-                                          $("#"+jj[i]).val(data[i]);
-                                        }
-                                          $("#contieneformulario1").removeClass('escondido');
-                                          $("#contieneformulario1").addClass('visible');
-
-                                        jj=[];
-                                      }
-                                    
-                                  });
+            $('#cat').removeClass('visible');
+            $('#cate').removeClass('visible');
+            $('#cat').addClass('escondido');
+            $('#cate').addClass('escondido');
+          }
         }
         </script>
         <script type="text/javascript">
 
         function enviopub() {
-          if ($('#departamento').val()!='' && $('#title').val()!='' && $('#ciudad').val()!='' && $('#pag_web').val()!='' && $('#subcat').val()!='' && $('#precio').val()!='' && $('#moneda').val()!='' && $('#descripcion').val()!='' && $('#tipotrans').val()!='' && $('#nomb').val()!='' && $('#email').val()!='' && $('#nombreimagen').val()!='') {
-
+          if ($('#ubicacion').val()!='' && $('#nombre').val()!=''  && $('#fechIni').val()!=''  && $('#duracion').val()!=''  && $('#cuanto').val()!=''  && $('#nombreimagen').val()!=''  && $('#pagina').val()!=''  && $('#nomb').val()!=''  && $('#phone').val()!='' && $('#email').val()!='') {
             $('#cargando').removeClass('escondido');
             $('#cargando').addClass('visible');
             var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacionhabitual.php',
+                            url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacioncasual.php',
                             type:'POST', 
                             data:dat, 
                             dataType:'json', 
@@ -315,7 +183,7 @@
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Formulario Habitual</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Formulario L&Iacute;der</center>
           </div>
    
           <nav class="menu2">
@@ -376,10 +244,11 @@
             <article class="publicacion"> 
               <article class="publicont" id="casual">
                 <form id="formularionuevoproducto" method="POST" action="guardar-producto.php" enctype="multipart/form-data" required="required">
-                <input type="text" name="idusuario" id="idusuario" class="escondido">
-                  <label id="cat" > Categor&iacute;a o Servicio</label>
-                    <select name="cat" id="cate" class="form-control" required="required" onchange="abrirformulario();">
-                      <option value="">Seleccione la categor&#237;a o servicio</option>
+                  <input name="idusuario" id="idusuario" style="display:none;">
+
+                  <label id="cat"> Categor&iacute;a</label>
+                    <select name="cat" id="cate" class="form-control" required="required">
+                      <option value="">Seleccione la categor&#237;a</option>
                       <optgroup label="Categor&#237;a">
                                     <option value="1">Accesorios para veh&#237;culos</option>
                                     <option value="2">Aeron&#225;utica</option>
@@ -433,16 +302,12 @@
                                     <option value="49">Otros</option>
                                   </optgroup>
                     </select>
-
-                    <label for="subCat" class="textoPromedio">Sub-categor&iacute;a</label>
-                    <select name="subcat" id="subcat" class="form-control" required="required">
-                    </select>
-
-                    <div  class="escondido" id="contieneformulario1">
-                    
-
-                      <label for="title" class="textoPromedio">T&iacute;tulo</label>
-                      <input placeholder="Titulo" class="form-control" name="title" type="text" id="title">
+                  <label for="" class="textoPromedio">Departamento</label>
+                                                                                                                                                                                                                                    
+          <select class="form-control" requied="required" name="departamento" id="departamento"><option value="" selected="selected">Seleccione su departamento</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
+                  <label for="namePub">T&#237;tulo de la publicaci&#243;n</label>
+                    <input id="nombre" placeholder="Titulo" name="nombre" type="text" required="required">
+                  <input value="1" placeholder="Casual" name="tipo" id="tipo" style="display:none;">
 
                       <label for="precio" class="textoPromedio">Precio</label>
                       <input placeholder="Precio" class="form-control" name="precio" type="number" id="precio">
@@ -452,138 +317,22 @@
                       <option value="Usd">Usd</option>
                       <option value="Bs">Bs</option>
                     </select>
-
-          <label for="" class="textoPromedio">Departamento</label>
-                                                                                                                                                                                                                                    
-          <select class="form-control" requied="required" name="departamento" id="departamento"><option value="" selected="selected">Seleccione su departamento</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
-
-          <label for="" class="textoPromedio">Ciudad</label>
-          <input class="form-control" placeholder="Ciudad" name="ciudad" type="text" id="ciudad">
-
-          <div id="vehiculo" class="escondido">
-            <label class="textoPromedio">Marca</label>
-            <select name="marca" class="form-control" id="veiMarca" onchange="cargarmodelo();">
-
-            </select>
-
-
-            <label class="textoPromedio">Modelo</label>
-            <select name="modelo" class="form-control" id="veiModel">
-
-            </select>
-            <label class="textoPromedio">A&ntilde;o</label>
-            <input class="form-control" placeholder="A&ntilde;o" name="anio" type="number" id="anio">
-            <label class="textoPromedio">Documentaci&oacute;n</label>
-            <input class="form-control" placeholder="Documentacion" name="doc" type="text" id="doc">
-            <label class="textoPromedio">Kilometraje</label>
-            <input class="form-control" placeholder="Kilometraje" name="kilo" type="text">
-            <label class="textoPromedio">Cilindrada</label>
-            <input class="form-control" placeholder="Cilindrada" name="cilin" type="text">
-            <label class="textoPromedio">Transmisi&oacute;n</label>
-            <input class="form-control" placeholder="Transmisi&oacute;n" name="trans" type="text">
-            <label class="textoPromedio">Combustible</label>
-            <input class="form-control" placeholder="Combustible" name="comb" type="text">
-            <label class="textoPromedio">Tracci&oacute;n</label>
-            <input class="form-control" placeholder="Tracci&oacute;n" name="trac" type="text">
-
-          </div>
-
-          <label class="textoPromedio">Operaci&oacute;n</label>
-                    <select name="tipotrans" id="tipotrans" class="form-control" required="required">
-                      <option value="">Seleccione</option>
-                      <option value="Venta">Venta</option>
-                      <option value="Alquiler">Alquiler</option>
-                    </select>
-
-
-          <label for="input" class="textoPromedio">Descripci&oacute;n</label>
-          <textarea  id="descripcion" name="descripcion" ></textarea>
-
-          <label for="input" class="textoPromedio">Imagen Principal</label><br>
-                  <input name="button" type="button" onclick="getPhoto3();" value="Imagen Principal"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando3" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage3">
+                  <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n"  class="botonimagen"/>
+                  <input name="button" type="button" onclick="getPhoto2();" value="Imagen Secundaria" class="botonimagen"/>
+                  <div class="imagenpublicacion">
+                    <img src="" width="200px" id="largeImage">
                     <input type="text" name="nombreimagen" id="nombreimagen" class="escondido">
                   </div>
-
-
-          <label for="input" class="textoPromedio">Puede agregar 7 imagenes extras</label><br>
-                  <input name="button" type="button" onclick="getPhoto4();" value="Imagen opcional (1)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando4" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage4">
+                  <div  class="imagenpublicacion">
+                    <img src="" width="200px" id="largeImagen">
                     <input type="text" name="nombreimagen2" id="nombreimagen2" class="escondido">
                   </div>
-                  <input name="button" type="button" onclick="getPhoto5();" value="Imagen opcional (2)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando5" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage5">
-                    <input type="text" name="nombreimagen3" id="nombreimagen3" class="escondido">
-                  </div>
-                  <input name="button" type="button" onclick="getPhoto6();" value="Imagen opcional (3)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando6" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage6">
-                    <input type="text" name="nombreimagen4" id="nombreimagen4" class="escondido">
-                  </div>
-                  <input name="button" type="button" onclick="getPhoto7();" value="Imagen opcional (4)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando7" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage7">
-                    <input type="text" name="nombreimagen5" id="nombreimagen5" class="escondido">
-                  </div>
-                  <input name="button" type="button" onclick="getPhoto8();" value="Imagen opcional (5)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando8" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage8">
-                    <input type="text" name="nombreimagen6" id="nombreimagen6" class="escondido">
-                  </div>
-                  <input name="button" type="button" onclick="getPhoto9();" value="Imagen opcional (6)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando9" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage9">
-                    <input type="text" name="nombreimagen7" id="nombreimagen7" class="escondido">
-                  </div>
-                  <input name="button" type="button" onclick="getPhoto10();" value="Imagen opcional (7)"  class="botonimagen"/>
-                  <div class="imagenpublicacion2">
-                  <div id="cargando10" class="escondido">
-                      <img src="load2.gif">
-                  </div>
-                    <img src="" width="200px" id="largeImage10">
-                    <input type="text" name="nombreimagen8" id="nombreimagen8" class="escondido">
-                  </div>
-
-          <label for="" class="textoPromedio">Tel&eacute;fono de contacto</label>
-          <input class="form-control" placeholder="Telefono de contacto" name="phone" type="number" id="phone">
-
-          <label for="" class="textoPromedio">Nombre de contacto</label>
-          <input class="form-control" placeholder="Nombre de contacto" name="nomb" type="text" id="nomb">
-
-          <label for="" class="textoPromedio">Correo electr&oacute;nico</label>
-          <input class="form-control" placeholder="Correo electronico" name="email" type="email" id="email">
-
-          <label for="" class="textoPromedio">Sitio web</label>
-          <input class="form-control" placeholder="Sitio web" name="pag_web" type="text" id="pag_web">
+                <label for="input" class="textoPromedio">Descripci&oacute;n</label>
+                <textarea  id="descripcion" name="descripcion" ></textarea>
 
                 <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub" onclick="enviopub();">
                 <input type="reset" value="Borrar" name="borrar" class="btn btn-warning">
                 <input type="reset" value="Cancelar" name="cancelar" class="btn btn-danger" onclick="inicio();">
-          </div>
                 </form> 
               </article>
             </article>
