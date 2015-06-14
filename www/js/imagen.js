@@ -200,7 +200,7 @@ function uploadPhoto4(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen2').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -232,7 +232,7 @@ function uploadPhoto5(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen3').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -264,7 +264,7 @@ function uploadPhoto6(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen4').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -296,7 +296,7 @@ function uploadPhoto7(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen5').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -328,7 +328,7 @@ function uploadPhoto8(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen6').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -360,7 +360,7 @@ function uploadPhoto9(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen7').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -392,7 +392,7 @@ function uploadPhoto10(imageURI) {
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
     options.mimeType = "image/jpg";
-    $('#nombreimagen').val(ruta);
+    $('#nombreimagen8').val(ruta);
     var params = new Object();
     params.imageURI = imageURI;
     params.userid = sessionStorage.loginuserid;
@@ -429,7 +429,7 @@ function win4(r) {
 }function win9(r) {    
                             $('#cargando9').removeClass('visible');
                             $('#cargando9').addClass('escondido');
-}function win9(r) {    
+}function win10(r) {    
                             $('#cargando10').removeClass('visible');
                             $('#cargando10').addClass('escondido');
 }
