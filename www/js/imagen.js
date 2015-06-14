@@ -16,13 +16,6 @@ function getPhoto(source) {
         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
     });
 }
-function getPhoto1(source) {
-    // Retrieve image file location from specified source
-    navigator.camera.getPicture(uploadPhoto2, onFail, { quality: 50,
-        destinationType: navigator.camera.DestinationType.FILE_URI,
-        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
-    });
-}
 function getPhoto2(source) {
     // Retrieve image file location from specified source
     navigator.camera.getPicture(uploadPhoto2, onFail, { quality: 50,
@@ -115,6 +108,8 @@ function uploadPhoto(imageURI) {
     var ft = new FileTransfer();
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
+                            $('#cargando2').addClass('visible');
+                            $('#cargando2').removeClass('escondido');
 }
 function uploadPhoto2(imageURI) {
     //If you wish to display image on your page in app
@@ -145,6 +140,8 @@ function uploadPhoto2(imageURI) {
     var ft = new FileTransfer();    
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
+                            $('#cargando22').addClass('visible');
+                            $('#cargando22').removeClass('escondido');
 
 }
 
