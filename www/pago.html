@@ -84,30 +84,144 @@
       //FIN BOTON ATRAS ANDROID
         </script>
         <script type="text/javascript">
-           
+            var jj= [];
           $(document).ready(function(){
             
             usuario = window.localStorage.getItem("usuario");
+            publicac = window.localStorage.getItem("publicacion");
+              $("#idpublica").val(publicac);
             if (usuario<=0) {
               $("#user").append("ffasil.com");
               $('#sesionoff').fadeIn(800);
               $("#sesionoff").removeClass("escondido");
               $("#sesionoff").addClass("visible");
-            }else{
-              $("#user").append(usuario);              
+            }else{         
               $('#sesionon').fadeIn(800);
               $("#sesionon").removeClass("escondido");
               $("#sesionon").addClass("visible");
+
+                            $('#cargando').addClass('visible');
+                            $('#cargando').removeClass('escondido');
+            var dat =4;
+                    $.ajax({ 
+                            url:'bancos.php',
+                            type:'POST', 
+                            data:dat, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){
+                            }, 
+                            success:function(data){
+                                                    if (data != 0) {
+
+                                                        $("#bancos").append( "<option id='selecciona'>Seleccionar</option>" );
+                                                        for (i=0;i<data.length;i++){ 
+                                                          $("#bancos").append( "<option id='model"+i+"'>"+data[i]+" </option>" );
+                                                          jj[i]='model'+i;
+                                                        }
+                                          }
+
+
+                                  $.ajax({ 
+                                    url:'cargaidbanco.php',
+                                    type:'POST', 
+                                    data:dat, 
+                                    dataType:'json', 
+                                    error:function(jqXHR,text_status,strError){
+                                    }, 
+                                    success:function(data){      
+                                        for (i=0;i<data.length;i++){
+                                          $("#"+jj[i]).val(data[i]);
+                                        }
+                                          $("#cargando").removeClass('visible');
+                                          $("#cargando").addClass('escondido');
+
+                                        jj=[];
+                                      }
+                        });
+
+
+                            }
+                        });
+
             }
           });
 
+        </script>
+        <script type="text/javascript">
+        function datosdebanco() {
+          if ($('#bancos').val()!='Seleccionar') {
+
+                            $('#cargando').addClass('visible');
+                            $('#cargando').removeClass('escondido');
+
+                                var dat =$('#formulario').serialize();
+                                  $.ajax({ 
+                                    url:'datosbanco.php',
+                                    type:'POST', 
+                                    data:dat, 
+                                    dataType:'json', 
+                                    error:function(jqXHR,text_status,strError){
+                                    }, 
+                                    success:function(data){
+                                      if (data[0]==null) {
+                                      $( "#datos" ).empty(); 
+                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1></h1><br><br>" );
+                                          $("#cargando").removeClass('visible');
+                                          $("#cargando").addClass('escondido');
+                                      }
+                                      else{
+                                      a=data[0];
+                                      $( "#datos" ).empty();
+                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1>"+a+"</h1><br><br>" );
+                                          $("#cargando").removeClass('visible');
+                                          $("#cargando").addClass('escondido');
+                                      }
+                                    }
+                        });
+            }
+        }
+        function sele() {
+                                      $( "#tipocuenta" ).val(''); 
+                                      $( "#datos" ).empty();
+        }
+        function regpag() {
+                            $('#pagoabierta').addClass('visible');
+                            $('#pagoabierta').removeClass('escondido');
+        }
+        function pagar() {                                
+
+          var dat =$('#formulario').serialize();
+                                  $.ajax({ 
+                                    url:'datosbanco.php',
+                                    type:'POST', 
+                                    data:dat, 
+                                    dataType:'json', 
+                                    error:function(jqXHR,text_status,strError){
+                                    }, 
+                                    success:function(data){
+                                      if (data[0]==null) {
+                                      $( "#datos" ).empty(); 
+                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1></h1><br><br>" );
+                                          $("#cargando").removeClass('visible');
+                                          $("#cargando").addClass('escondido');
+                                      }
+                                      else{
+                                      a=data[0];
+                                      $( "#datos" ).empty();
+                                      $( "#datos" ).append( "<h1>Numero de Cuenta<br><br><br><h1>"+a+"</h1><br><br>" );
+                                          $("#cargando").removeClass('visible');
+                                          $("#cargando").addClass('escondido');
+                                      }
+                                    }
+                        });
+        }
         </script>
     </head>
     <body>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user"></center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Cuentas Bancarias</center>
           </div>
    
           <nav class="menu2">
@@ -160,9 +274,40 @@
               </ul>
           </nav>
         </header>
-        <div style="clear:both"></div>
-          <section class="cajaccion escondido" id="sesionon">
-            <a href="buscar.html"><article>Cuentas Bancarias</article></a>
+        <div style="clear:booth"></div>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section class="cajaformulario escondido" id="sesionon">
+                <label for="input" class="textoPromedio">Mostrar cuentas</label>
+          <form method="POST" id="formulario">
+            <select id="bancos" name="banco" onchange="sele();">
+              
+            </select>
+          <label for="input" class="textoPromedio">Tipo de cuenta</label>
+            <select id="tipocuenta" name="tipocuenta" onchange="datosdebanco();">
+                <option value="">Seleccionar</option>
+                <option value="corriente">Corriente</option>
+                <option value="ahorro">Ahorro</option>
+            </select>
+            <section > 
+              <article id="datos" style="clear:both; height:150px !important; width:90%; box-sizing:border-box;">
+                
+              </article>
+            </section>
+            <input type="button" value="Registrar un pago" name="enviarPub" id="procesarpagoboton"  onclick="regpag();">
+
+            <div id="pagoabierta" class="escondido" style="margin-top:50px; margin-bottom:50px;">
+              <input type="text" name="publicacion" id="idpublica" style="display:none; margin-top:-100px;">
+              <label>Banco Emisor</label>
+                        <br><br><br><input type="text" class="form-control" name="emisor" >
+              <label>Fecha de transacci&oacute;n</label>
+                        <input type="date" id="fecha" name="fecha" placehlder="DD-MM-YYYY" class="form-control" required>
+              <label>Numero de transacci&oacute;n</label>
+                <input type="text" id="numTransVal" name="transNumber" placehlder="Numero de transaccion" class="form-control" required>
+
+            <input type="button" value="Pagar" name="enviarPub" id="procesarpagoboton"  onclick="pagar();">
+            </div>          </form>
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

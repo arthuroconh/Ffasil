@@ -458,6 +458,19 @@ body {
     background: #0f0f0f;
     color: #fff;
 }
+#procesarpagoboton{
+    margin-top: -10px !important;
+    width: 100% !important;
+    height: 50px !important;
+    border: none !important;
+    font-size: 200% !important;
+    background: #f29200 !important;
+    color: #fff !important;
+}
+#procesarpagoboton:hover{
+    background: #0f0f0f !important;
+    color: #fff !important;
+}
 .cajaccion article{
     height: 15%;
     margin-bottom: 2%;
