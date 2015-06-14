@@ -139,7 +139,7 @@ function uploadPhoto2(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();    
     var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
-    ft.upload(imageURI, url, win, fail, options, true);
+    ft.upload(imageURI, url, win22, fail, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
 
@@ -403,6 +403,12 @@ function uploadPhoto10(imageURI) {
 }
 //Success callback
 function win(r) {    
+                            $('#cargando2').removeClass('visible');
+                            $('#cargando2').addClass('escondido');
+}
+function win22(r) {    
+                            $('#cargando22').removeClass('visible');
+                            $('#cargando22').addClass('escondido');
 }
 function win3(r) {    
                             $('#cargando3').removeClass('visible');
