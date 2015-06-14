@@ -285,6 +285,7 @@
 
         function enviopub() {
           if ($('#departamento').val()!='' && $('#title').val()!='' && $('#ciudad').val()!='' && $('#pag_web').val()!='' && $('#subcat').val()!='' && $('#precio').val()!='' && $('#moneda').val()!='' && $('#descripcion').val()!='' && $('#tipotrans').val()!='' && $('#nomb').val()!='' && $('#email').val()!='' && $('#nombreimagen').val()!='') {
+
             $('#cargando').removeClass('escondido');
             $('#cargando').addClass('visible');
             var dat = $('#formularionuevoproducto').serialize();
@@ -434,7 +435,7 @@
                     </select>
 
                     <label for="subCat" class="textoPromedio">Sub-categor&iacute;a</label>
-                    <select name="subcat" id="subcat" class="form-control" required="required" onchange="();">
+                    <select name="subcat" id="subcat" class="form-control" required="required">
                     </select>
 
                     <div  class="escondido" id="contieneformulario1">
