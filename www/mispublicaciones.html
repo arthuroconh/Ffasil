@@ -89,7 +89,7 @@
             
             usuario = window.localStorage.getItem("usuario");
             clave = window.localStorage.getItem("id");
-              $("#idusuario").val(clave);
+              $("#idusuario").val('7');
             if (usuario<=0) {
               $("#user").append("ffasil.com");
               $('#sesionoff').fadeIn(800);
@@ -105,7 +105,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({ 
-                                        url:'http://desarrollotricolor.com.ve/ffasil/cargapub.php',
+                                        url:'cargapub.php',
                                         type:'POST', 
                                         data:dat, 
                                         dataType:'json', 
@@ -117,7 +117,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({ 
-                                                                  url:'http://desarrollotricolor.com.ve/ffasil/cargapublicacion.php',
+                                                                  url:'cargapublicacion.php',
                                                                   type:'POST', 
                                                                   data:dat, 
                                                                   dataType:'json', 
@@ -126,8 +126,8 @@
                                                                   success:function(data){  
                                                                     contador=contador+1;
                                                                     var a ="<p>";
-                                                                    var b ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:150px;'>";
-                                                                    var bb ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:1150px !important;'>";
+                                                                    var b ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:50px;'>";
+                                                                    var bb ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:150px !important;'>";
                                                                     var c = "<img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+data[3]+"' style='width:37%!important; height:100% !important; float:left; box-sizing:border-box;'>";
                                                                     var d = "<section style='width:60%!important; height:95% !important; float:right; box-sizing:border-box; position:relative;'>";
                                                                     var e = "<section id='infromacion"+data[0]+"' style='padding-top:20px;' class='infromacion'>";
@@ -243,6 +243,10 @@
           <form method="POST" id="formulario" style="height:100%;">
 
           </form>
+          <div style="position:relative; height:150px;">
+            
+          </div>
+
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
