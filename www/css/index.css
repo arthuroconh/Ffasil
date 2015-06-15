@@ -79,6 +79,9 @@ body {
 .app {
 
 }
+.infromacion{
+    font-size: 150%;
+}
 
 .blink {
     animation:fade 3000ms infinite;
@@ -471,6 +474,18 @@ body {
     background: #0f0f0f !important;
     color: #fff !important;
 }
+#procesarpagobotonn{
+    margin-top: -10px !important;
+    width: 100% !important;
+    border: none !important;
+    font-size: 200% !important;
+    background: #f29200 !important;
+    color: #fff !important;
+}
+#procesarpagobotonn:hover{
+    background: #0f0f0f !important;
+    color: #fff !important;
+}
 .cajaccion article{
     height: 15%;
     margin-bottom: 2%;
@@ -790,6 +805,10 @@ h1 {
 }
 }
 @media only screen and (max-height: 550px) and (max-width: 1500px) {
+.infromacion{
+    font-size: 300%;
+}
+
 
 .imagenpublicacion img{
     width: 100%;
@@ -960,6 +979,10 @@ label{
 }
 
 @media only screen and (min-height: 1800px) and (min-width: 1000px) {
+.infromacion{
+    font-size: 350%;
+}
+
 .cajapublica{
     position: fixed;
     width: 95%;
