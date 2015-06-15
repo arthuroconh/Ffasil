@@ -105,7 +105,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({ 
-                                        url:'cargapub.php',
+                                        url:'http://desarrollotricolor.com.ve/ffasil/cargapub.php',
                                         type:'POST', 
                                         data:dat, 
                                         dataType:'json', 
@@ -117,7 +117,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({ 
-                                                                  url:'cargapublicacion.php',
+                                                                  url:'http://desarrollotricolor.com.ve/ffasil/cargapublicacion.php',
                                                                   type:'POST', 
                                                                   data:dat, 
                                                                   dataType:'json', 
