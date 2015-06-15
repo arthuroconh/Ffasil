@@ -300,6 +300,7 @@
                             $('#cargando').removeClass('visible');
                             $('#cargando').addClass('escondido');
                             alert('Creado satisfactoriamente');
+                            window.localStorage.setItem("publicacion", data[0]);
                             location.href="pago.html";
                             }
                         });
