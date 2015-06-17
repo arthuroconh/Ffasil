@@ -78,36 +78,102 @@
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
                                         //$.mobile.changePage('#home');
                                           //}else
-    navigator.app.exitApp();
+        window.location.href = "index.html";
        // }
       }
       //FIN BOTON ATRAS ANDROID
         </script>
         <script type="text/javascript">
-           
+            var jj= [];
           $(document).ready(function(){
             
             usuario = window.localStorage.getItem("usuario");
+            clave = window.localStorage.getItem("id");
+              $("#idusuario").val(clave);
             if (usuario<=0) {
               $("#user").append("ffasil.com");
               $('#sesionoff').fadeIn(800);
               $("#sesionoff").removeClass("escondido");
               $("#sesionoff").addClass("visible");
-            }else{
-              $("#user").append(usuario);              
+            }else{         
               $('#sesionon').fadeIn(800);
               $("#sesionon").removeClass("escondido");
               $("#sesionon").addClass("visible");
+              if ($("#idusuario").val()>0) {
+                                              $("#cargando").addClass('visible');
+                                              $("#cargando").removeClass('escondido');
+                  var contador = 0;
+                  var dat =$('#fo').serialize();
+                                      $.ajax({ 
+                                        url:'http://desarrollotricolor.com.ve/ffasil/cargacantidadventas.php',
+                                        type:'POST', 
+                                        data:dat, 
+                                        dataType:'json', 
+                                        error:function(jqXHR,text_status,strError){
+                                        }, 
+                                        success:function(data){      
+                                            for (i=0;i<data.length;i++){
+                                              var tutu = data.length;
+                                                                $("#publicacionid").val(data[i]);
+                                                                var dat =$('#fo').serialize();
+                                                                $.ajax({ 
+                                                                  url:'http://desarrollotricolor.com.ve/ffasil/cargaventas.php',
+                                                                  type:'POST', 
+                                                                  data:dat, 
+                                                                  dataType:'json', 
+                                                                  error:function(jqXHR,text_status,strError){
+                                                                  }, 
+                                                                  success:function(data){ 
+                                                                      var mensaje = data[0];
+                                                                      var porcion = mensaje.substring(0,15); 
+                                                                    contador=contador+1;
+                                                                    var a ="<p>";
+                                                                    var b ="<section style='position:relative; width:95%!important; padding:10px; height:30% !important; background:#dadada; box-sizing:border-box; margin-bottom:50px;'>";
+                                                                    var bb ="<section style='position:relative; width:95%!important; padding:10px; height:30% !important; background:#dadada; box-sizing:border-box; margin-bottom:70% !important;'>";
+                                                                    var d = "<section style='width:90%!important; height:95% !important; float:left; box-sizing:border-box; position:relative;'>";
+                                                                    var e = "<section id='infromacion"+data[3]+"' style='padding-top:10px;' class='infromacion'><section style='padding-top:20px;' class='infromacion'>"+porcion+"...</section><br>";
+                                                                    var cerrarsec="</section>";
+                                                                    var f = "</p>";
+                                                                    var fomulapago = "<form method='POST' id='formulario' style='height:100%; bottom:350px !important;''><input id='idusuario"+data[3]+"' type='text' name='id' class='escondido' value='"+data[4]+"'><input id='idusuar"+data[3]+"' type='text' name='id_usuario' class='escondido' value='"+data[4]+"'><input id='publica"+data[3]+"' type='text' name='id_usuario' class='escondido' value='"+data[5]+"'><input style='margin-top:8% !important; width:70% !important; float:right; ' type='button' value='Ver' name='enviarPub' id='procesarpagobotonn'  onclick='pagar("+data[3]+");'></form>";
+                                                                    if (contador==tutu) {
+
+                                                                        $("#formulario").append(bb+d+e+cerrarsec+cerrarsec+cerrarsec);
+                                                                        $("#infromacion"+data[3]).append(data[1]);
+                                                                        $("#infromacion"+data[3]).append(fomulapago);
+                                                                    }else{
+                                                                        $("#formulario").append(b+d+e+cerrarsec+cerrarsec+cerrarsec);
+                                                                        $("#infromacion"+data[3]).append(data[1]);
+                                                                        $("#infromacion"+data[3]).append(fomulapago);
+                                                                    }
+                                                                    }
+                                                      });
+                                            }
+                                              $("#cargando").removeClass('visible');
+                                              $("#cargando").addClass('escondido');
+                                          }
+                            });
+              }
+
             }
           });
 
+        </script>
+        <script type="text/javascript">
+        function pagar(id) {
+          var usupu=$("#idusuario"+id).val();
+          var publica=$("#publica"+id).val();
+                            window.localStorage.setItem("publicacion_ver", id);
+                            window.localStorage.setItem("usuario_publicacion", usupu);
+                            window.localStorage.setItem("idpublicacion", publica);
+                            location.href="calificar.html";
+        }
         </script>
     </head>
     <body>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user"></center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Mis Ventas</center>
           </div>
    
           <nav class="menu2">
@@ -160,24 +226,21 @@
               </ul>
           </nav>
         </header>
-        <div style="clear:both"></div>
-          <section class="cajaccion escondido" id="sesionoff">
-            <a href="buscar.html"><article>Buscar</article></a>
-            <a href="contacto.html"><article>Cont&aacute;ctenos</article></a>
-            <a href="terminos.html"><article>T&eacute;rminos y Condiciones</article></a>
-            <a href="iniciar.html"><article>Iniciar Sesi&oacute;n</article></a>
-            <a href="registro.html"><article>Registrarse</article></a>
-          </section>
-          <section class="cajaccion escondido" id="sesionon">
-            <a href="buscar.html"><article>Buscar</article></a>
-            <a href="perfil.html"><article>Perfil</article></a>
-            <a href="publicar.html"><article>Publicar</article></a>
-            <a href="mispublicaciones.html"><article>Mis Publicaciones</article></a>
-            <a href="miscompras.html"><article>Mis Compras</article></a>
-            <a href="misventas.html"><article>Mis Ventas</article></a>
-            <a href="#"><article>Reputaci&oacute;n</article></a>
-            <a href="#"><article>Comentarios</article></a>
-            <a href="#"><article>Cerrar Sesi&oacute;n</article></a>
+        <div style="clear:booth"></div>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section id="sesionon" style="display:none; width: 95%; height: 95%; position: fixed; float: left; margin-left: 2%; ">
+
+          <div style="width:100%; height: 100%; overflow:scroll; margin-top:19%; "id="formulario">
+          <form method="POST" id="fo" class="escondido">
+            <input id="idusuario" type="text" name="id" class="escondido">
+            <input id="publicacionid" type="text" name="user_id" class="escondido">
+          </form>
+
+
+          </div>
+
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

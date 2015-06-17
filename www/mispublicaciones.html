@@ -123,7 +123,9 @@
                                                                   dataType:'json', 
                                                                   error:function(jqXHR,text_status,strError){
                                                                   }, 
-                                                                  success:function(data){  
+                                                                  success:function(data){ 
+                                                                      var mensaje = data[1];
+                                                                      var porcion = mensaje.substring(0,15);  
                                                                     contador=contador+1;
                                                                     var a ="<p>";
                                                                     var b ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:50px;'>";
@@ -139,7 +141,7 @@
                                                                     if (contador==tutu) {
 
                                                                         $("#formulario").append(bb+c+d+e+cerrarsec+cerrarsec+cerrarsec);
-                                                                        $("#infromacion"+data[0]).append(data[1]);
+                                                                        $("#infromacion"+data[0]).append(porcion+'...');
                                                                         if (data[2]=='Pendiente' || data[2]=='Procesando') {
                                                                           $("#infromacion"+data[0]).append(fomulapago);
                                                                         }else{
@@ -147,7 +149,7 @@
                                                                         }
                                                                     }else{
                                                                         $("#formulario").append(b+c+d+e+cerrarsec+cerrarsec+cerrarsec);
-                                                                        $("#infromacion"+data[0]).append(data[1]);
+                                                                        $("#infromacion"+data[0]).append(porcion+'...');
                                                                         if (data[2]=='Pendiente' || data[2]=='Procesando') {
                                                                           $("#infromacion"+data[0]).append(fomulapago);
                                                                         }else{

@@ -78,28 +78,104 @@
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
                                         //$.mobile.changePage('#home');
                                           //}else
-    navigator.app.exitApp();
+        window.location.href = "misventas.html";
        // }
       }
       //FIN BOTON ATRAS ANDROID
         </script>
         <script type="text/javascript">
-           
+            var jj= [];
           $(document).ready(function(){
             
             usuario = window.localStorage.getItem("usuario");
+            clave = window.localStorage.getItem("id");
+              $("#idusuario").val(clave);
             if (usuario<=0) {
               $("#user").append("ffasil.com");
               $('#sesionoff').fadeIn(800);
               $("#sesionoff").removeClass("escondido");
               $("#sesionoff").addClass("visible");
-            }else{
-              $("#user").append(usuario);              
+            }else{         
               $('#sesionon').fadeIn(800);
               $("#sesionon").removeClass("escondido");
               $("#sesionon").addClass("visible");
+              if ($("#idusuario").val()>0) {
+                                              $("#cargando").addClass('visible');
+                                              $("#cargando").removeClass('escondido');
+                                              $('#publicacionpuntuar').val(window.localStorage.getItem("publicacion_ver"));
+                                              $('#titulopublicacion').val(window.localStorage.getItem("idpublicacion"));
+                                              $('#usuariodepuntuar').val(window.localStorage.getItem("id"));
+
+                  var dat =$('#fo').serialize();
+                                      $.ajax({ 
+                                        url:'http://desarrollotricolor.com.ve/ffasil/cargadatosvendedor.php',
+                                        type:'POST', 
+                                        data:dat, 
+                                        dataType:'json', 
+                                        error:function(jqXHR,text_status,strError){
+                                        }, 
+                                        success:function(data){      
+                                        	var a="<section id='contienecomprador'><label>Titulo</label><section id='titulo'>"+data[4]+"</section><label>Comprador</label><section id='comprador'>"+data[0]+"&nbsp&nbsp"+data[1]+"</section><label>Tel&eacute;fono</label><section id='telefono'>"+data[2]+"</section><label>Correo</label><section id='correo'>"+data[3]+"</section><section id='valorar'></section></section>";
+                                        	var b="<label>Valorar Comprador</label><input type=button onclick='positivo();' value='Positivo' class='btn btn-success'><input type='button' onclick='negativo();' value='Negativo' class='btn btn-danger'>"
+                                        	$('#formulario').append(a);
+                                        	if (data[5]==0) {
+                                        		$('#valorar').append(b);
+                                        	}
+                                              $("#cargando").addClass('escondido');
+                                              $("#cargando").removeClass('visible');
+                                        }
+                                    });
+
+
+             }
             }
-          });
+         });
+        </script>
+        <script type="text/javascript">
+        function positivo() {
+        	$('#positivonegativo').val('1');
+                                              $("#cargando").addClass('visible');
+                                              $("#cargando").removeClass('escondido');
+        	var dat =$('#fo').serialize();
+                                      $.ajax({ 
+                                        url:'http://desarrollotricolor.com.ve/ffasil/valorarvendedor.php',
+                                        type:'POST', 
+                                        data:dat, 
+                                        dataType:'json', 
+                                        error:function(jqXHR,text_status,strError){
+                                        	alert(strError);
+                                        }, 
+                                        success:function(data){ 
+                                        	alert('Valorado Correctamente ');
+                                              $("#cargando").addClass('escondido');
+                                              $("#cargando").removeClass('visible');
+                            				location.href="miscompras.html";
+                                        }
+                                    });
+        }
+
+        function negativo() {
+        	var neg = -1;
+        	$('#positivonegativo').val('-1');
+                                              $("#cargando").addClass('visible');
+                                              $("#cargando").removeClass('escondido');
+        	var dat =$('#fo').serialize();
+                                      $.ajax({ 
+                                        url:'http://desarrollotricolor.com.ve/ffasil/valorarvendedor.php',
+                                        type:'POST', 
+                                        data:dat, 
+                                        dataType:'json', 
+                                        error:function(jqXHR,text_status,strError){
+                                        	alert(strError);
+                                        }, 
+                                        success:function(data){ 
+                                          alert('Valorado Correctamente ');
+                                              $("#cargando").addClass('escondido');
+                                              $("#cargando").removeClass('visible');
+                            				location.href="miscompras.html";
+                                        }
+                                    });
+        }
 
         </script>
     </head>
@@ -107,7 +183,7 @@
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user"></center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Mis Ventas</center>
           </div>
    
           <nav class="menu2">
@@ -160,24 +236,23 @@
               </ul>
           </nav>
         </header>
-        <div style="clear:both"></div>
-          <section class="cajaccion escondido" id="sesionoff">
-            <a href="buscar.html"><article>Buscar</article></a>
-            <a href="contacto.html"><article>Cont&aacute;ctenos</article></a>
-            <a href="terminos.html"><article>T&eacute;rminos y Condiciones</article></a>
-            <a href="iniciar.html"><article>Iniciar Sesi&oacute;n</article></a>
-            <a href="registro.html"><article>Registrarse</article></a>
-          </section>
-          <section class="cajaccion escondido" id="sesionon">
-            <a href="buscar.html"><article>Buscar</article></a>
-            <a href="perfil.html"><article>Perfil</article></a>
-            <a href="publicar.html"><article>Publicar</article></a>
-            <a href="mispublicaciones.html"><article>Mis Publicaciones</article></a>
-            <a href="miscompras.html"><article>Mis Compras</article></a>
-            <a href="misventas.html"><article>Mis Ventas</article></a>
-            <a href="#"><article>Reputaci&oacute;n</article></a>
-            <a href="#"><article>Comentarios</article></a>
-            <a href="#"><article>Cerrar Sesi&oacute;n</article></a>
+        <div style="clear:booth"></div>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section id="sesionon" style="display:none; width: 95%; height: 95%; position: fixed; float: left; margin-left: 2%; ">
+
+          <div style="width:100%; height: 100%; overflow:scroll; margin-top:19%; "id="formulario">
+          <form method="POST" id="fo" class="escondido">
+            <input id="idusuario" type="text" name="idusuario" class="escondido">
+            <input id="publicacionpuntuar" type="text" name="publicacionpuntuar" class="escondido">
+            <input id="titulopublicacion" type="text" name="titulopublicacion" class="escondido">
+            <input id="usuariodepuntuar" type="text" name="usuariodepuntuar" class="escondido">
+            <input id="positivonegativo" type="text" name="positivonegativo" class="escondido">
+          </form>
+
+          </div>
+
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

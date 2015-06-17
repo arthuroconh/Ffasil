@@ -52,7 +52,31 @@ body {
     width:100%;
     overflow-x:hidden; 
 }
+#contienecomprador{
+    height: 100%;
+    width: 100%;
+}
+#contienecomprador .btn{
+  border: none !important;
+  margin-top: 0px !important;
+  height: 40% !important;
+  width: 40% !important;
+  margin-right: 5% !important;
+  font-size: 20px;
+  color: #fff;
+}
+#contienecomprador section{
+    height: 19%;
+    width: 100%;
+}
+#contienecomprador label{
+    font-size: 30px !important;
+    margin-bottom: 20px;
+}
 
+#contienecomprador #titulo,#comprador,#telefono,#correo{
+    font-size: 20px;
+}
 .escondido{
     display: none;
 }
