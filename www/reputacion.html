@@ -78,7 +78,7 @@
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
                                         //$.mobile.changePage('#home');
                                           //}else
-        window.location.href = "reputacion.html";
+        window.location.href = "index.html";
        // }
       }
       //FIN BOTON ATRAS ANDROID
@@ -112,7 +112,7 @@
                                               $("#cargando").removeClass('escondido');
                   var dat =$('#fo').serialize();
                                       $.ajax({ 
-                                        url:'http://desarrollotricolor.com.ve/ffasil/reputavendedor.php',
+                                        url:'http://www.desarrollotricolor.com.ve/ffasil/reputavendedor.php',
                                         type:'POST', 
                                         data:dat, 
                                         dataType:'json', 
@@ -149,7 +149,7 @@
                                               $("#cargando").addClass('visible');
                                               $("#cargando").removeClass('escondido');
                                       $.ajax({ 
-                                        url:'http://desarrollotricolor.com.ve/ffasil/reputacomprador.php',
+                                        url:'http://www.desarrollotricolor.com.ve/ffasil/reputacomprador.php',
                                         type:'POST', 
                                         data:dat, 
                                         dataType:'json', 
