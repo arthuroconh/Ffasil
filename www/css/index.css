@@ -56,6 +56,19 @@ body {
     height: 100%;
     width: 100%;
 }
+.botngrande{
+    background: #f29200;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.botngrande:hover{
+    background: #000;
+    color: #fff;
+}
 #contienecomprador .btn{
   border: none !important;
   margin-top: 0px !important;
@@ -106,7 +119,28 @@ body {
 .infromacion{
     font-size: 150%;
 }
-
+.contienecomentario{
+    width: 90%;
+    margin-bottom: 20%;
+    background: #dadada;
+    font-size: 150%;
+    display: box; 
+    box-orient:horizontal;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+.contienecomentario textarea{
+    width: 90%;
+    background: #fafafa;
+    font-size: 150%;
+    display: box; 
+    box-orient:horizontal;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+.contienecomentario b{
+    font-size: 190%;
+}
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
@@ -298,7 +332,34 @@ body {
     padding-left: 2%;
     border-bottom: 1px solid grey;
 }
-
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 200%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    width:100%;
+    height:15%;
+    font-size: 200%;
+    background: #000;
+    color: #fff;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrepp{
+    width:100%;
+    height:15%;
+    font-size: 40px;
+    margin-top: 20%;
+    padding-top: 20%;
+    background: #fff;
+}
+.botonrepp:hover{
+    color: #000;
+}
 .tituloperfil{
     margin-top: 5px;
     font-size: 18px;
@@ -833,6 +894,24 @@ h1 {
     font-size: 300%;
 }
 
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #000;
+    color: #fff;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+
 
 .imagenpublicacion img{
     width: 100%;
@@ -1004,7 +1083,24 @@ label{
 
 @media only screen and (min-height: 1800px) and (min-width: 1000px) {
 .infromacion{
-    font-size: 350%;
+    font-size: 300%;
+}
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #000;
+    color: #fff;
+    margin-top: 20%;
+    padding-top: 20%;
 }
 
 .cajapublica{

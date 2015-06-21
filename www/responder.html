@@ -78,13 +78,14 @@
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
                                         //$.mobile.changePage('#home');
                                           //}else
-        window.location.href = "index.html";
+        window.location.href = "comentarios.html";
        // }
       }
       //FIN BOTON ATRAS ANDROID
         </script>
         <script type="text/javascript">
             var jj= [];
+                                              var a='';
           $(document).ready(function(){
             
             usuario = window.localStorage.getItem("usuario");
@@ -100,80 +101,59 @@
               $("#sesionon").removeClass("escondido");
               $("#sesionon").addClass("visible");
               if ($("#idusuario").val()>0) {
+
                                               $("#cargando").addClass('visible');
                                               $("#cargando").removeClass('escondido');
-                  var contador = 0;
-                  var dat =$('#fo').serialize();
-                                      $.ajax({ 
-                                        url:'http://desarrollotricolor.com.ve/ffasil/miscompras.php',
-                                        type:'POST', 
-                                        data:dat, 
-                                        dataType:'json', 
-                                        error:function(jqXHR,text_status,strError){
-                                        }, 
-                                        success:function(data){
-                                            for (i=0;i<data.length;i++){
-                                              var tutu = data.length;
-                                                                $("#publicacionid").val(data[i]);
-                                                                var dat =$('#fo').serialize();
-                                                                $.ajax({ 
-                                                                  url:'http://desarrollotricolor.com.ve/ffasil/cargacompras.php',
-                                                                  type:'POST', 
-                                                                  data:dat, 
-                                                                  dataType:'json', 
-                                                                  error:function(jqXHR,text_status,strError){
-                                                                  }, 
-                                                                  success:function(data){ 
-                                                                      var mensaje = data[0];
-                                                                      var porcion = mensaje.substring(0,15); 
-                                                                    contador=contador+1;
-                                                                    var a ="<p>";
-                                                                    var b ="<section style='position:relative; width:95%!important; padding:10px; height:30% !important; background:#dadada; box-sizing:border-box; margin-bottom:50px;'>";
-                                                                    var bb ="<section style='position:relative; width:95%!important; padding:10px; height:30% !important; background:#dadada; box-sizing:border-box; margin-bottom:70% !important;'>";
-                                                                    var d = "<section style='width:90%!important; height:95% !important; float:left; box-sizing:border-box; position:relative;'>";
-                                                                    var e = "<section id='infromacion"+data[5]+"' style='padding-top:10px;' class='infromacion'><section style='padding-top:20px;' class='infromacion'>"+porcion+"...</section><br>";
-                                                                    var cerrarsec="</section>";
-                                                                    var f = "</p>";
-                                                                    var fomulapago = "<form method='POST' id='formulario' style='height:100%; bottom:350px !important;''><input id='idusuario"+data[1]+"' type='text' name='id' class='escondido' value='"+data[2]+"'><input id='idusuar"+data[1]+"' type='text' name='id_usuario' class='escondido' value='"+data[2]+"'><input id='publica"+data[1]+"' type='text' name='id_usuario' class='escondido' value='"+data[4]+"'><input style='margin-top:8% !important; width:70% !important; float:right; ' type='button' value='Ver' name='enviarPub' id='procesarpagobotonn'  onclick='calificar("+data[1]+");'></form>";
-                                                                    if (contador==tutu) {
+                                            $("#comentrioid").val(window.localStorage.getItem("idcomentario"));
+                                              var datd =$('#fo').serialize();
 
-                                                                        $("#formulario").append(bb+d+e+cerrarsec+cerrarsec+cerrarsec);
-                                                                        $("#infromacion"+data[5]).append(data[3]);
-                                                                        $("#infromacion"+data[5]).append(fomulapago);
-                                                                    }else{
-                                                                        $("#formulario").append(b+d+e+cerrarsec+cerrarsec+cerrarsec);
-                                                                        $("#infromacion"+data[5]).append(data[3]);
-                                                                        $("#infromacion"+data[5]).append(fomulapago);
-                                                                    }
-                                                                    }
+                                                    $.ajax({ 
+                                                      url:'http://desarrollotricolor.com.ve/ffasil/cargaaresponder.php',
+                                                      type:'POST', 
+                                                      data:datd, 
+                                                      dataType:'json', 
+                                                      error:function(jqXHR,text_status,strError){
+                                                      }, 
+                                                      success:function(datos){ 
+                                                        $("#reputa").addClass('escondido');
+                                                        $("#reputacom").addClass('escondido');
+                                                        $("#cargando").addClass('escondido');
+                                                        $("#cargando").removeClass('visible');
+                                                        a="<form id='formrespuesta'><section class='contienecomentario'><br><b>Publicaci&oacute;n:</b><br><br>"+datos[0]+"<br><br><b>Comentario:</b><br><br></b>"+datos[2]+"<br><br><b>Respuesta:</b><br><br></b><textarea name='comentario'></textarea><section class='botngrande' onclick='responder("+datos[1]+");'>Responder</section></section><input type='text' class='escondido' name='comentarioid' value='"+datos[1]+"'></form>";
+                                                        $("#formulario").append(a);
+                                                      }
                                                       });
-                                            }
-                                              $("#cargando").removeClass('visible');
-                                              $("#cargando").addClass('escondido');
-                                          }
-                            });
-              }
-
             }
+          }
           });
 
         </script>
         <script type="text/javascript">
-        function calificar(id) {
-          var usupu=$("#idusuario"+id).val();
-          var publica=$("#publica"+id).val();
-                            window.localStorage.setItem("publicacion_ver", id);
-                            window.localStorage.setItem("usuario_publicacion", usupu);
-                            window.localStorage.setItem("idpublicacion", publica);
-                            location.href="calificarvendedor.html";
-        }
+            function responder(idcomentario) {
+                                              var datd =$('#formrespuesta').serialize();
+                                                    $.ajax({ 
+                                                      url:'http://desarrollotricolor.com.ve/ffasil/responder.php',
+                                                      type:'POST', 
+                                                      data:datd, 
+                                                      dataType:'json', 
+                                                      error:function(jqXHR,text_status,strError){
+                                                      }, 
+                                                      success:function(datos){ 
+                                                        alert(datos[0]);
+                                                        alert(datos[1]);
+
+                                                        location.href="comentarios.html";
+                                                      }
+                                                      });
+
+            }
         </script>
     </head>
     <body>
           <section class="cerrador"></section>
         <header>
           <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Mis Compras</center>
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Comentarios</center>
           </div>
    
           <nav class="menu2">
@@ -235,12 +215,13 @@
           <div style="width:100%; height: 100%; overflow:scroll; margin-top:19%; "id="formulario">
           <form method="POST" id="fo" class="escondido">
             <input id="idusuario" type="text" name="id" class="escondido">
-            <input id="publicacionid" type="text" name="publicaid" class="escondido">
+            <input id="comentrioid" type="text" name="comentrioid" class="escondido">
           </form>
-
-
+              <section id="reputa" class="botonrep" onclick="recibidos();"><center>Recibidos</center></section>
+              <section id="reputacom" class="botonrep" onclick="realizados();"><center>Realizados</center></section>
+              <section id="valoraciones">
+              </section>
           </div>
-
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>

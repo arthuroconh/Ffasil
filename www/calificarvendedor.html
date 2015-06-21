@@ -104,7 +104,7 @@
                                               $("#cargando").removeClass('escondido');
                                               $('#publicacionpuntuar').val(window.localStorage.getItem("publicacion_ver"));
                                               $('#titulopublicacion').val(window.localStorage.getItem("idpublicacion"));
-                                              $('#usuariodepuntuar').val(window.localStorage.getItem("id"));
+                                              $('#usuariodepuntuar').val(window.localStorage.getItem("usuario_publicacion"));
 
                   var dat =$('#fo').serialize();
                                       $.ajax({ 
@@ -115,8 +115,8 @@
                                         error:function(jqXHR,text_status,strError){
                                         }, 
                                         success:function(data){      
-                                        	var a="<section id='contienecomprador'><label>Titulo</label><section id='titulo'>"+data[4]+"</section><label>Comprador</label><section id='comprador'>"+data[0]+"&nbsp&nbsp"+data[1]+"</section><label>Tel&eacute;fono</label><section id='telefono'>"+data[2]+"</section><label>Correo</label><section id='correo'>"+data[3]+"</section><section id='valorar'></section></section>";
-                                        	var b="<label>Valorar Comprador</label><input type=button onclick='positivo();' value='Positivo' class='btn btn-success'><input type='button' onclick='negativo();' value='Negativo' class='btn btn-danger'>"
+                                        	var a="<section id='contienecomprador'><label>Titulo</label><section id='titulo'>"+data[4]+"</section><label>Vendedor</label><section id='comprador'>"+data[0]+"&nbsp&nbsp"+data[1]+"</section><label>Tel&eacute;fono</label><section id='telefono'>"+data[2]+"</section><label>Correo</label><section id='correo'>"+data[3]+"</section><section id='valorar'></section></section>";
+                                        	var b="<label>Valorar Vendedor</label><input type=button onclick='positivo();' value='Positivo' class='btn btn-success'><input type='button' onclick='negativo();' value='Negativo' class='btn btn-danger'>"
                                         	$('#formulario').append(a);
                                         	if (data[5]==0) {
                                         		$('#valorar').append(b);

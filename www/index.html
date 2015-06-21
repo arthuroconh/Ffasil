@@ -102,6 +102,12 @@
           });
 
         </script>
+        <script type="text/javascript">
+        function cerrarsesion() {
+         localStorage.clear();
+                            location.href="index.html";
+        }
+        </script>
     </head>
     <body>
           <section class="cerrador"></section>
@@ -175,9 +181,9 @@
             <a href="mispublicaciones.html"><article>Mis Publicaciones</article></a>
             <a href="miscompras.html"><article>Mis Compras</article></a>
             <a href="misventas.html"><article>Mis Ventas</article></a>
-            <a href="#"><article>Reputaci&oacute;n</article></a>
-            <a href="#"><article>Comentarios</article></a>
-            <a href="#"><article>Cerrar Sesi&oacute;n</article></a>
+            <a href="reputacion.html"><article>Reputaci&oacute;n</article></a>
+            <a href="comentarios.html"><article>Comentarios</article></a>
+            <a href="#" onclick="cerrarsesion();"><article>Cerrar Sesi&oacute;n</article></a>
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
