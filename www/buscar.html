@@ -102,6 +102,11 @@
             if (window.localStorage.getItem("ultimabusqueda")!='') {
           
                 var dato = $('#formulario').serialize();
+                
+
+
+                                                          $("#cargando").removeClass('escondido');
+                                                          $("#cargando").addClass('visible');
                     $.ajax({ 
                             url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php', 
                             type:'POST', 
@@ -147,6 +152,10 @@
         <script type="text/javascript">
         function buscar() {
           
+
+
+                                                          $("#cargando").removeClass('escondido');
+                                                          $("#cargando").addClass('visible');
                 var dato = $('#formulario').serialize();
                     $.ajax({ 
                             url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php', 
