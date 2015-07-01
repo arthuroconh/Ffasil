@@ -99,6 +99,175 @@ body {
 #sesionon article{
     height: 65px;
 }
+.cajaresultado{
+    height: 70%;
+    width: 100%;
+    overflow: scroll;
+    float: left; 
+}
+.dentrode{
+    width: 90%;
+    height: 20%;
+    background: #dadada;
+    color: #000;
+    margin-bottom: 14%;
+    padding:5%; 
+}
+.dentrode:hover{
+    width: 90%;
+    height: 20%;
+    background: #869791;
+    color: #000;
+    margin-bottom: 14%;
+    padding:5%; 
+}
+.dentrode img{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+.partedos{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin-left: 11%; 
+    padding-left: 35%;
+    font-size: 20px;
+}
+.contienepublicacion{
+    height: 100%;
+    width: 100%;
+}
+.botonera{
+    padding-top:30% !important;
+}
+.botonera input{
+    width: 100% !important;
+    height: 50px !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px !important;
+}
+.botonera input:hover{
+    background: #000;
+    color: #fff;
+}
+.tiempo{
+    padding-top: 5%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.comentariox{
+    width: 100%;
+    padding: 30px 10px;
+    display: box; 
+    box-orient:horizontal;
+    box-sizing: border-box;   
+    border: 1px solid black;
+}
+#comentario{
+    width: 100%;
+    height: 350px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    display: box; 
+    box-orient:horizontal;
+    box-sizing: border-box;   
+    border: 1px solid black;
+}
+.contienerespuestax{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.respuestax{
+    width:100%;
+    padding: 20px 10px;
+    display: box; 
+    box-orient:horizontal;
+    box-sizing: border-box;   
+    float: right;
+    background: #dadada;
+    position: relative;
+    margin-bottom: 5%;
+}
+.botoneradespues{
+    height: 60%;
+}
+.botoneradespues input{
+    width: 100%;
+    height: 15% !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px !important;
+}
+.botoneradespues input:hover{
+    background: #000;
+    color: #fff;
+}
+.titulopub{
+    width: 90%;
+    font-size: 200%;
+    padding: 5px;
+    background: #dadada;
+    display: box; 
+    box-orient:horizontal;
+    box-sizing: border-box;
+}
+.contienedesc{
+    height: 100%;
+    width: 100%;
+}
+.descrip{
+    box-sizing:border-box;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.descrip p{
+    word-wrap: break-word;
+}
+.contieneimagenpublicacion{
+    width: 80%;
+    height: 30%;
+    padding: 5%;
+}
+.contieneimagenpublicacion img{
+    width: 100%;
+    height: 100%;
+}
+.cajabusqueda #busqueda{
+    width: 80% !important;
+    height: 80px;
+}
+.cajabusqueda #busqueda:hover,.cajabusqueda #busqueda:active,.cajabusqueda #busqueda:focus{
+    width: 80% !important;
+    height: 80px;
+}
+.cajabusqueda{
+    width: 100% !important;
+    display: box;
+
+    box-orient:horizontal;
+}
+.cajabusqueda #busq{
+    width: 15% !important;
+    height: 80px;  
+    margin-left: 3%;  
+}
+.cajabusqueda #departamento{
+    width: 100% !important;
+    height: 80px;   
+}
+.cajabusqueda #busq:hover,.cajabusqueda #busq:active,.cajabusqueda #busq:focus{
+    width: 15% !important;
+    height: 80px;    
+}
 #formularionuevoproducto textarea{
     width: 100%;
     height: 200px;

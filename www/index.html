@@ -86,7 +86,7 @@
         <script type="text/javascript">
            
           $(document).ready(function(){
-            
+            localStorage.removeItem("ultimabusqueda");
             usuario = window.localStorage.getItem("usuario");
             if (usuario<=0) {
               $("#user").append("ffasil.com");

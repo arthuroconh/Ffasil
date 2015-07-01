@@ -31,7 +31,6 @@
         <script src="js/velocidadscroll.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="js/menu.js"></script>
-        <script src="js/jquery-1.11.3.min.js"></script>
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -82,7 +81,7 @@
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
                                         //$.mobile.changePage('#home');
                                           //}else
-        window.location.href = "index.html";
+        history.go(-1);
        // }
       }
       //FIN BOTON ATRAS ANDROID
@@ -90,107 +89,38 @@
         <script type="text/javascript">
            
           $(document).ready(function(){
-            
             $('#page_effect').fadeIn(800);
             usuario = window.localStorage.getItem("usuario");
+            id = window.localStorage.getItem("id");
+            publicacionaver = window.localStorage.getItem("publicacionaver");
             if (usuario<=0) {
-              $("#user").append("Buscar");
+              $("#user").append("Publicaci&oacute;n");
             }else{
-              $("#user").append("Buscar");
-            }
-
-            if (window.localStorage.getItem("ultimabusqueda")!='') {
-          
-                var dato = $('#formulario').serialize();
-                    $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php', 
-                            type:'POST', 
-                            data:dato, 
-                            dataType:'json', 
-                            error:function(jqXHR,text_status,strError){}, 
-                            success:function(data){ 
-
-
-                                                          $("#cargando").removeClass('escondido');
-                                                          $("#cargando").addClass('visible');
-                                                        $("#resultados").empty();
-                                            for (i=0;i<data.length;i++){
-                                              $("#idpublicacion").val(data[i]);
-                                                var datd =$('#formulario').serialize();
-                                                    $.ajax({ 
-                                                      url:'http://desarrollotricolor.com.ve/ffasil/busqueda.php',
-                                                      type:'POST', 
-                                                      data:datd, 
-                                                      dataType:'json', 
-                                                      error:function(jqXHR,text_status,strError){
-                                                      }, 
-                                                      success:function(datos){
-                                                                      var mensaje = datos[2];
-                                                                      var porcion = mensaje.substring(0,20); 
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
-                                                          $("#resultados").append(a);
-                                                        }
-                                                    });
-                                            }
-
-                                                          $("#cargando").addClass('escondido');
-                                                          $("#cargando").removeClass('visible');
-                                        }
-
-                        });
-
-
+              $("#user").append("Publicaci&oacute;n");
             }
           });
 
         </script>
         <script type="text/javascript">
-        function buscar() {
-          
+        function enviar() {
+
+          $("#cargando").addClass('visible');
+          $("#cargando").removeClass('escondido');
+              $("#publicacionid").val(publicacionaver);
+              $("#id").val(id);
                 var dato = $('#formulario').serialize();
                     $.ajax({ 
-                            url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php', 
+                            url:'http://desarrollotricolor.com.ve/ffasil/comentar.php', 
                             type:'POST', 
                             data:dato, 
                             dataType:'json', 
                             error:function(jqXHR,text_status,strError){}, 
                             success:function(data){ 
-
-
-                                                          $("#cargando").removeClass('escondido');
-                                                          $("#cargando").addClass('visible');
-                                                        $("#resultados").empty();
-                                            for (i=0;i<data.length;i++){
-                                              $("#idpublicacion").val(data[i]);
-                                                var datd =$('#formulario').serialize();
-                                                    $.ajax({ 
-                                                      url:'http://desarrollotricolor.com.ve/ffasil/busqueda.php',
-                                                      type:'POST', 
-                                                      data:datd, 
-                                                      dataType:'json', 
-                                                      error:function(jqXHR,text_status,strError){
-                                                      }, 
-                                                      success:function(datos){
-                                                                      var mensaje = datos[2];
-                                                                      var porcion = mensaje.substring(0,20); 
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
-                                                          $("#resultados").append(a);
-                                                        }
-                                                    });
-                                            }
-
                                                           $("#cargando").addClass('escondido');
                                                           $("#cargando").removeClass('visible');
-                                        }
-
-                        });
-        }
-        </script>
-        <script type="text/javascript">
-        function mostrarpublicacion(id) {
-          window.localStorage.setItem("ultimabusqueda", $("#busqueda").val());
-          window.localStorage.setItem("publicacionaver", id);
-          location.href="mostrarpublicacion.html";
+                                                          location.href="comentariospublica.html";
+                            }
+                    });
         }
         </script>
     </head>
@@ -256,61 +186,15 @@
             <img src="load.gif">
         </div>
           <section class="cajaccion" id="page_effect" style="display:none;">
-            <div class="cajabusqueda">
-                <form name="formulario" id="formulario" method="POST">
-                <input list="idpublicacion" id="idpublicacion" name="idpublicacion" class="escondido">
-                <input list="browsers" id="busqueda" name="busqueda" placeholder="Buscar">
-
-                <datalist id="browsers">
-                  <option value="Accesorios para vehículos">
-                  <option value="Aeronáutica">
-                  <option value="Agropecuaria y Campo">
-                  <option value="Alimentos y Bebidas">
-                  <option value="Animales y Mascotas">
-                  <option value="Arte y Antigüedades">
-                  <option value="Artículos militares y de seguridad">
-                  <option value="Cámaras y accesorios">
-                  <option value="Celulares y Accesorios">
-                  <option value="Computación">
-                  <option value="Consolas y videojuegos">
-                  <option value="Deportes y Fitness">
-                  <option value="Electrodomésticos">
-                  <option value="Electrónicos, audio y video">
-                  <option value="Entretenimiento y Ocio">
-                  <option value="Equipamiento Industrial">
-                  <option value="Inmuebles, bienes raíces">
-                  <option value="Instrumentos Musicales">
-                  <option value="Inversiones y Negocios">
-                  <option value="Joyas y Relojes">
-                  <option value="Juegos y juguetes">
-                  <option value="Materiales de Construcción">
-                  <option value="Motocicletas">
-                  <option value="Música y Videos">
-                  <option value="Niños">
-                  <option value="Restaurantes y Locales">
-                  <option value="Salud y Belleza">
-                  <option value="Vehículos">
-                  <option value="Viajes y Turismo">
-                  <option value="Otros">
-                  <option value="Belleza y Cuidado Personal">
-                  <option value="Clases y Capacitaciones">
-                  <option value="Fiestas y Eventos">
-                  <option value="Importaciones">
-                  <option value="Imprenta y Letreros">
-                  <option value="Mantenimiento del Hogar">
-                  <option value="Mantenimiento Vehículos">
-                  <option value="Servicio Técnico">
-                  <option value="Transporte y Mudanzas">
-                  <option value="Viajes">
-                </datalist>
-                <input type="button" id="busq" value="ir" onclick="buscar();">
-                <label>Filtrar por Departamento</label>                                                                                                                                                                                                                                   
-                <select class="form-control" requied="required" name="departamento" id="departamento"><option value="cualquiera" selected="selected">Cualquiera</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
+            <section class="botonera" style="padding-top:0px !important; width:100% !important;">
+                <label>Comentario</label>
+                <form name="formulario" id="formulario" method="POST">                  
+                  <textarea name="comentario" id="comentario"></textarea>
+                  <input type="button" id="no" value="Comentar" onclick="enviar();">
+                      <input list="id" id="id" name="id" class="escondido">
+                      <input list="publicacionid" id="publicacionid" name="publicacionid" class="escondido">
                 </form>
-            </div>
-            <div class="cajaresultado" id="resultados">
-              
-            </div>
+            </section>
           </section>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
