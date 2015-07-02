@@ -139,7 +139,7 @@
             $("#cargando").addClass("visible"); 
           var dato = $('#formulario').serialize();
                     $.ajax({ 
-                            url:'modificarperfil.php', 
+                            url:'http://desarrollotricolor.com.ve/ffasil/modificarperfil.php', 
                             type:'POST', 
                             data:dato, 
                             dataType:'json', 
@@ -263,7 +263,7 @@
                 <select class="form-control datoxx" requied="required" name="department"><option value="" selected="selected">Seleccione su departamento</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
             </article>
             <input type="button" value="Listo" onclick="modificar();" id="botonmod"> 
-            <input type="button" value="Listo" onclick="cancelar();" id="botoncan"> 
+            <input type="button" value="Cancelar" onclick="cancelar();" id="botoncan"> 
           </section>
           </form>
             <div id="deviceready" class="blink">
