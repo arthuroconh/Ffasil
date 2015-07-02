@@ -91,8 +91,8 @@
         <script type="text/javascript">
            
           $(document).ready(function(){
+            id = window.localStorage.getItem("id");
             usuario = window.localStorage.getItem("usuario");
-            clave = window.localStorage.getItem("id");
             $('#page_effect').fadeIn(800);
             $("#id").append(id);
             $("#cargando").removeClass("escondido"); 
@@ -116,15 +116,15 @@
                             var pais=data[7];
                             var depart=data[8];
                             var direccion=data[9];
-                            $("#nombre").val(nombre);
-                            $("#apellido").val(apellido);
-                            $("#carnet").val(carnet);
-                            $("#nit").val(nit);
-                            $("#telefono").val(telefono);
-                            $("#pagina").val(pagina);
-                            $("#postal").val(postal);
-                            $("#pais").val(pais);
-                            $("#depart").val(depart);
+                            $('input[name="nombre"]').val(nombre);
+                            $('input[name="apellido"]').val(apellido);
+                            $('input[name="carnet"]').val(carnet);
+                            $('input[name="nit"]').val(nit);
+                            $('input[name="telefono"]').val(telefono);
+                            $('input[name="pagina"]').val(pagina);
+                            $('input[name="postal"]').val(postal);
+                            $('input[name="pais"]').val(pais);
+                            $('input[name="depart"]').val(depart);
                             
                             $("#cargando").removeClass("visible"); 
                             $("#cargando").addClass("escondido"); 
@@ -223,40 +223,40 @@
           <section class="cajaperfil" id="page_effect" style="display:none; overflow-y:scroll;">
             <article class="datoperfil"> 
               <article class="tituloperfil">Nombre</article>
-              <input type="text" class="datoxx"  id="nombre"  name="nombre">
+              <input type="text" class="datoxx"   name="nombre">
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Apellido</article>
-              <input type="text" class="datoxx"  id="apellido"  name="apellido"> 
+              <input type="text" class="datoxx"   name="apellido"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Carnet de Identidad</article>
-              <input type="text" class="datoxx"  id="carnet" name="carnet"> 
+              <input type="text" class="datoxx"  name="carnet"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">NIT</article>
-              <input type="text" class="datoxx"  id="nit" name="nit"> 
+              <input type="text" class="datoxx"  name="nit"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Tel&eacute;fono</article>
-              <input type="text" class="datoxx"  id="telefono" name="telefono"> 
+              <input type="text" class="datoxx"  name="telefono"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">P&aacute;gina web</article>
-              <input type="text" class="datoxx"  id="pagina" name="pagina"> 
+              <input type="text" class="datoxx"  name="pagina"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">C&oacute;digo Postal</article>
-              <input type="text" class="datoxx"  id="postal"  name="postal"> 
+              <input type="text" class="datoxx"   name="postal"> 
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Pais</article>
-              <input type="text" class="datoxx"  id="pais" name="pais"> 
+              <input type="text" class="datoxx"  name="pais"> 
             </article>
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Departamento Actual</article>
-              <input type="text" class="datoxx"  id="depart" name="depart" readonly="readonly">
+              <input type="text" class="datoxx"  name="depart" readonly="readonly">
             </article>
             <article class="datoperfil"> 
               <article class="tituloperfil">Cambiar Departamento</article>
