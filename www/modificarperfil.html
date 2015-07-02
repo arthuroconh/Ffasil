@@ -29,9 +29,12 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
         <script src="js/velocidadscroll.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="js/menu.js"></script>
         <link rel="stylesheet" href="css/menu.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="js/imagen.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
         <script type="text/javascript">
       document.addEventListener("deviceready", onDeviceReady, false);
@@ -88,10 +91,9 @@
         <script type="text/javascript">
            
           $(document).ready(function(){
-            
-            $('#page_effect').fadeIn(800);
-            id = window.localStorage.getItem("id");
             usuario = window.localStorage.getItem("usuario");
+            clave = window.localStorage.getItem("id");
+            $('#page_effect').fadeIn(800);
             $("#id").append(id);
             $("#cargando").removeClass("escondido"); 
             $("#cargando").addClass("visible"); 
@@ -130,7 +132,6 @@
                         });
 
           });
-
         </script>
         <script type="text/javascript">
         function modificar() {
@@ -269,6 +270,7 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
