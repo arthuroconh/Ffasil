@@ -519,7 +519,7 @@ body {
 }
 .cajaformulario #botoncan{
     width: 100%;
-    height: 15% !important;
+    height: 80px !important;
     border:none;
     background: #e20612;
     margin-bottom: 10%;
@@ -532,7 +532,7 @@ body {
 }
 .cajaformulario #botonmod{
     width: 100%;
-    height: 15% !important;
+    height: 80px !important;
     border:none;
     background: #0f70b7;
     margin-bottom: 5%;
