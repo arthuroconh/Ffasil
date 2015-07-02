@@ -517,29 +517,30 @@ body {
     background: #000;
     color: #fff;
 }
-.cajaperfil #botoncan{
+.cajaformulario #botoncan{
     width: 100%;
     height: 15% !important;
     border:none;
     background: #e20612;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
     color: #fff;
     font-size: 30px !important;
 }
-.cajaperfil #botoncan:hover{
+.cajaformulario #botoncan:hover{
     background: #000;
     color: #fff;
 }
-.cajaperfil #botonmod{
+.cajaformulario #botonmod{
     width: 100%;
     height: 15% !important;
     border:none;
     background: #0f70b7;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     color: #fff;
     font-size: 30px !important;
 }
-.cajaperfil #botonmod:hover{
+.cajaformulario #botonmod:hover{
     background: #000;
     color: #fff;
 }
@@ -642,7 +643,7 @@ body {
     margin-top: 10px;
 }
 .cajaformulario input{
-    width: 100%;
+    width: 95%;
     height: 40px;
     font-size: 20px !important;
     margin-bottom: 20px;
@@ -1349,7 +1350,7 @@ label{
     margin-bottom: 30px;
 }
 .cajaformulario input{
-    width: 100%;
+    width: 95%;
     height: 90px;
     font-size: 60px !important;
     margin-bottom: 100px;
@@ -1816,7 +1817,7 @@ label{
     margin-top: 10px;
 }
 .cajaformulario input{
-    width: 100%;
+    width: 95%;
     height: 90px;
     font-size: 40px !important;
     margin-bottom: 20px;
