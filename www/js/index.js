@@ -34,7 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        so.setOrientation(so.Orientation.SENSOR_LANDSCAPE);
+        // set to either landscape
+        screen.lockOrientation('landscape');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
