@@ -41,7 +41,7 @@ body {
 
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;   
+    -webkit-user-select: none;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -50,7 +50,7 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
-    overflow-x:hidden; 
+    overflow-x:hidden;
 }
 #contienecomprador{
     height: 100%;
@@ -104,10 +104,10 @@ body {
     height: 65px;
 }
 .cajaresultado{
-    height: 70%;
+    height: 60%;
     width: 100%;
     overflow: scroll;
-    float: left; 
+    float: left;
 }
 .dentrode{
     width: 90%;
@@ -115,7 +115,7 @@ body {
     background: #dadada;
     color: #000;
     margin-bottom: 14%;
-    padding:5%; 
+    padding:5%;
 }
 .dentrode:hover{
     width: 90%;
@@ -123,7 +123,7 @@ body {
     background: #869791;
     color: #000;
     margin-bottom: 14%;
-    padding:5%; 
+    padding:5%;
 }
 .dentrode img{
     float: left;
@@ -134,7 +134,7 @@ body {
     position: relative;
     width: 50%;
     height: 70%;
-    margin-left: 11%; 
+    margin-left: 11%;
     padding-left: 35%;
     font-size: 20px;
 }
@@ -171,9 +171,9 @@ body {
 .comentariox{
     width: 100%;
     padding: 30px 10px;
-    display: box; 
+    display: box;
     box-orient:horizontal;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border: 1px solid black;
 }
 #comentario{
@@ -182,9 +182,9 @@ body {
     font-size: 25px;
     margin-bottom: 30px;
     padding: 10px 10px;
-    display: box; 
+    display: box;
     box-orient:horizontal;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border: 1px solid black;
 }
 .contienerespuestax{
@@ -194,9 +194,9 @@ body {
 .respuestax{
     width:100%;
     padding: 20px 10px;
-    display: box; 
+    display: box;
     box-orient:horizontal;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     float: right;
     background: #dadada;
     position: relative;
@@ -223,7 +223,7 @@ body {
     font-size: 200%;
     padding: 5px;
     background: #dadada;
-    display: box; 
+    display: box;
     box-orient:horizontal;
     box-sizing: border-box;
 }
@@ -266,16 +266,16 @@ body {
 }
 .cajabusqueda #busq{
     width: 15% !important;
-    height: 80px;  
-    margin-left: 3%;  
+    height: 80px;
+    margin-left: 3%;
 }
 .cajabusqueda #departamento{
     width: 100% !important;
-    height: 80px;   
+    height: 80px;
 }
 .cajabusqueda #busq:hover,.cajabusqueda #busq:active,.cajabusqueda #busq:focus{
     width: 15% !important;
-    height: 80px;    
+    height: 80px;
 }
 #formularionuevoproducto textarea{
     width: 100%;
@@ -302,7 +302,7 @@ body {
     margin-bottom: 20%;
     background: #dadada;
     font-size: 150%;
-    display: box; 
+    display: box;
     box-orient:horizontal;
     padding-bottom: 60px;
     padding-left: 10px;
@@ -311,7 +311,7 @@ body {
     width: 90%;
     background: #fafafa;
     font-size: 150%;
-    display: box; 
+    display: box;
     box-orient:horizontal;
     padding-bottom: 60px;
     padding-left: 10px;
@@ -501,9 +501,9 @@ body {
     margin-top:100px;
     float: left;
     border: 2px solid grey;
-    margin-left: 7.5%;   
+    margin-left: 7.5%;
 }
- 
+
 .cajaperfil #botonmod{
     width: 100%;
     height: 15% !important;
@@ -587,7 +587,7 @@ body {
 .datop{
     margin-top: 2px;
     font-size: 16px;
-    color: grey; 
+    color: grey;
 }
 .imagenpublicacion{
     width: 45%;
@@ -624,7 +624,7 @@ body {
     margin-top:100px;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario{
     position: fixed;
@@ -634,7 +634,7 @@ body {
     margin-top:16%;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario label{
     width: 100%;
@@ -840,7 +840,7 @@ body {
     font-size: 280%;
     padding-top: 5px;
     padding-left: 5%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border:none;
 }
 #busqueda:focus{
@@ -861,7 +861,7 @@ body {
     font-size: 200%;
     padding-top: 5px;
     padding-left: 2%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border:none;
     border-radius: 5%
 }
@@ -873,7 +873,7 @@ body {
     font-size: 200%;
     padding-top: 5px;
     padding-left: 2%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border:none;
     border-radius: 5%
 }
@@ -890,7 +890,7 @@ body {
     margin-bottom: 10% !important;
     overflow: scroll;
     height: 100% !important;
-    overflow-x:hidden; 
+    overflow-x:hidden;
     padding-bottom: 190px;
 }
 label{
@@ -1014,20 +1014,20 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
     display: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (max-width: 768px) and (max-width: 959px) {
 
 }
 
@@ -1039,7 +1039,7 @@ h1 {
 
 /* Note: Design for a width of 480px */
 
-@media only screen and (min-width: 300px) and (max-width: 767px) { 
+@media only screen and (max-width: 300px) and (max-width: 767px) {
 .terminos{
     background: none !important;
     padding-left: 10% !important;
@@ -1048,7 +1048,7 @@ h1 {
     overflow: scroll;
     height: 100% !important;
     padding-bottom: 190px;
-} 
+}
 
 .cajaccion article{
     height: 15%;
@@ -1088,7 +1088,7 @@ h1 {
     margin-top:100px;
     float: left;
     border: 2px solid grey;
-    margin-left: 7.5%;   
+    margin-left: 7.5%;
 }
 .datoperfil{
     width: 100%;
@@ -1105,7 +1105,7 @@ h1 {
 .datop{
     margin-top: 2px;
     font-size: 14px !important;
-    color: grey; 
+    color: grey;
 }
 }
 @media only screen and (max-height: 550px) and (max-width: 1500px) {
@@ -1168,7 +1168,7 @@ h1 {
     margin-top:100px;
     float: left;
     border: 2px solid grey;
-    margin-left: 7.5%;   
+    margin-left: 7.5%;
 }
 .datoperfil{
     width: 100%;
@@ -1185,7 +1185,7 @@ h1 {
 .datop{
     margin-top: 2px;
     font-size: 10px !important;
-    color: grey; 
+    color: grey;
 }
 .cajaccion article{
     height: 17%;
@@ -1300,7 +1300,7 @@ label{
 }
 }
 
-@media only screen and (min-height: 1800px) and (min-width: 1000px) {
+@media only screen and (min-height: 1800px) and (max-width: 1000px) {
 .infromacion{
     font-size: 300%;
 }
@@ -1330,7 +1330,7 @@ label{
     margin-top:180px;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario{
     position: fixed;
@@ -1340,7 +1340,7 @@ label{
     margin-top:16%;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario label{
     width: 100%;
@@ -1404,7 +1404,7 @@ label{
     border: none !important;
     background:#f29200 !important;
 }
-.btn-danger{    
+.btn-danger{
     border: none !important;
     background:#e20612 !important;
     margin-bottom: 60px !important;
@@ -1648,7 +1648,7 @@ label{
     font-size: 370%;
     padding-top: 5px;
     padding-left: 5%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border:none;
 }
 #busqueda:focus{
@@ -1668,7 +1668,7 @@ label{
     margin-top:200px;
     float: left;
     border: 2px solid grey;
-    margin-left: 7.5%;   
+    margin-left: 7.5%;
 }
 .datoperfil{
     width: 100%;
@@ -1685,10 +1685,10 @@ label{
 .datop{
     margin-top: 2px;
     font-size: 38px !important;
-    color: grey; 
+    color: grey;
 }
 }
-@media only screen and (min-height: 1000px) and (min-width: 1800px) {
+@media only screen and (max-height: 1000px) and (min-width: 1800px) {
 
 .datoperfil{
     width: 100%;
@@ -1705,7 +1705,7 @@ label{
 .datop{
     margin-top: 2px;
     font-size: 38px !important;
-    color: grey; 
+    color: grey;
 }
 .cajapublica{
     position: fixed;
@@ -1715,7 +1715,7 @@ label{
     margin-top:180px;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario{
     position: fixed;
@@ -1725,7 +1725,7 @@ label{
     margin-top:16%;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 
 .publicacion{
@@ -1797,7 +1797,7 @@ label{
     margin-top:180px;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 .cajaformulario{
     position: fixed;
@@ -1807,7 +1807,7 @@ label{
     margin-top:16%;
     float: left;
     overflow: scroll;
-    margin-left: 2%;   
+    margin-left: 2%;
 }
 
 .cajaformulario label{
@@ -1870,7 +1870,7 @@ label{
     border: none !important;
     background:#f29200 !important;
 }
-.btn-danger{    
+.btn-danger{
     border: none !important;
     background:#e20612 !important;
     margin-bottom: 60px !important;
@@ -2115,7 +2115,7 @@ label{
     font-size: 370%;
     padding-top: 5px;
     padding-left: 5%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     border:none;
 }
 #busqueda:focus{
@@ -2135,7 +2135,7 @@ label{
     margin-top:200px;
     float: left;
     border: 2px solid grey;
-    margin-left: 7.5%;   
+    margin-left: 7.5%;
 }
 .datoperfil{
     width: 100%;
@@ -2152,7 +2152,7 @@ label{
 .datop{
     margin-top: 2px;
     font-size: 38px !important;
-    color: grey; 
+    color: grey;
 }
 }
 @media only screen and (max-height: 750px) and (max-width: 1300px) {
@@ -2161,6 +2161,3154 @@ label{
     margin-bottom: 50px;
 }
 }
+@media only screen and (min-height: 320px) and (max-width: 240px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:20px !important;
+}
+.cajaccion article{
+  font-size: 120% !important;
+}
+
+.cajaccion article:hover {
+  font-size: 120% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 140% !important;
+}
+header .menu2 {
+  margin: 40px auto !important;
+}
+header nav ul li a {
+  font-size: 100% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 40px;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 40px;
+  margin-left: 3%;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 40px !important;
+  margin-left: 3%;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 40px;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 50px;
+}
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 40px;
+}
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:12px !important;
+}
+.cajaccion label {
+  font-size: 16px !important;
+}
+}
+@media only screen and (max-height: 240px) and (min-width: 320px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:20px !important;
+}
+.cajaccion article{
+  font-size: 140% !important;
+}
+
+.cajaccion article:hover {
+  font-size: 140% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 140% !important;
+}
+header .menu2 {
+  margin: 40px auto !important;
+}
+header nav ul li a {
+  font-size: 120% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 40px;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 40px;
+  margin-left: 3%;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 40px !important;
+  margin-left: 3%;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 40px;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 50px;
+}
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 40px;
+}
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:12px !important;
+}
+.cajaccion label {
+  font-size: 16px !important;
+}
+}
+
+
+@media only screen and (min-height: 480px) and (max-width: 320px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:30px !important;
+}
+.cajaccion article{
+  font-size: 180% !important;
+}
+
+.cajaccion article:hover {
+  font-size: 180% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 150% !important;
+}
+header .menu2 {
+  margin: 50px auto !important;
+}
+header nav ul li a {
+  font-size: 150% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+}
+
+@media only screen and (max-height: 320px) and (min-width: 480px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:30px !important;
+}
+.cajaccion article{
+  font-size: 180% !important;
+}
+
+.cajaccion article:hover {
+  font-size: 180% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 150% !important;
+}
+header .menu2 {
+  margin: 50px auto !important;
+}
+header nav ul li a {
+  font-size: 150% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 30px;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 30px;
+  margin-left: 3%;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 30px !important;
+  margin-left: 3%;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 30px;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 30px;
+}
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 30px;
+}
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:12px !important;
+}
+.cajaccion label {
+  font-size: 14px !important;
+}
+}
+
+@media only screen and (min-height: 960px) and (max-width: 640px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300%;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 260% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 100px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 75px;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 75px !important;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 75px;
+}
+.dentrode {
+  height: 27%;
+}
+.dentrode:hover {
+  height: 27%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:27px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+}
+
+@media only screen and (max-height: 640px) and (min-width: 960px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 400%;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 400% !important;
+}
+header .menu2 {
+  margin: 100px auto !important;
+}
+header nav ul li a {
+  font-size: 350% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 75px;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 75px !important;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 75px;
+}
+.dentrode {
+  height: 37%;
+}
+.dentrode:hover {
+  height: 37%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:27px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+}
+
+@media only screen and (min-height: 800px) and (max-width: 480px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 400% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:30px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 67px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:23px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+}
+
+@media only screen and (max-height: 480px) and (min-width: 800px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 400% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:45px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 67px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 45%;
+}
+.dentrode:hover {
+  height: 45%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:23px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+.cajaresultado {
+  height: 40%;
+}
+}
+
+@media only screen and (min-height: 960px) and (max-width: 540px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 35%;
+}
+.dentrode:hover {
+  height: 35%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 68%;
+}
+}
+
+@media only screen and (max-height: 540px) and (min-width: 960px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 35%;
+}
+.dentrode:hover {
+  height: 35%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 68%;
+}
+}
+
+@media only screen and (min-height: 1024px) and (max-width: 600px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 68%;
+}
+}
+
+
+@media only screen and (max-height: 600px) and (min-width: 1024px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 45%;
+}
+.dentrode:hover {
+  height: 45%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 60%;
+}
+}
+
+@media only screen and (min-height: 1136px) and (max-width: 640px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:55px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 340% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 340% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 68%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (max-height: 640px) and (min-width: 1136px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:55px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 60%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (min-height: 1024px) and (max-width: 768px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -100px;
+  font-size: 100% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:55px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 95px auto !important;
+}
+header nav ul li a {
+  font-size: 270% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (max-height: 768px) and (min-width: 1024px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -90px;
+  font-size: 370% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:55px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 400% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 400% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 350% !important;
+}
+header .menu2 {
+  margin: 95px auto !important;
+}
+header nav ul li a {
+  font-size: 300% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (min-height: 1280px) and (max-width: 720px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -50px;
+  font-size: 80% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:65px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 200% !important;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 200% !important;
+}
+#sesionon1 article {
+  height: 125px;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 120% !important;
+}
+header .menu2 {
+  margin: 155px auto !important;
+}
+header nav ul li a {
+  font-size: 80% !important;
+  margin-left: -5px;
+  text-align: center;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: -1% !important;
+}
+}
+
+@media only screen and (max-height: 720px) and (min-width: 1280px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -90px;
+  font-size: 380% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:60px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 400% !important;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 400% !important;
+}
+#sesionon1 article {
+  height: 125px;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 420% !important;
+}
+header .menu2 {
+  margin: 115px auto !important;
+}
+header nav ul li a {
+  font-size: 380% !important;
+  margin-left: -5px;
+  text-align: center;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2% !important;
+}
+}
+
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
 
+  .menu_bar {
+    position: fixed;
+    display: block;
+    float: left;
+    background-color: #f59c34;
+    width: 120%;
+    z-index: 1;
+    left: -5px;
+    height: 2%;
+    z-index: 90000;
+  }
+  .titulo {
+    margin-top: -90px;
+    font-size: 380% !important;
+  }
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 5px;
+    background: #f59c34;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:60px !important;
+  }
+  .cajaccion {
+    margin-top: 130px;
+  }
+  .cajaccion article{
+    padding-top: 26px;
+    font-size: 400% !important;
+  }
+  .cajaccion article:hover {
+    padding-top: 26px;
+    font-size: 400% !important;
+  }
+  #sesionon1 article {
+    height: 125px;
+  }
+  header nav ul li h1 {
+    margin: 20px -10px !important;
+    font-size: 420% !important;
+  }
+  header .menu2 {
+    margin: 115px auto !important;
+  }
+  header nav ul li a {
+    font-size: 380% !important;
+    margin-left: -5px;
+    text-align: center;
+  }
+  /*Buscar*/
+  .cajabusqueda #busqueda {
+    width: 80% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+    width: 80% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busq {
+    width: 15% !important;
+    height: 85px;
+    margin-left: 3%;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+    width: 15% !important;
+    height: 85px !important;
+    margin-left: 3%;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #departamento {
+    width: 100% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  input #busqueda {
+    width: 80% !important;
+    height: 85px;
+  }
+  .dentrode {
+    height: 30%;
+  }
+  .dentrode:hover {
+    height: 30%;
+  }
+  .partedos {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin-left: 11%;
+    padding-left: 35%;
+  }
+  .precio{
+  font-size:35px !important;
+  }
+  .cajaccion label {
+    font-size: 40px !important;
+    margin-bottom: 7px;
+  }
+  .cajaresultado {
+    height: 67%;
+  }
+  .cajabusqueda {
+    width: 100% !important;
+    display: box;
+    box-orient: horizontal;
+    margin-top: 2% !important;
+  }
+}
+
+@media only screen and (max-height: 640px) and (min-width: 1136px) {
+
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 2%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -90px;
+      font-size: 380% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:60px !important;
+    }
+    .cajaccion {
+      margin-top: 130px;
+    }
+    .cajaccion article{
+      padding-top: 26px;
+      font-size: 400% !important;
+    }
+    .cajaccion article:hover {
+      padding-top: 26px;
+      font-size: 400% !important;
+    }
+    #sesionon1 article {
+      height: 125px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 420% !important;
+    }
+    header .menu2 {
+      margin: 115px auto !important;
+    }
+    header nav ul li a {
+      font-size: 380% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 85px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 85px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 85px;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 85px !important;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 85px;
+      font-size: 40px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 85px;
+    }
+    .dentrode {
+      height: 40%;
+    }
+    .dentrode:hover {
+      height: 40%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:35px !important;
+    }
+    .cajaccion label {
+      font-size: 40px !important;
+      margin-bottom: 7px;
+    }
+    .cajaresultado {
+      height: 67%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+}
+@media only screen and (min-height: 1280px) and (max-width: 800px) {
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 2%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -90px;
+      font-size: 95% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:60px !important;
+    }
+    .cajaccion {
+      margin-top: 130px;
+    }
+    .cajaccion article{
+      padding-top: 26px;
+      font-size: 200% !important;
+    }
+    .cajaccion article:hover {
+      padding-top: 26px;
+      font-size: 200% !important;
+    }
+    #sesionon1 article {
+      height: 125px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 120% !important;
+    }
+    header .menu2 {
+      margin: 135px auto !important;
+    }
+    header nav ul li a {
+      font-size: 100% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 95px;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 95px !important;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 95px;
+    }
+    .dentrode {
+      height: 36%;
+    }
+    .dentrode:hover {
+      height: 36%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:40px !important;
+    }
+    .cajaccion label {
+      font-size: 50px !important;
+      margin-bottom: 7px;
+    }
+    .cajaresultado {
+      height: 66%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+}
+
+@media only screen and (max-height: 800px) and (min-width: 1280px) {
+
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 2%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -90px;
+      font-size: 380% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:60px !important;
+    }
+    .cajaccion {
+      margin-top: 130px;
+    }
+    .cajaccion article{
+      padding-top: 26px;
+      font-size: 400% !important;
+    }
+    .cajaccion article:hover {
+      padding-top: 26px;
+      font-size: 400% !important;
+    }
+    #sesionon1 article {
+      height: 125px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 420% !important;
+    }
+    header .menu2 {
+      margin: 115px auto !important;
+    }
+    header nav ul li a {
+      font-size: 380% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+}
+
+
+@media only screen and (min-height: 1920px) and (max-width: 1200px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -160px !important;
+      font-size: 120% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 140px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 300% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 300% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 140% !important;
+    }
+    header .menu2 {
+      margin: 187px auto !important;
+    }
+    header nav ul li a {
+      font-size: 140% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:65px !important;
+    }
+    .cajaccion label {
+      font-size: 80px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 66%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+}
+
+
+@media only screen and (max-height: 1200px) and (min-width: 1920px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -160px !important;
+      font-size: 120% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 140px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 300% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 300% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 150% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 140% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 155px;
+      margin-left: 3%;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 155px !important;
+      margin-left: 3%;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 155px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:65px !important;
+    }
+    .cajaccion label {
+      font-size: 80px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 63%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+}
+
+@media only screen and (min-height: 1920px) and (max-width: 1080px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -160px !important;
+      font-size: 120% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 140px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 300% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 300% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 150% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 140% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-height: 1080px) and (min-width: 1920px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -160px !important;
+      font-size: 620% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 240px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 600% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 600% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 550% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 540% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 155px;
+      margin-left: 3%;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 155px !important;
+      margin-left: 3%;
+      font-size: 70px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 155px;
+      font-size: 70px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 155px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:65px !important;
+    }
+    .cajaccion label {
+      font-size: 80px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 60%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+}
+
+@media only screen and (min-height: 2048px) and (max-width: 1536px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -170px !important;
+      font-size: 160% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 240px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 340% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 340% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 150% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 140% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+}
+
+@media only screen and (max-height: 1536px) and (min-width: 2048px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -170px !important;
+      font-size: 150% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 240px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 440% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 440% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 250% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 240% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+}
+
+@media only screen and (min-height: 2560px) and (max-width: 1600px) {
+
+    .menu_bar .bt-menu:active {
+      font-size: 150px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -220px !important;
+      font-size: 150% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:150px !important;
+    }
+    .cajaccion {
+      margin-top: 390px !important;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 440% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 440% !important;
+    }
+    #sesionon1 article {
+      height: 265px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 170% !important;
+    }
+    header .menu2 {
+      margin: 317px auto !important;
+    }
+    header nav ul li a {
+      font-size: 170% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size: 300% !important;
+      padding: 25px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 20% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 90px !important;
+    }
+}
+
+@media only screen and (max-height: 1600px) and (min-width: 2560px) {
+    .menu_bar .bt-menu:active {
+      font-size: 150px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -220px !important;
+      font-size: 150% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:150px !important;
+    }
+    .cajaccion {
+      margin-top: 390px !important;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 440% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 440% !important;
+    }
+    #sesionon1 article {
+      height: 265px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 170% !important;
+    }
+    header .menu2 {
+      margin: 317px auto !important;
+    }
+    header nav ul li a {
+      font-size: 170% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          font-size: 300% !important;
+          padding: 25px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 16% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 80px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          width: 50%;
+          margin-left: 25%;
+          height: 100%;
+        }
 }

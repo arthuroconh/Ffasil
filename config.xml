@@ -41,6 +41,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="net.yoik.cordova.plugins.screenorientation" version="0.0.2" />
     <feature name="Storage">
         <param name="android-package" value="org.apache.cordova.Storage" />
     </feature>

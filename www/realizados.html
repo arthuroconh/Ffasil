@@ -38,18 +38,18 @@
       document.addEventListener("deviceready", onDeviceReady, false);
       function onDeviceReady() {
         //DIV DEL MENU
-        menuDiv = document.querySelector("#menu"); 
+        menuDiv = document.querySelector("#menu");
         //BOTON MENU ANDROID
-        document.addEventListener("menubutton", onMenuKeyDown, false);  
+        document.addEventListener("menubutton", onMenuKeyDown, false);
         //BOTON ATRAS ANDROID
-        document.addEventListener("backbutton", onBackKeyDown, false);    
-        
-      }  
-      
+        document.addEventListener("backbutton", onBackKeyDown, false);
+
+      }
+
       //BOTON MENU
       var menuOpen = true;
       var menuDiv = "";
-      
+
       function onMenuKeyDown() {
         if(menuOpen) {
                     console.log("close the menu");
@@ -62,17 +62,17 @@
                 }
       }
       //FIN BOTON MENU
-      
+
       //BOTON ATRAS ANDROID
       function onBackKeyDown(){
         //if($.mobile.activePage.attr('id') == 'home'){ // PARA AÑADIR MAS USAR SEPARADORES "||"
          // navigator.notification.confirm(
-         // '¿Salir de la aplicación?', 
+         // '¿Salir de la aplicación?',
          // function(button) {
          //   if (button == 2) {
          //     navigator.app.exitApp();
         //    }
-        //  }, 
+        //  },
         //  'Salir', 'No,Si');return false;
       //  }
       //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
@@ -86,7 +86,7 @@
         <script type="text/javascript">
             var jj= [];
           $(document).ready(function(){
-            
+
             usuario = window.localStorage.getItem("usuario");
             clave = window.localStorage.getItem("id");
               $("#idusuario").val(clave);
@@ -95,7 +95,7 @@
               $('#sesionoff').fadeIn(800);
               $("#sesionoff").removeClass("escondido");
               $("#sesionoff").addClass("visible");
-            }else{         
+            }else{
               $('#sesionon').fadeIn(800);
               $("#sesionon").removeClass("escondido");
               $("#sesionon").addClass("visible");
@@ -106,26 +106,26 @@
                   var dat =$('#fo').serialize();
                                               $("#cargando").addClass('visible');
                                               $("#cargando").removeClass('escondido');
-                                      $.ajax({ 
+                                      $.ajax({
                                         url:'http://desarrollotricolor.com.ve/ffasil/realizados.php',
-                                        type:'POST', 
-                                        data:dat, 
-                                        dataType:'json', 
+                                        type:'POST',
+                                        data:dat,
+                                        dataType:'json',
                                         error:function(jqXHR,text_status,strError){
-                                        }, 
-                                        success:function(data){ 
+                                        },
+                                        success:function(data){
                                             for (i=0;i<data.length;i++){
                                             $("#comentrioid").val(data[i]);
                                               var datd =$('#fo').serialize();
 
-                                                    $.ajax({ 
+                                                    $.ajax({
                                                       url:'http://desarrollotricolor.com.ve/ffasil/ralizadodatos.php',
-                                                      type:'POST', 
-                                                      data:datd, 
-                                                      dataType:'json', 
+                                                      type:'POST',
+                                                      data:datd,
+                                                      dataType:'json',
                                                       error:function(jqXHR,text_status,strError){
-                                                      }, 
-                                                      success:function(datos){ 
+                                                      },
+                                                      success:function(datos){
                                                         $("#reputa").addClass('escondido');
                                                         $("#reputacom").addClass('escondido');
                                                         $("#cargando").addClass('escondido');
@@ -141,7 +141,7 @@
                                                       }
                                                       });
                                             }
-                                        } 
+                                        }
                                     });
             }
           }
@@ -161,56 +161,109 @@
           <div class="menu_bar">
               <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Comentarios</center>
           </div>
-   
-          <nav class="menu2">
-              <ul>
-                  <li><h1><span class="icon-house"></span>Categor&iacute;as</h1></li>
-                  <li><a href="dos.html"><span class="icon-house"></span>Accesorios para veh&iacute;culos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Aeron&aacute;utica</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Agropecuaria y Campo</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Alimentos y Bebidas</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Animales y Mascotas</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Arte y Antigüedades</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Art&iacute;culos militares y de seguridad</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>C&aacute;maras y accesorios</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Celulares y Accesorios</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Computaci&oacute;n</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Consolas y videojuegos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Deportes y Fitness</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Electrodom&eacute;sticos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Electr&oacute;nicos, audio y video</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Entretenimiento y Ocio</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Equipamiento Industrial</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Inmuebles, bienes ra&iacute;ces</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Instrumentos Musicales</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Inversiones y Negocios</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Joyas y Relojes</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Juegos y juguetes</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Materiales de Construcci&oacute;n</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Motocicletas</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Música y Videos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Niños</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Restaurantes y Locales</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Salud y Belleza</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Veh&iacute;culos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Vestimenta y Moda</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Viajes y Turismo</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Otros</a></li>
-                  <li><h1><span class="icon-house"></span>Servicios</h1></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Belleza y Cuidado Personal</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Clases y Capacitaciones</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Fiestas y Eventos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Importaciones</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Imprenta y Letreros</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Mantenimiento del Hogar</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Mantenimiento Veh&iacute;culos</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Servicio T&eacute;cnico</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Transporte y Mudanzas</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Viajes</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span>Otros</a></li>
-                  <li><a href="#"><span class="icon-suitcase"></span></a></li>
-              </ul>
-          </nav>
+
+                              <nav class="menu2">
+                              <script type="text/javascript">
+                              function cerrarsesion() {
+                               localStorage.clear();
+                                                  location.href="index.html";
+                              }
+                              function buscar(busqueda) {
+                                var objeto = $('#buscar'+busqueda).val();
+                                window.localStorage.setItem("ultimabusqueda", objeto);
+                                location.href="buscar.html";
+                              }
+                              </script>
+                                  <ul>
+                                      <li><h1><span class="icon-house"></span>Categor&iacute;as</h1></li>
+                                      <li><a href="#" onclick="buscar(1);"><span class="icon-house"></span>Accesorios para veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(2);"><span class="icon-suitcase"></span>Aeron&aacute;utica</a></li>
+                                      <li><a href="#" onclick="buscar(3);"><span class="icon-suitcase"></span>Agropecuaria y Campo</a></li>
+                                      <li><a href="#" onclick="buscar(4);"><span class="icon-suitcase"></span>Alimentos y Bebidas</a></li>
+                                      <li><a href="#" onclick="buscar(5);"><span class="icon-suitcase"></span>Animales y Mascotas</a></li>
+                                      <li><a href="#" onclick="buscar(6);"><span class="icon-suitcase"></span>Arte y Antigüedades</a></li>
+                                      <li><a href="#" onclick="buscar(7);"><span class="icon-suitcase"></span>Art&iacute;culos militares y de seguridad</a></li>
+                                      <li><a href="#" onclick="buscar(8);"><span class="icon-suitcase"></span>C&aacute;maras y accesorios</a></li>
+                                      <li><a href="#" onclick="buscar(9);"><span class="icon-suitcase"></span>Celulares y Accesorios</a></li>
+                                      <li><a href="#" onclick="buscar(10);"><span class="icon-suitcase"></span>Computaci&oacute;n</a></li>
+                                      <li><a href="#" onclick="buscar(11);"><span class="icon-suitcase"></span>Consolas y videojuegos</a></li>
+                                      <li><a href="#" onclick="buscar(12);"><span class="icon-suitcase"></span>Deportes y Fitness</a></li>
+                                      <li><a href="#" onclick="buscar(13);"><span class="icon-suitcase"></span>Electrodom&eacute;sticos</a></li>
+                                      <li><a href="#" onclick="buscar(14);"><span class="icon-suitcase"></span>Electr&oacute;nicos, audio y video</a></li>
+                                      <li><a href="#" onclick="buscar(15);"><span class="icon-suitcase"></span>Entretenimiento y Ocio</a></li>
+                                      <li><a href="#" onclick="buscar(16);"><span class="icon-suitcase"></span>Equipamiento Industrial</a></li>
+                                      <li><a href="#" onclick="buscar(17);"><span class="icon-suitcase"></span>Inmuebles, bienes ra&iacute;ces</a></li>
+                                      <li><a href="#" onclick="buscar(18);"><span class="icon-suitcase"></span>Instrumentos Musicales</a></li>
+                                      <li><a href="#" onclick="buscar(19);"><span class="icon-suitcase"></span>Inversiones y Negocios</a></li>
+                                      <li><a href="#" onclick="buscar(20);"><span class="icon-suitcase"></span>Joyas y Relojes</a></li>
+                                      <li><a href="#" onclick="buscar(21);"><span class="icon-suitcase"></span>Juegos y juguetes</a></li>
+                                      <li><a href="#" onclick="buscar(22);"><span class="icon-suitcase"></span>Materiales de Construcci&oacute;n</a></li>
+                                      <li><a href="#" onclick="buscar(23);"><span class="icon-suitcase"></span>Motocicletas</a></li>
+                                      <li><a href="#" onclick="buscar(24);"><span class="icon-suitcase"></span>Música y Videos</a></li>
+                                      <li><a href="#" onclick="buscar(25);"><span class="icon-suitcase"></span>Ni&ntilde;os</a></li>
+                                      <li><a href="#" onclick="buscar(26);"><span class="icon-suitcase"></span>Restaurantes y Locales</a></li>
+                                      <li><a href="#" onclick="buscar(27);"><span class="icon-suitcase"></span>Salud y Belleza</a></li>
+                                      <li><a href="#" onclick="buscar(28);"><span class="icon-suitcase"></span>Veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(29);"><span class="icon-suitcase"></span>Vestimenta y Moda</a></li>
+                                      <li><a href="#" onclick="buscar(30);"><span class="icon-suitcase"></span>Viajes y Turismo</a></li>
+                                      <li><a href="#" onclick="buscar(31);"><span class="icon-suitcase"></span>Otros</a></li>
+                                      <li><h1><span class="icon-house"></span>Servicios</h1></li>
+                                      <li><a href="#" onclick="buscar(32);"><span class="icon-suitcase"></span>Belleza y Cuidado Personal</a></li>
+                                      <li><a href="#" onclick="buscar(33);"><span class="icon-suitcase"></span>Clases y Capacitaciones</a></li>
+                                      <li><a href="#" onclick="buscar(34);"><span class="icon-suitcase"></span>Fiestas y Eventos</a></li>
+                                      <li><a href="#" onclick="buscar(35);"><span class="icon-suitcase"></span>Importaciones</a></li>
+                                      <li><a href="#" onclick="buscar(36);"><span class="icon-suitcase"></span>Imprenta y Letreros</a></li>
+                                      <li><a href="#" onclick="buscar(37);"><span class="icon-suitcase"></span>Mantenimiento del Hogar</a></li>
+                                      <li><a href="#" onclick="buscar(38);"><span class="icon-suitcase"></span>Mantenimiento Veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(39);"><span class="icon-suitcase"></span>Servicio T&eacute;cnico</a></li>
+                                      <li><a href="#" onclick="buscar(40);"><span class="icon-suitcase"></span>Transporte y Mudanzas</a></li>
+                                      <li><a href="#" onclick="buscar(41);"><span class="icon-suitcase"></span>Viajes</a></li>
+                                      <li><a href="#" onclick="buscar(42);"><span class="icon-suitcase"></span>Otros</a></li>
+                                      <li><a href="#" onclick="buscar();"><span class="icon-suitcase"></span></a></li>
+                                  </ul>
+                                  <input value="Accesorios&nbsp;para&nbsp;veh&iacute;culos" type="button" id="buscar1" class="escondido">
+                                  <input value="Aeron&aacute;utica" type="button" id="buscar2" class="escondido">
+                                  <input value="Agropecuaria&nbsp;y&nbsp;Campo" type="button" id="buscar3" class="escondido">
+                                  <input value="Alimentos&nbsp;y&nbsp;Bebidas" type="button" id="buscar4" class="escondido">
+                                  <input value="Animales&nbsp;y&nbsp;Mascotas" type="button" id="buscar5" class="escondido">
+                                  <input value="Arte&nbsp;y&nbsp;Antigüedades" type="button" id="buscar6" class="escondido">
+                                  <input value="Art&iacute;culos&nbsp;militares&nbsp;y&nbsp;de&nbsp;seguridad" type="button" id="buscar7" class="escondido">
+                                  <input value="C&aacute;maras&nbsp;y&nbsp;accesorios" type="button" id="buscar8" class="escondido">
+                                  <input value="Celulares&nbsp;y&nbsp;Accesorios" type="button" id="buscar9" class="escondido">
+                                  <input value="Computaci&oacute;n" type="button" id="buscar10" class="escondido">
+                                  <input value="Consolas&nbsp;y&nbsp;videojuegos" type="button" id="buscar11" class="escondido">
+                                  <input value="Deportes&nbsp;y&nbsp;Fitness" type="button" id="buscar12" class="escondido">
+                                  <input value="Electrodom&eacute;sticos" type="button" id="buscar13" class="escondido">
+                                  <input value="Electr&oacute;nicos,&nbsp;audio&nbsp;y&nbsp;video" type="button" id="buscar14" class="escondido">
+                                  <input value="Entretenimiento&nbsp;y&nbsp;Ocio" type="button" id="buscar15" class="escondido">
+                                  <input value="Equipamiento&nbsp;Industrial" type="button" id="buscar16" class="escondido">
+                                  <input value="Inmuebles,&nbsp;bienes&nbsp;ra&iacute;ces" type="button" id="buscar17" class="escondido">
+                                  <input value="Instrumentos&nbsp;Musicales" type="button" id="buscar18" class="escondido">
+                                  <input value="Inversiones&nbsp;y&nbsp;Negocios" type="button" id="buscar19" class="escondido">
+                                  <input value="Joyas&nbsp;y&nbsp;Relojes" type="button" id="buscar20" class="escondido">
+                                  <input value="Juegos&nbsp;y&nbsp;juguetes" type="button" id="buscar21" class="escondido">
+                                  <input value="Materiales&nbsp;de&nbsp;Construcci&oacute;n" type="button" id="buscar22" class="escondido">
+                                  <input value="Motocicletas" type="button" id="buscar23" class="escondido">
+                                  <input value="Música&nbsp;y&nbsp;Videos" type="button" id="buscar24" class="escondido">
+                                  <input value="Ni&ntilde;os" type="button" id="buscar25" class="escondido">
+                                  <input value="Restaurantes&nbsp;y&nbsp;Locales" type="button" id="buscar26" class="escondido">
+                                  <input value="Salud&nbsp;y&nbsp;Belleza" type="button" id="buscar27" class="escondido">
+                                  <input value="Veh&iacute;culos" type="button" id="buscar28" class="escondido">
+                                  <input value="Vestimenta&nbsp;y&nbsp;Moda" type="button" id="buscar29" class="escondido">
+                                  <input value="Viajes&nbsp;y&nbsp;Turismo" type="button" id="buscar30" class="escondido">
+                                  <input value="Otros" type="button" id="buscar31" class="escondido">
+                                  <input value="Belleza&nbsp;y&nbsp;Cuidado Personal" type="button" id="buscar32" class="escondido">
+                                  <input value="Clases&nbsp;y&nbsp;Capacitaciones" type="button" id="buscar33" class="escondido">
+                                  <input value="Fiestas&nbsp;y&nbsp;Eventos" type="button" id="buscar34" class="escondido">
+                                  <input value="Importaciones" type="button" id="buscar35" class="escondido">
+                                  <input value="Imprenta&nbsp;y&nbsp;Letreros" type="button" id="buscar36" class="escondido">
+                                  <input value="Mantenimiento&nbsp;del&nbsp;Hogar" type="button" id="buscar37" class="escondido">
+                                  <input value="Mantenimiento&nbsp;Veh&iacute;culos" type="button" id="buscar38" class="escondido">
+                                  <input value="Servicio&nbsp;T&eacute;cnico" type="button" id="buscar39" class="escondido">
+                                  <input value="Transporte&nbsp;y&nbsp;Mudanzas" type="button" id="buscar40" class="escondido">
+                                  <input value="Viajes" type="button" id="buscar41" class="escondido">
+                                  <input value="Otros" type="button" id="buscar42" class="escondido">
+                              </nav>
         </header>
         <div style="clear:booth"></div>
         <div id="cargando" class="escondido">

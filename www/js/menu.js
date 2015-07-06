@@ -1,10 +1,10 @@
 $(document).ready(main);
- 
+
 var contador = 1;
 function main(){
 	$('.menu_bar').click(function(){
-		// $('nav').toggle(); 
- 	
+		// $('nav').toggle();
+
 		if(contador == 1){
 			$('.cerrador').css("display","block");
 			$('.menu2').animate({
@@ -23,9 +23,9 @@ function main(){
 			$('.cerrador').animate({
 				right: '-100%'
 			});
-			
+
 			$('.cerrador').css("display","none");
-		} 
+		}
 	});
 	$('.cerrador').click(function(){
 		if(contador == 1){
@@ -46,7 +46,7 @@ function main(){
 				right: '-100%'
 			});
 			$('.cerrador').css("display","none");
-		} 
+		}
 	});
- 
+
 };
