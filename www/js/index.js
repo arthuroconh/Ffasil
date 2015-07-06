@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         // set to either landscape
-        screen.lockOrientation('landscape');
+        screen.lockOrientation('portrait');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
