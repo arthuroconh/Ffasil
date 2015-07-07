@@ -2246,94 +2246,29 @@ font-size:12px !important;
 .cajaccion label {
   font-size: 16px !important;
 }
-}
-@media only screen and (max-height: 240px) and (min-width: 320px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:20px !important;
-}
-.cajaccion article{
-  font-size: 140% !important;
-}
 
-.cajaccion article:hover {
-  font-size: 140% !important;
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:110% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 17px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 140% !important;
-}
-header .menu2 {
-  margin: 40px auto !important;
-}
-header nav ul li a {
-  font-size: 120% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 40px;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 40px;
-  margin-left: 3%;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 40px !important;
-  margin-left: 3%;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 40px;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 50px;
-}
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 40px;
-}
-.dentrode {
-  height: 33%;
-}
-.dentrode:hover {
-  height: 33%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:12px !important;
-}
-.cajaccion label {
-  font-size: 16px !important;
-}
-}
-
 
 @media only screen and (min-height: 480px) and (max-width: 320px) {
 .menu_bar {
@@ -2381,95 +2316,28 @@ header nav ul li a {
 .dentrode:hover {
   height: 33%;
 }
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:130% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 17px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
-
-@media only screen and (max-height: 320px) and (min-width: 480px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:30px !important;
-}
-.cajaccion article{
-  font-size: 180% !important;
-}
-
-.cajaccion article:hover {
-  font-size: 180% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 150% !important;
-}
-header .menu2 {
-  margin: 50px auto !important;
-}
-header nav ul li a {
-  font-size: 150% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 30px;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 30px;
-  margin-left: 3%;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 30px !important;
-  margin-left: 3%;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 30px;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 30px;
-}
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 30px;
-}
-.dentrode {
-  height: 33%;
-}
-.dentrode:hover {
-  height: 33%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:12px !important;
-}
-.cajaccion label {
-  font-size: 14px !important;
-}
-}
-
 @media only screen and (min-height: 960px) and (max-width: 640px) {
 .menu_bar {
   position: fixed;
@@ -2571,109 +2439,27 @@ font-size:27px !important;
 .cajaccion label {
   font-size: 28px !important;
 }
-}
-
-@media only screen and (max-height: 640px) and (min-width: 960px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 400%;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:50px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 400% !important;
-}
-header .menu2 {
-  margin: 100px auto !important;
-}
-header nav ul li a {
-  font-size: 350% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 75px;
-  font-size: 35px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 75px;
-  font-size: 35px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 75px;
-  margin-left: 3%;
-  font-size: 35px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 75px !important;
-  margin-left: 3%;
-  font-size: 35px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 75px;
-  font-size: 35px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 75px;
-}
-.dentrode {
-  height: 37%;
-}
-.dentrode:hover {
-  height: 37%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:27px !important;
-}
-.cajaccion label {
-  font-size: 28px !important;
-}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
 @media only screen and (min-height: 800px) and (max-width: 480px) {
@@ -2689,8 +2475,8 @@ font-size:27px !important;
   z-index: 90000;
 }
 .titulo {
-  margin-top: -80px;
-  font-size: 400% !important;
+  margin-top: -60px;
+  font-size: 260% !important;
 }
 .menu_bar .bt-menu {
   display: block;
@@ -2777,112 +2563,27 @@ font-size:23px !important;
 .cajaccion label {
   font-size: 28px !important;
 }
-}
-
-@media only screen and (max-height: 480px) and (min-width: 800px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 400% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:45px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 300% !important;
-}
-header .menu2 {
-  margin: 67px auto !important;
-}
-header nav ul li a {
-  font-size: 250% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 65px;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 65px !important;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 65px;
-}
-.dentrode {
-  height: 45%;
-}
-.dentrode:hover {
-  height: 45%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:23px !important;
-}
-.cajaccion label {
-  font-size: 28px !important;
-}
-.cajaresultado {
-  height: 40%;
-}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
 @media only screen and (min-height: 960px) and (max-width: 540px) {
@@ -2990,115 +2691,28 @@ font-size:28px !important;
 .cajaresultado {
   height: 68%;
 }
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
-
-@media only screen and (max-height: 540px) and (min-width: 960px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 300% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:50px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 300% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 300% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 300% !important;
-}
-header .menu2 {
-  margin: 78px auto !important;
-}
-header nav ul li a {
-  font-size: 250% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 65px;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 65px !important;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 65px;
-}
-.dentrode {
-  height: 35%;
-}
-.dentrode:hover {
-  height: 35%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:28px !important;
-}
-.cajaccion label {
-  font-size: 33px !important;
-  margin-bottom: 5px;
-}
-.cajaresultado {
-  height: 68%;
-}
-}
-
 @media only screen and (min-height: 1024px) and (max-width: 600px) {
 .menu_bar {
   position: fixed;
@@ -3204,115 +2818,29 @@ font-size:28px !important;
 .cajaresultado {
   height: 68%;
 }
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:300% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
-
-@media only screen and (max-height: 600px) and (min-width: 1024px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 300% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:50px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 300% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 300% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 300% !important;
-}
-header .menu2 {
-  margin: 78px auto !important;
-}
-header nav ul li a {
-  font-size: 250% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 65px;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 65px !important;
-  margin-left: 3%;
-  font-size: 30px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 65px;
-  font-size: 30px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 65px;
-}
-.dentrode {
-  height: 45%;
-}
-.dentrode:hover {
-  height: 45%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:28px !important;
-}
-.cajaccion label {
-  font-size: 33px !important;
-  margin-bottom: 5px;
-}
-.cajaresultado {
-  height: 60%;
-}
-}
 
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
 .menu_bar {
@@ -3425,119 +2953,28 @@ font-size:35px !important;
   box-orient: horizontal;
   margin-top: 2%;
 }
-}
-
-@media only screen and (max-height: 640px) and (min-width: 1136px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 300% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:55px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 380% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 300% !important;
-}
-header .menu2 {
-  margin: 78px auto !important;
-}
-header nav ul li a {
-  font-size: 250% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 85px;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 85px !important;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 85px;
-}
-.dentrode {
-  height: 30%;
-}
-.dentrode:hover {
-  height: 30%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:35px !important;
-}
-.cajaccion label {
-  font-size: 40px !important;
-  margin-bottom: 7px;
-}
-.cajaresultado {
-  height: 60%;
-}
-.cajabusqueda {
-  width: 100% !important;
-  display: box;
-  box-orient: horizontal;
-  margin-top: 2%;
-}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      margin-top: 5px;
+      font-size:300% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
 @media only screen and (min-height: 1024px) and (max-width: 768px) {
@@ -3554,7 +2991,7 @@ font-size:35px !important;
 }
 .titulo {
   margin-top: -100px;
-  font-size: 100% !important;
+  font-size: 250% !important;
 }
 .menu_bar .bt-menu {
   display: block;
@@ -3651,119 +3088,28 @@ font-size:35px !important;
   box-orient: horizontal;
   margin-top: 2%;
 }
-}
-
-@media only screen and (max-height: 768px) and (min-width: 1024px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -90px;
-  font-size: 370% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:55px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 400% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 400% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 350% !important;
-}
-header .menu2 {
-  margin: 95px auto !important;
-}
-header nav ul li a {
-  font-size: 300% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 85px;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 85px !important;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 85px;
-}
-.dentrode {
-  height: 30%;
-}
-.dentrode:hover {
-  height: 30%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:35px !important;
-}
-.cajaccion label {
-  font-size: 40px !important;
-  margin-bottom: 7px;
-}
-.cajaresultado {
-  height: 67%;
-}
-.cajabusqueda {
-  width: 100% !important;
-  display: box;
-  box-orient: horizontal;
-  margin-top: 2%;
-}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      margin-top: 5px;
+      font-size:300% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
 @media only screen and (min-height: 1280px) and (max-width: 720px) {
@@ -3807,13 +3153,13 @@ font-size:35px !important;
 }
 header nav ul li h1 {
   margin: 20px -10px !important;
-  font-size: 120% !important;
+  font-size: 320% !important;
 }
 header .menu2 {
-  margin: 155px auto !important;
+  margin: 105px auto !important;
 }
 header nav ul li a {
-  font-size: 80% !important;
+  font-size: 380% !important;
   margin-left: -5px;
   text-align: center;
 }
@@ -3878,120 +3224,28 @@ font-size:35px !important;
   box-orient: horizontal;
   margin-top: -1% !important;
 }
-}
-
-@media only screen and (max-height: 720px) and (min-width: 1280px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -90px;
-  font-size: 380% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:60px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 400% !important;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 400% !important;
-}
-#sesionon1 article {
-  height: 125px;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 420% !important;
-}
-header .menu2 {
-  margin: 115px auto !important;
-}
-header nav ul li a {
-  font-size: 380% !important;
-  margin-left: -5px;
-  text-align: center;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 85px;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 85px !important;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 85px;
-}
-.dentrode {
-  height: 30%;
-}
-.dentrode:hover {
-  height: 30%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:35px !important;
-}
-.cajaccion label {
-  font-size: 40px !important;
-  margin-bottom: 7px;
-}
-.cajaresultado {
-  height: 67%;
-}
-.cajabusqueda {
-  width: 100% !important;
-  display: box;
-  box-orient: horizontal;
-  margin-top: 2% !important;
-}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      margin-top: 9px;
+      font-size:320% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 20% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:42px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
 }
 
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
@@ -4009,7 +3263,7 @@ font-size:35px !important;
   }
   .titulo {
     margin-top: -90px;
-    font-size: 380% !important;
+    font-size: 300% !important;
   }
   .menu_bar .bt-menu {
     display: block;
@@ -4036,13 +3290,13 @@ font-size:35px !important;
   }
   header nav ul li h1 {
     margin: 20px -10px !important;
-    font-size: 420% !important;
+    font-size: 320% !important;
   }
   header .menu2 {
     margin: 115px auto !important;
   }
   header nav ul li a {
-    font-size: 380% !important;
+    font-size: 300% !important;
     margin-left: -5px;
     text-align: center;
   }
@@ -4107,122 +3361,30 @@ font-size:35px !important;
     box-orient: horizontal;
     margin-top: 2% !important;
   }
+      /*mostrarpublicacion*/
+      .titulopub {
+        width: 100%;
+        margin-top: 9px;
+        font-size:320% !important;
+        padding: 15px;
+      }
+      .botoneradespues input {
+        width: 100%;
+        height: 20% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 7%;
+        color: #fff;
+        font-size:42px !important;
+      }
+      .contienepublicacion {
+          overflow-y: scroll;
+      }
+      .contieneimagenpublicacion img {
+        margin-left: 5%;
+      }
 }
 
-@media only screen and (max-height: 640px) and (min-width: 1136px) {
-
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 2%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -90px;
-      font-size: 380% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:60px !important;
-    }
-    .cajaccion {
-      margin-top: 130px;
-    }
-    .cajaccion article{
-      padding-top: 26px;
-      font-size: 400% !important;
-    }
-    .cajaccion article:hover {
-      padding-top: 26px;
-      font-size: 400% !important;
-    }
-    #sesionon1 article {
-      height: 125px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
-      font-size: 420% !important;
-    }
-    header .menu2 {
-      margin: 115px auto !important;
-    }
-    header nav ul li a {
-      font-size: 380% !important;
-      margin-left: -5px;
-      text-align: center;
-    }
-    /*Buscar*/
-    .cajabusqueda #busqueda {
-      width: 80% !important;
-      height: 85px;
-      font-size: 40px  !important;
-    }
-    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-      width: 80% !important;
-      height: 85px;
-      font-size: 40px  !important;
-    }
-    .cajabusqueda #busq {
-      width: 15% !important;
-      height: 85px;
-      margin-left: 3%;
-      font-size: 40px  !important;
-    }
-    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-      width: 15% !important;
-      height: 85px !important;
-      margin-left: 3%;
-      font-size: 40px  !important;
-    }
-    .cajabusqueda #departamento {
-      width: 100% !important;
-      height: 85px;
-      font-size: 40px  !important;
-    }
-    input #busqueda {
-      width: 80% !important;
-      height: 85px;
-    }
-    .dentrode {
-      height: 40%;
-    }
-    .dentrode:hover {
-      height: 40%;
-    }
-    .partedos {
-      position: relative;
-      width: 50%;
-      height: 70%;
-      margin-left: 11%;
-      padding-left: 35%;
-    }
-    .precio{
-    font-size:35px !important;
-    }
-    .cajaccion label {
-      font-size: 40px !important;
-      margin-bottom: 7px;
-    }
-    .cajaresultado {
-      height: 67%;
-    }
-    .cajabusqueda {
-      width: 100% !important;
-      display: box;
-      box-orient: horizontal;
-      margin-top: 2% !important;
-    }
-}
 @media only screen and (min-height: 1280px) and (max-width: 800px) {
     .menu_bar {
       position: fixed;
@@ -4237,7 +3399,7 @@ font-size:35px !important;
     }
     .titulo {
       margin-top: -90px;
-      font-size: 95% !important;
+      font-size: 300% !important;
     }
     .menu_bar .bt-menu {
       display: block;
@@ -4264,13 +3426,13 @@ font-size:35px !important;
     }
     header nav ul li h1 {
       margin: 20px -10px !important;
-      font-size: 120% !important;
+      font-size: 320% !important;
     }
     header .menu2 {
-      margin: 135px auto !important;
+      margin: 115px auto !important;
     }
     header nav ul li a {
-      font-size: 100% !important;
+      font-size: 300% !important;
       margin-left: -5px;
       text-align: center;
     }
@@ -4335,62 +3497,29 @@ font-size:35px !important;
       box-orient: horizontal;
       margin-top: 2% !important;
     }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 9px;
+          font-size:370% !important;
+          padding: 15px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:42px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
 }
-
-@media only screen and (max-height: 800px) and (min-width: 1280px) {
-
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 2%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -90px;
-      font-size: 380% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:60px !important;
-    }
-    .cajaccion {
-      margin-top: 130px;
-    }
-    .cajaccion article{
-      padding-top: 26px;
-      font-size: 400% !important;
-    }
-    .cajaccion article:hover {
-      padding-top: 26px;
-      font-size: 400% !important;
-    }
-    #sesionon1 article {
-      height: 125px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
-      font-size: 420% !important;
-    }
-    header .menu2 {
-      margin: 115px auto !important;
-    }
-    header nav ul li a {
-      font-size: 380% !important;
-      margin-left: -5px;
-      text-align: center;
-    }
-}
-
 
 @media only screen and (min-height: 1920px) and (max-width: 1200px) {
     .menu_bar .bt-menu:active {
@@ -4409,7 +3538,7 @@ font-size:35px !important;
     }
     .titulo {
       margin-top: -160px !important;
-      font-size: 120% !important;
+      font-size: 420% !important;
     }
     .menu_bar .bt-menu {
       display: block;
@@ -4436,13 +3565,13 @@ font-size:35px !important;
     }
     header nav ul li h1 {
       margin: 20px -10px !important;
-      font-size: 140% !important;
+      font-size: 540% !important;
     }
     header .menu2 {
       margin: 187px auto !important;
     }
     header nav ul li a {
-      font-size: 140% !important;
+      font-size: 450% !important;
       margin-left: -5px;
       text-align: center;
     }
@@ -4507,125 +3636,31 @@ font-size:35px !important;
       box-orient: horizontal;
       margin-top: 2% !important;
     }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 120px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:72px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
 }
 
 
-@media only screen and (max-height: 1200px) and (min-width: 1920px) {
-    .menu_bar .bt-menu:active {
-      font-size: 100px !important;
-    }
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 5%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -160px !important;
-      font-size: 120% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:100px !important;
-    }
-    .cajaccion {
-      margin-top: 140px;
-    }
-    .cajaccion article{
-      padding-top: 56px;
-      font-size: 300% !important;
-    }
-    .cajaccion article:hover {
-      padding-top:56px;
-      font-size: 300% !important;
-    }
-    #sesionon1 article {
-      height: 225px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
-      font-size: 150% !important;
-    }
-    header .menu2 {
-      margin: 207px auto !important;
-    }
-    header nav ul li a {
-      font-size: 140% !important;
-      margin-left: -5px;
-      text-align: center;
-    }
-    /*Buscar*/
-    .cajabusqueda #busqueda {
-      width: 80% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-      width: 80% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busq {
-      width: 15% !important;
-      height: 155px;
-      margin-left: 3%;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-      width: 15% !important;
-      height: 155px !important;
-      margin-left: 3%;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #departamento {
-      width: 100% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    input #busqueda {
-      width: 80% !important;
-      height: 155px;
-    }
-    .dentrode {
-      height: 34%;
-    }
-    .dentrode:hover {
-      height: 34%;
-    }
-    .partedos {
-      position: relative;
-      width: 50%;
-      height: 70%;
-      margin-left: 11%;
-      padding-left: 35%;
-    }
-    .precio{
-    font-size:65px !important;
-    }
-    .cajaccion label {
-      font-size: 80px !important;
-      margin-bottom: 100px;
-    }
-    .cajaresultado {
-      height: 63%;
-    }
-    .cajabusqueda {
-      width: 100% !important;
-      display: box;
-      box-orient: horizontal;
-      margin-top: 2% !important;
-    }
-}
 
 @media only screen and (min-height: 1920px) and (max-width: 1080px) {
     .menu_bar .bt-menu:active {
@@ -4644,7 +3679,7 @@ font-size:35px !important;
     }
     .titulo {
       margin-top: -160px !important;
-      font-size: 120% !important;
+      font-size: 420% !important;
     }
     .menu_bar .bt-menu {
       display: block;
@@ -4671,134 +3706,38 @@ font-size:35px !important;
     }
     header nav ul li h1 {
       margin: 20px -10px !important;
-      font-size: 150% !important;
-    }
-    header .menu2 {
-      margin: 207px auto !important;
-    }
-    header nav ul li a {
-      font-size: 140% !important;
-      margin-left: -5px;
-      text-align: center;
-    }
-}
-
-@media only screen and (max-height: 1080px) and (min-width: 1920px) {
-    .menu_bar .bt-menu:active {
-      font-size: 100px !important;
-    }
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 5%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -160px !important;
-      font-size: 620% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:100px !important;
-    }
-    .cajaccion {
-      margin-top: 240px;
-    }
-    .cajaccion article{
-      padding-top: 56px;
-      font-size: 600% !important;
-    }
-    .cajaccion article:hover {
-      padding-top:56px;
-      font-size: 600% !important;
-    }
-    #sesionon1 article {
-      height: 225px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
       font-size: 550% !important;
     }
     header .menu2 {
       margin: 207px auto !important;
     }
     header nav ul li a {
-      font-size: 540% !important;
+      font-size: 480% !important;
       margin-left: -5px;
-      padding: 70px 0px !important;
       text-align: center;
     }
-    /*Buscar*/
-    .cajabusqueda #busqueda {
-      width: 80% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-      width: 80% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busq {
-      width: 15% !important;
-      height: 155px;
-      margin-left: 3%;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-      width: 15% !important;
-      height: 155px !important;
-      margin-left: 3%;
-      font-size: 70px  !important;
-    }
-    .cajabusqueda #departamento {
-      width: 100% !important;
-      height: 155px;
-      font-size: 70px  !important;
-    }
-    input #busqueda {
-      width: 80% !important;
-      height: 155px;
-    }
-    .dentrode {
-      height: 34%;
-    }
-    .dentrode:hover {
-      height: 34%;
-    }
-    .partedos {
-      position: relative;
-      width: 50%;
-      height: 70%;
-      margin-left: 11%;
-      padding-left: 35%;
-    }
-    .precio{
-    font-size:65px !important;
-    }
-    .cajaccion label {
-      font-size: 80px !important;
-      margin-bottom: 100px;
-    }
-    .cajaresultado {
-      height: 60%;
-    }
-    .cajabusqueda {
-      width: 100% !important;
-      display: box;
-      box-orient: horizontal;
-      margin-top:1% !important;
-    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 120px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:72px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
 }
 
 @media only screen and (min-height: 2048px) and (max-width: 1536px) {
@@ -4818,7 +3757,7 @@ font-size:35px !important;
     }
     .titulo {
       margin-top: -170px !important;
-      font-size: 160% !important;
+      font-size: 460% !important;
     }
     .menu_bar .bt-menu {
       display: block;
@@ -4845,13 +3784,13 @@ font-size:35px !important;
     }
     header nav ul li h1 {
       margin: 20px -10px !important;
-      font-size: 150% !important;
+      font-size: 550% !important;
     }
     header .menu2 {
       margin: 207px auto !important;
     }
     header nav ul li a {
-      font-size: 140% !important;
+      font-size: 440% !important;
       margin-left: -5px;
       padding: 70px 0px !important;
       text-align: center;
@@ -4917,124 +3856,28 @@ font-size:35px !important;
       box-orient: horizontal;
       margin-top:1% !important;
     }
-}
-
-@media only screen and (max-height: 1536px) and (min-width: 2048px) {
-    .menu_bar .bt-menu:active {
-      font-size: 100px !important;
-    }
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 5%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -170px !important;
-      font-size: 150% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:100px !important;
-    }
-    .cajaccion {
-      margin-top: 240px;
-    }
-    .cajaccion article{
-      padding-top: 56px;
-      font-size: 440% !important;
-    }
-    .cajaccion article:hover {
-      padding-top:56px;
-      font-size: 440% !important;
-    }
-    #sesionon1 article {
-      height: 225px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
-      font-size: 250% !important;
-    }
-    header .menu2 {
-      margin: 207px auto !important;
-    }
-    header nav ul li a {
-      font-size: 240% !important;
-      margin-left: -5px;
-      padding: 70px 0px !important;
-      text-align: center;
-    }
-    /*Buscar*/
-    .cajabusqueda #busqueda {
-      width: 80% !important;
-      height: 195px;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-      width: 80% !important;
-      height: 195px;
-      font-size:80px  !important;
-    }
-    .cajabusqueda #busq {
-      width: 15% !important;
-      height: 195px;
-      margin-left: 3%;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-      width: 15% !important;
-      height: 195px !important;
-      margin-left: 3%;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #departamento {
-      width: 100% !important;
-      height: 195px;
-      font-size: 80px  !important;
-    }
-    input #busqueda {
-      width: 80% !important;
-      height: 195px;
-    }
-    .dentrode {
-      height: 34%;
-    }
-    .dentrode:hover {
-      height: 34%;
-    }
-    .partedos {
-      position: relative;
-      width: 50%;
-      height: 70%;
-      margin-left: 11%;
-      padding-left: 35%;
-    }
-    .precio{
-    font-size:75px !important;
-    }
-    .cajaccion label {
-      font-size: 90px !important;
-      margin-bottom: 100px;
-    }
-    .cajaresultado {
-      height: 70%;
-    }
-    .cajabusqueda {
-      width: 100% !important;
-      display: box;
-      box-orient: horizontal;
-      margin-top:1% !important;
-    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 20px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:82px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
 }
 
 @media only screen and (min-height: 2560px) and (max-width: 1600px) {
@@ -5170,145 +4013,4 @@ font-size:35px !important;
       color: #fff;
       font-size: 90px !important;
     }
-}
-
-@media only screen and (max-height: 1600px) and (min-width: 2560px) {
-    .menu_bar .bt-menu:active {
-      font-size: 150px !important;
-    }
-    .menu_bar {
-      position: fixed;
-      display: block;
-      float: left;
-      background-color: #f59c34;
-      width: 120%;
-      z-index: 1;
-      left: -5px;
-      height: 5%;
-      z-index: 90000;
-    }
-    .titulo {
-      margin-top: -220px !important;
-      font-size: 150% !important;
-    }
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 5px;
-      background: #f59c34;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size:150px !important;
-    }
-    .cajaccion {
-      margin-top: 390px !important;
-    }
-    .cajaccion article{
-      padding-top: 56px;
-      font-size: 440% !important;
-    }
-    .cajaccion article:hover {
-      padding-top:56px;
-      font-size: 440% !important;
-    }
-    #sesionon1 article {
-      height: 265px;
-    }
-    header nav ul li h1 {
-      margin: 20px -10px !important;
-      font-size: 170% !important;
-    }
-    header .menu2 {
-      margin: 317px auto !important;
-    }
-    header nav ul li a {
-      font-size: 170% !important;
-      margin-left: -5px;
-      padding: 70px 0px !important;
-      text-align: center;
-    }
-    /*Buscar*/
-    .cajabusqueda #busqueda {
-      width: 80% !important;
-      height: 195px;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-      width: 80% !important;
-      height: 195px;
-      font-size:80px  !important;
-    }
-    .cajabusqueda #busq {
-      width: 15% !important;
-      height: 195px;
-      margin-left: 3%;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-      width: 15% !important;
-      height: 195px !important;
-      margin-left: 3%;
-      font-size: 80px  !important;
-    }
-    .cajabusqueda #departamento {
-      width: 100% !important;
-      height: 195px;
-      font-size: 80px  !important;
-    }
-    input #busqueda {
-      width: 80% !important;
-      height: 195px;
-    }
-    .dentrode {
-      height: 34%;
-    }
-    .dentrode:hover {
-      height: 34%;
-    }
-    .partedos {
-      position: relative;
-      width: 50%;
-      height: 70%;
-      margin-left: 11%;
-      padding-left: 35%;
-    }
-    .precio{
-    font-size:75px !important;
-    }
-    .cajaccion label {
-      font-size: 90px !important;
-      margin-bottom: 100px;
-    }
-    .cajaresultado {
-      height: 70%;
-    }
-    .cajabusqueda {
-      width: 100% !important;
-      display: box;
-      box-orient: horizontal;
-      margin-top:1% !important;
-    }
-        /*mostrarpublicacion*/
-        .titulopub {
-          width: 100%;
-          font-size: 300% !important;
-          padding: 25px;
-        }
-        .botoneradespues input {
-          width: 100%;
-          height: 16% !important;
-          border: none;
-          background: #0f70b7;
-          margin-bottom: 2%;
-          color: #fff;
-          font-size: 80px !important;
-        }
-        .contienepublicacion {
-            overflow-y: scroll;
-        }
-        .contieneimagenpublicacion img {
-          width: 50%;
-          margin-left: 25%;
-          height: 100%;
-        }
 }

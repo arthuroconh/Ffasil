@@ -113,7 +113,7 @@ header nav ul li a: {
 		font-size:40px;
 	}
 
-@media only screen and (min-height: 1800px) and (min-width: 1000px) {
+@media only screen and (min-height: 1800px) and (max-width: 1000px) {
 	.menu_bar{
 		position:fixed;
 		display:block;
@@ -219,7 +219,7 @@ header nav ul li a: {
 }
 
 }
-@media only screen and (min-height: 1150px) and (min-width: 650px) {
+@media only screen and (min-height: 1150px) and (max-width: 650px) {
 	.menu_bar{
 		position:fixed;
 		display:block;
