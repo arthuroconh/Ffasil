@@ -148,7 +148,6 @@ body {
     font-size: 20px;
 }
 .botonera{
-    padding-top:30% !important;
 }
 .botonera input{
     width: 100% !important;
@@ -2161,7 +2160,7 @@ label{
     margin-bottom: 50px;
 }
 }
-@media only screen and (min-height: 320px) and (max-width: 240px) {
+@media only screen and (min-height: 320px) and (min-width: 240px) and (max-width: 320px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2172,6 +2171,9 @@ label{
   left: -5px;
   height: 2%;
   z-index: 90000;
+}
+#sesionon1{
+  font-size: 15px !important;
 }
 .menu_bar .bt-menu {
   display: block;
@@ -2186,6 +2188,10 @@ label{
   font-size: 120% !important;
 }
 
+.titulo {
+  margin-top: -40px;
+  font-size: 100%;
+}
 .cajaccion article:hover {
   font-size: 120% !important;
 }
@@ -2265,12 +2271,37 @@ font-size:12px !important;
     .contienepublicacion {
         overflow-y: scroll;
     }
-    .contieneimagenpublicacion img {
+
+.contieneimagenpublicacion img {
       margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera{
+    }
+    /*comentarios publicacion*/
+    .paddingcomentario{
+      padding-bottom: 200px !important;
+      height: 70% !important;
     }
 }
 
-@media only screen and (min-height: 480px) and (max-width: 320px) {
+@media only screen and (min-height: 480px) and (min-width: 320px) and (max-width: 640px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2292,11 +2323,11 @@ font-size:12px !important;
   font-size:30px !important;
 }
 .cajaccion article{
-  font-size: 180% !important;
+  font-size: 140% !important;
 }
 
 .cajaccion article:hover {
-  font-size: 180% !important;
+  font-size: 140% !important;
 }
 header nav ul li h1 {
   margin: 20px -10px !important;
@@ -2337,8 +2368,34 @@ header nav ul li a {
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 200px !important;
+    }
 }
-@media only screen and (min-height: 960px) and (max-width: 640px) {
+@media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2459,6 +2516,53 @@ font-size:27px !important;
     }
     .contieneimagenpublicacion img {
       margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 30px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
     }
 }
 
@@ -2584,9 +2688,41 @@ font-size:23px !important;
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
 }
 
-@media only screen and (min-height: 960px) and (max-width: 540px) {
+@media only screen and (min-height: 960px) and (min-width: 540px) and (max-width: 640px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2712,8 +2848,38 @@ font-size:28px !important;
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
 }
-@media only screen and (min-height: 1024px) and (max-width: 600px) {
+@media only screen and (min-height: 1024px) and (min-width: 600px) and (max-width: 768px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2746,7 +2912,7 @@ font-size:28px !important;
   font-size: 300% !important;
 }
 #sesionon1 article {
-  height: 105px;
+  height: 90px;
 }
 .cajaccion article:hover {
   padding-top: 26px;
@@ -2839,145 +3005,40 @@ font-size:28px !important;
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
-}
-
-
-@media only screen and (min-height: 1136px) and (max-width: 640px) {
-.menu_bar {
-  position: fixed;
-  display: block;
-  float: left;
-  background-color: #f59c34;
-  width: 120%;
-  z-index: 1;
-  left: -5px;
-  height: 2%;
-  z-index: 90000;
-}
-.titulo {
-  margin-top: -80px;
-  font-size: 300% !important;
-}
-.menu_bar .bt-menu {
-  display: block;
-  padding: 5px;
-  background: #f59c34;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size:55px !important;
-}
-.cajaccion {
-  margin-top: 130px;
-}
-.cajaccion article{
-  padding-top: 26px;
-  font-size: 340% !important;
-}
-#sesionon1 article {
-  height: 105px;
-}
-.cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 340% !important;
-}
-header nav ul li h1 {
-  margin: 20px -10px !important;
-  font-size: 300% !important;
-}
-header .menu2 {
-  margin: 78px auto !important;
-}
-header nav ul li a {
-  font-size: 250% !important;
-  margin-left: -5px;
-}
-/*Buscar*/
-.cajabusqueda #busqueda {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
-  width: 80% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq {
-  width: 15% !important;
-  height: 85px;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
-  width: 15% !important;
-  height: 85px !important;
-  margin-left: 3%;
-  font-size: 40px  !important;
-}
-.cajabusqueda #departamento {
-  width: 100% !important;
-  height: 85px;
-  font-size: 40px  !important;
-}
-input #busqueda {
-  width: 80% !important;
-  height: 85px;
-}
-.dentrode {
-  height: 30%;
-}
-.dentrode:hover {
-  height: 30%;
-}
-.partedos {
-  position: relative;
-  width: 50%;
-  height: 70%;
-  margin-left: 11%;
-  padding-left: 35%;
-}
-.precio{
-font-size:35px !important;
-}
-.cajaccion label {
-  font-size: 40px !important;
-  margin-bottom: 7px;
-}
-.cajaresultado {
-  height: 68%;
-}
-.cajabusqueda {
-  width: 100% !important;
-  display: box;
-  box-orient: horizontal;
-  margin-top: 2%;
-}
-    /*mostrarpublicacion*/
-    .titulopub {
-      width: 100%;
-      margin-top: 5px;
-      font-size:300% !important;
-      padding: 15px;
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 33px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
     }
-    .botoneradespues input {
+    .contienedesc {
       width: 100%;
-      height: 16% !important;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 200px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
       border: none;
       background: #0f70b7;
-      margin-bottom: 7%;
+      margin-bottom: 5%;
       color: #fff;
-      font-size:37px !important;
-    }
-    .contienepublicacion {
-        overflow-y: scroll;
-    }
-    .contieneimagenpublicacion img {
-      margin-left: 5%;
+      font-size: 40px !important;
     }
 }
 
-@media only screen and (min-height: 1024px) and (max-width: 768px) {
+
+@media only screen and (min-height: 1024px) and (min-width: 768px) and (max-width: 800px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -3110,9 +3171,39 @@ font-size:35px !important;
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 30px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 40px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
 }
 
-@media only screen and (min-height: 1280px) and (max-width: 720px) {
+@media only screen and (min-height: 1280px) and (min-width: 720px) and (max-width: 768px){
 .menu_bar {
   position: fixed;
   display: block;
@@ -3125,8 +3216,8 @@ font-size:35px !important;
   z-index: 90000;
 }
 .titulo {
-  margin-top: -50px;
-  font-size: 80% !important;
+  margin-top: -80px;
+  font-size: 280% !important;
 }
 .menu_bar .bt-menu {
   display: block;
@@ -3138,15 +3229,15 @@ font-size:35px !important;
   font-size:65px !important;
 }
 .cajaccion {
-  margin-top: 130px;
+  margin-top: 180px;
 }
 .cajaccion article{
-  padding-top: 26px;
-  font-size: 200% !important;
+  padding-top: 36px;
+  font-size: 300% !important;
 }
 .cajaccion article:hover {
-  padding-top: 26px;
-  font-size: 200% !important;
+  padding-top: 36px;
+  font-size: 300% !important;
 }
 #sesionon1 article {
   height: 125px;
@@ -3246,9 +3337,24 @@ font-size:35px !important;
     .contieneimagenpublicacion img {
       margin-left: 5%;
     }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 40px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
 }
 
-@media only screen and (min-height: 1136px) and (max-width: 640px) {
+@media only screen and (min-height: 1136px) and (min-width: 640px) and (max-width: 800px) {
 
   .menu_bar {
     position: fixed;
@@ -3279,11 +3385,11 @@ font-size:35px !important;
   }
   .cajaccion article{
     padding-top: 26px;
-    font-size: 400% !important;
+    font-size: 350% !important;
   }
   .cajaccion article:hover {
     padding-top: 26px;
-    font-size: 400% !important;
+    font-size: 350% !important;
   }
   #sesionon1 article {
     height: 125px;
@@ -3383,9 +3489,39 @@ font-size:35px !important;
       .contieneimagenpublicacion img {
         margin-left: 5%;
       }
+  /*descripcion*/
+      .descrip {
+        box-sizing: border-box;
+        position: relative;
+        font-size: 35px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+      }
+      .contienedesc {
+        width: 100%;
+        overflow-y: scroll;
+      }
+      .depart{
+        padding-bottom: 300%;
+      }
+      /*contactarvendedor*/
+
+      .botonera label {
+        margin-bottom: 100px;
+        font-size: 40px !important;
+      }
+      .botonera input {
+        width: 100% !important;
+        height: 90px !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 5%;
+        color: #fff;
+        font-size: 40px !important;
+      }
 }
 
-@media only screen and (min-height: 1280px) and (max-width: 800px) {
+@media only screen and (min-height: 1280px) and (min-width: 800px) and (max-width: 1080px)  {
     .menu_bar {
       position: fixed;
       display: block;
@@ -3415,11 +3551,11 @@ font-size:35px !important;
     }
     .cajaccion article{
       padding-top: 26px;
-      font-size: 200% !important;
+      font-size: 360% !important;
     }
     .cajaccion article:hover {
       padding-top: 26px;
-      font-size: 200% !important;
+      font-size: 360% !important;
     }
     #sesionon1 article {
       height: 125px;
@@ -3519,9 +3655,39 @@ font-size:35px !important;
         .contieneimagenpublicacion img {
           margin-left: 5%;
         }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 45px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+
+        .botonera label {
+          margin-bottom: 100px;
+          font-size: 50px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 100px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 55px !important;
+        }
 }
 
-@media only screen and (min-height: 1920px) and (max-width: 1200px) {
+@media only screen and (min-height: 1920px) and (min-width: 1200px) and (max-width: 1536px) {
     .menu_bar .bt-menu:active {
       font-size: 100px !important;
     }
@@ -3658,11 +3824,44 @@ font-size:35px !important;
         .contieneimagenpublicacion img {
           margin-left: 5%;
         }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 65px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          margin-top: 10%;
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+        .botonera {
+          padding-top: 150px;
+        }
+        .botonera label {
+          margin-bottom: 180px;
+          font-size: 75px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 75px !important;
+        }
 }
 
 
 
-@media only screen and (min-height: 1920px) and (max-width: 1080px) {
+@media only screen and (min-height: 1920px) and (min-width: 1080px) and (max-width: 1200px){
     .menu_bar .bt-menu:active {
       font-size: 100px !important;
     }
@@ -3691,15 +3890,15 @@ font-size:35px !important;
       font-size:100px !important;
     }
     .cajaccion {
-      margin-top: 140px;
+      margin-top: 240px;
     }
     .cajaccion article{
       padding-top: 56px;
-      font-size: 300% !important;
+      font-size: 500% !important;
     }
     .cajaccion article:hover {
       padding-top:56px;
-      font-size: 300% !important;
+      font-size: 500% !important;
     }
     #sesionon1 article {
       height: 225px;
@@ -3773,11 +3972,11 @@ font-size:35px !important;
     }
     .cajaccion article{
       padding-top: 56px;
-      font-size: 340% !important;
+      font-size: 540% !important;
     }
     .cajaccion article:hover {
       padding-top:56px;
-      font-size: 340% !important;
+      font-size: 540% !important;
     }
     #sesionon1 article {
       height: 225px;
@@ -3878,6 +4077,38 @@ font-size:35px !important;
         .contieneimagenpublicacion img {
           margin-left: 5%;
         }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 65px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+        .botonera {
+          padding-top: 150px;
+        }
+        .botonera label {
+          margin-bottom: 180px;
+          font-size: 75px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 75px !important;
+        }
 }
 
 @media only screen and (min-height: 2560px) and (max-width: 1600px) {
@@ -3898,7 +4129,7 @@ font-size:35px !important;
     }
     .titulo {
       margin-top: -220px !important;
-      font-size: 150% !important;
+      font-size:75px;
     }
     .menu_bar .bt-menu {
       display: block;
@@ -3914,24 +4145,24 @@ font-size:35px !important;
     }
     .cajaccion article{
       padding-top: 56px;
-      font-size: 440% !important;
+      font-size: 640% !important;
     }
     .cajaccion article:hover {
       padding-top:56px;
-      font-size: 440% !important;
+      font-size: 640% !important;
     }
     #sesionon1 article {
       height: 265px;
     }
     header nav ul li h1 {
       margin: 20px -10px !important;
-      font-size: 170% !important;
+      font-size: 570% !important;
     }
     header .menu2 {
       margin: 317px auto !important;
     }
     header nav ul li a {
-      font-size: 170% !important;
+      font-size: 570% !important;
       margin-left: -5px;
       padding: 70px 0px !important;
       text-align: center;
@@ -4001,7 +4232,7 @@ font-size:35px !important;
     /*mostrarpublicacion*/
     .titulopub {
       width: 100%;
-      font-size: 300% !important;
+      font-size: 500% !important;
       padding: 25px;
     }
     .botoneradespues input {
@@ -4012,5 +4243,37 @@ font-size:35px !important;
       margin-bottom: 2%;
       color: #fff;
       font-size: 90px !important;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 78px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+    .botonera {
+      padding-top: 150px;
+    }
+    .botonera label {
+      margin-bottom: 240px;
+      font-size: 95px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 250px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 95px !important;
     }
 }
