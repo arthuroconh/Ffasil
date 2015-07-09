@@ -72,6 +72,13 @@ body {
     background: #000;
     color: #fff;
 }
+  #botoncomentar{
+    width: 100%;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+  }
 #contienecomprador .btn{
   border: none !important;
   margin-top: 0px !important;
@@ -742,7 +749,7 @@ body {
 
 }
 #botonpub{
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
     height: 50px;
     border: none;
@@ -1462,7 +1469,7 @@ label{
 
 }
 #botonpub{
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
     height: 100px;
     border: none;
@@ -1763,7 +1770,7 @@ label{
 
 }
 #botonpub{
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
     height: 100px;
     border: none;
@@ -1896,7 +1903,7 @@ label{
     box-sizing: border-box;
 }
 .publicacion{
-    margin-bottom: 70%;
+    margin-bottom: 90%;
     width: 100%;
     height: 50%;
     box-sizing: border-box;
@@ -1928,7 +1935,7 @@ label{
 
 }
 #botonpub{
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
     height: 100px;
     border: none;
@@ -2302,6 +2309,167 @@ font-size:12px !important;
       padding-bottom: 200px !important;
       height: 70% !important;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 40% !important;
+  font-size: 25px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:40px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 17px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 55px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 19%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 17px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 15px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 20%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 50%;
+  font-size: 17px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:60px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 17px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 12px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 200%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 200%;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
 }
 
 @media only screen and (min-height: 480px) and (max-height: 800px) and (min-width: 320px) and (max-width: 640px) {
@@ -2397,8 +2565,169 @@ header nav ul li a {
     .paddingcomentario{
       padding-bottom: 200px !important;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 150px !important;
+  font-size: 25px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
-@media only screen and (min-height: 960px) and (max-height: 960px)  and (min-width: 640px) and (max-width: 768px) {
+  #botoncomentar{
+    width: 100%;
+    height:40px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 17px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 85px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 19%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 17px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 15px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 50%;
+  font-size: 17px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:80px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 20px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 18px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+}
+@media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2412,7 +2741,7 @@ header nav ul li a {
 }
 .titulo {
   margin-top: -80px;
-  font-size: 300%;
+  font-size: 250%;
 }
 .menu_bar .bt-menu {
   display: block;
@@ -2567,6 +2896,167 @@ font-size:27px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 250px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 40%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
 }
 
 @media only screen and (min-height: 800px) and (max-height: 960px)  and (max-width: 480px) {
@@ -2740,9 +3230,170 @@ font-size:23px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 200px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
 }
 
-@media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 640px) {
+.publicacion{
+    margin-bottom: 80%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+}
+
+@media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 641px) {
 .menu_bar {
   position: fixed;
   display: block;
@@ -2915,6 +3566,171 @@ font-size:28px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 240px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 80%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
 }
 @media only screen and (min-height: 1024px) and (max-height: 1136px) and (min-width: 600px) and (max-width: 768px) {
 .menu_bar {
@@ -3089,6 +3905,167 @@ font-size:28px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 33px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 31px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 38px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 45px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
 }
 
 
@@ -3272,9 +4249,170 @@ font-size:35px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 185px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 37px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 35px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 30px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:150px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
 }
 
-@media only screen and (min-height: 1280px) and (min-width: 720px){
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+}
+
+@media only screen and (max-height: 1280px) and (min-width: 720px){
 .menu_bar {
   position: fixed;
   display: block;
@@ -3448,9 +4586,170 @@ font-size:35px !important;
     .respuestax {
       padding: 20px 10px;
     }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 49px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 52px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 185px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 37px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 35px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 100px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 48px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 100px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 48px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 75px!important;
+  font-size: 37px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:150px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
 }
 
-@media only screen and (min-height: 1136px) and (min-width: 640px) and (max-width: 800px) {
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #f29200;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+}
+
+@media only screen and (min-height: 1136px) and (max-width: 640px) {
 
   .menu_bar {
     position: fixed;
@@ -3465,7 +4764,7 @@ font-size:35px !important;
   }
   .titulo {
     margin-top: -90px;
-    font-size:70% !important;
+    font-size:60px;
   }
   .menu_bar .bt-menu {
     display: block;
@@ -3642,6 +4941,167 @@ font-size:35px !important;
       .respuestax {
         padding: 20px 10px;
       }
+      /*Comentar*/
+      #comentario {
+    width: 100%;
+    height: 280px !important;
+    font-size: 49px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    display: box;
+    box-orient: horizontal;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+    #botoncomentar{
+      width: 100%;
+      height:90px!important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 52px !important;
+    }
+    /*Perfil*/
+    .cajaperfil {
+      position: fixed;
+      width: 85%;
+      height: 80%;
+      border-radius: 5px;
+      margin-top: 185px;
+      float: left;
+      border: 2px solid grey;
+      margin-left: 7.5%;
+    }
+    .datoperfil {
+      width: 100%;
+      height: 14%;
+      box-sizing: border-box;
+      padding-left: 2%;
+    }
+    .tituloperfil {
+      margin-top: 2px;
+      font-size: 37px !important;
+      font-weight: 600;
+    }
+    .datop {
+      margin-top: 2px;
+      font-size: 35px !important;
+      color: grey;
+    }
+    .cajaperfil #botonmod {
+      width: 100%;
+      height: 15% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 38px !important;
+    }
+    .cajaformulario #botoncan {
+      width: 100%;
+      height: 100px !important;
+      border: none;
+      background: #e20612;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 48px !important;
+  }
+    .cajaformulario #botonmod {
+      width: 100%;
+      height: 100px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 48px !important;
+  }
+    .fomulaperfil {
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top: 25%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+  }
+    .fomulaperfil .datoxx {
+    width: 90%;
+    height: 75px!important;
+    font-size: 37px !important;
+  }
+  /*publicacion*/
+
+  .cajapublica{
+      position: fixed;
+      width: 95%;
+      height: 85%;
+      border-radius: 5px;
+      margin-top:150px;
+      float: left;
+      overflow: scroll;
+      margin-left: 2%;
+  }
+
+  .publicacion{
+      margin-bottom: 80%;
+      width: 100%;
+      height: 50%;
+      box-sizing: border-box;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+  .publicacion .imagenpub{
+      width: 50%;
+      height: 50%;
+      display: block;
+      margin-bottom: 20px;
+  }
+  .imagenpub img{
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin-left: 50.55%;
+  }
+  .tutulopublicar{
+      margin-bottom: 10px;
+      font-size: 40px !important;
+      font-weight: 600;
+  }
+  .publicont{
+      text-align: justify;
+      margin-top: 6px;
+      font-size: 40px !important;
+      margin-bottom:60px;
+
+  }
+  #botonpub{
+      margin-top: 10px;
+      width: 100%;
+      height: 90px;
+      border: none;
+      font-size: 45px;
+      background: #0f70b7;
+      color: #fff;
+  }
+  #botonpub:hover{
+      background: #0f0f0f;
+      color: #fff;
+  }
+  #botongo{
+      margin-top: -10px;
+      width: 45%;
+      height: 90px;
+      border: none;
+      font-size: 45px;
+      background: #f29200;
+      color: #fff;
+  }
+  #botongo:hover{
+      background: #0f0f0f;
+      color: #fff;
+  }
 }
 
 @media only screen and (min-height: 1280px) and (max-height: 1920px) and (min-width: 800px) and (max-width: 1080px)  {
@@ -3834,6 +5294,146 @@ font-size:35px !important;
               .respuestax {
                 padding: 20px 10px;
               }
+              /*Perfil*/
+              .cajaperfil {
+                position: fixed;
+                width: 85%;
+                height: 80%;
+                border-radius: 5px;
+                margin-top: 185px;
+                float: left;
+                border: 2px solid grey;
+                margin-left: 7.5%;
+              }
+              .datoperfil {
+                width: 100%;
+                height: 14%;
+                box-sizing: border-box;
+                padding-left: 2%;
+              }
+              .tituloperfil {
+                margin-top: 2px;
+                font-size: 37px !important;
+                font-weight: 600;
+              }
+              .datop {
+                margin-top: 2px;
+                font-size: 35px !important;
+                color: grey;
+              }
+              .cajaperfil #botonmod {
+                width: 100%;
+                height: 15% !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 38px !important;
+              }
+              .cajaformulario #botoncan {
+                width: 100%;
+                height: 100px !important;
+                border: none;
+                background: #e20612;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 48px !important;
+            }
+              .cajaformulario #botonmod {
+                width: 100%;
+                height: 100px !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 48px !important;
+            }
+              .fomulaperfil {
+              position: fixed;
+              width: 95%;
+              height: 95%;
+              border-radius: 5px;
+              margin-top: 25%;
+              float: left;
+              overflow: scroll;
+              margin-left: 2%;
+            }
+              .fomulaperfil .datoxx {
+              width: 90%;
+              height: 95px!important;
+              font-size: 37px !important;
+            }
+            /*publicacion*/
+
+            .cajapublica{
+                position: fixed;
+                width: 95%;
+                height: 90%;
+                border-radius: 5px;
+                margin-top:150px;
+                float: left;
+                overflow: scroll;
+                margin-left: 2%;
+            }
+
+            .publicacion{
+                margin-bottom: 80%;
+                width: 100%;
+                height: 50%;
+                box-sizing: border-box;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            .publicacion .imagenpub{
+                width: 50%;
+                height: 50%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .imagenpub img{
+                width: 100%;
+                height: 100%;
+                float: left;
+                margin-left: 50.55%;
+            }
+            .tutulopublicar{
+                margin-bottom: 10px;
+                font-size: 50px !important;
+                font-weight: 600;
+            }
+            .publicont{
+                text-align: justify;
+                margin-top: 6px;
+                font-size: 50px !important;
+                margin-bottom:60px;
+
+            }
+            #botonpub{
+                margin-top: 10px;
+                width: 100%;
+                height: 100px;
+                border: none;
+                font-size: 55px;
+                background: #0f70b7;
+                color: #fff;
+            }
+            #botonpub:hover{
+                background: #0f0f0f;
+                color: #fff;
+            }
+            #botongo{
+                margin-top: -10px;
+                width: 45%;
+                height: 100px;
+                border: none;
+                font-size: 55px;
+                background: #f29200;
+                color: #fff;
+            }
+            #botongo:hover{
+                background: #0f0f0f;
+                color: #fff;
+            }
 }
 
 @media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1200px) and (max-width: 1536px) {
@@ -4032,6 +5632,167 @@ font-size:35px !important;
               .respuestax {
                 padding: 20px 10px;
               }
+              /*Comentar*/
+              #comentario {
+            width: 100%;
+            height: 300px !important;
+            font-size: 59px;
+            margin-bottom: 30px;
+            padding: 10px 10px;
+            display: box;
+            box-orient: horizontal;
+            box-sizing: border-box;
+            border: 1px solid black;
+          }
+            #botoncomentar{
+              width: 100%;
+              height:190px!important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 62px !important;
+            }
+            /*Perfil*/
+            .cajaperfil {
+              position: fixed;
+              width: 85%;
+              height: 80%;
+              border-radius: 5px;
+              margin-top: 235px;
+              float: left;
+              border: 2px solid grey;
+              margin-left: 7.5%;
+            }
+            .datoperfil {
+              width: 100%;
+              height: 14%;
+              box-sizing: border-box;
+              padding-left: 2%;
+            }
+            .tituloperfil {
+              margin-top: 2px;
+              font-size: 57px !important;
+              font-weight: 600;
+            }
+            .datop {
+              margin-top: 2px;
+              font-size: 55px !important;
+              color: grey;
+            }
+            .cajaperfil #botonmod {
+              width: 100%;
+              height: 15% !important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+            }
+            .cajaformulario #botoncan {
+              width: 100%;
+              height: 200px !important;
+              border: none;
+              background: #e20612;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+          }
+            .cajaformulario #botonmod {
+              width: 100%;
+              height: 200px !important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+          }
+            .fomulaperfil {
+            position: fixed;
+            width: 95%;
+            height: 95%;
+            border-radius: 5px;
+            margin-top: 25%;
+            float: left;
+            overflow: scroll;
+            margin-left: 2%;
+          }
+            .fomulaperfil .datoxx {
+            width: 90%;
+            height: 135px!important;
+            font-size: 50px !important;
+          }
+          /*publicacion*/
+
+          .cajapublica{
+              position: fixed;
+              width: 95%;
+              height: 90%;
+              border-radius: 5px;
+              margin-top:260px;
+              float: left;
+              overflow: scroll;
+              margin-left: 2%;
+          }
+
+          .publicacion{
+              margin-bottom: 70%;
+              width: 100%;
+              height: 50%;
+              box-sizing: border-box;
+              padding-left: 2%;
+              padding-right: 2%;
+          }
+          .publicacion .imagenpub{
+              width: 50%;
+              height: 50%;
+              display: block;
+              margin-bottom: 20px;
+          }
+          .imagenpub img{
+              width: 100%;
+              height: 100%;
+              float: left;
+              margin-left: 50.55%;
+          }
+          .tutulopublicar{
+              margin-bottom: 10px;
+              font-size: 70px !important;
+              font-weight: 600;
+          }
+          .publicont{
+              text-align: justify;
+              margin-top: 6px;
+              font-size: 65px !important;
+              margin-bottom:60px;
+
+          }
+          #botonpub{
+              margin-top: 10px;
+              width: 100%;
+              height: 200px;
+              border: none;
+              font-size: 75px;
+              background: #0f70b7;
+              color: #fff;
+          }
+          #botonpub:hover{
+              background: #0f0f0f;
+              color: #fff;
+          }
+          #botongo{
+              margin-top: -10px;
+              width: 45%;
+              height: 200px;
+              border: none;
+              font-size: 75px;
+              background: #f29200;
+              color: #fff;
+          }
+          #botongo:hover{
+              background: #0f0f0f;
+              color: #fff;
+          }
 }
 
 
@@ -4112,6 +5873,168 @@ font-size:35px !important;
         .contieneimagenpublicacion img {
           margin-left: 5%;
         }
+        /*Comentar*/
+        #comentario {
+          margin-top: 60px;
+      width: 100%;
+      height: 400px !important;
+      font-size: 59px;
+      margin-bottom: 30px;
+      padding: 10px 10px;
+      display: box;
+      box-orient: horizontal;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+      #botoncomentar{
+        width: 100%;
+        height:190px!important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 62px !important;
+      }
+      /*Perfil*/
+      .cajaperfil {
+        position: fixed;
+        width: 85%;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 235px;
+        float: left;
+        border: 2px solid grey;
+        margin-left: 7.5%;
+      }
+      .datoperfil {
+        width: 100%;
+        height: 14%;
+        box-sizing: border-box;
+        padding-left: 2%;
+      }
+      .tituloperfil {
+        margin-top: 2px;
+        font-size: 57px !important;
+        font-weight: 600;
+      }
+      .datop {
+        margin-top: 2px;
+        font-size: 55px !important;
+        color: grey;
+      }
+      .cajaperfil #botonmod {
+        width: 100%;
+        height: 15% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+      }
+      .cajaformulario #botoncan {
+        width: 100%;
+        height: 200px !important;
+        border: none;
+        background: #e20612;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+    }
+      .cajaformulario #botonmod {
+        width: 100%;
+        height: 200px !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+    }
+      .fomulaperfil {
+      position: fixed;
+      width: 95%;
+      height: 95%;
+      border-radius: 5px;
+      margin-top: 25%;
+      float: left;
+      overflow: scroll;
+      margin-left: 2%;
+    }
+      .fomulaperfil .datoxx {
+      width: 90%;
+      height: 135px!important;
+      font-size: 50px !important;
+    }
+    /*publicacion*/
+
+    .cajapublica{
+        position: fixed;
+        width: 95%;
+        height: 90%;
+        border-radius: 5px;
+        margin-top:260px;
+        float: left;
+        overflow: scroll;
+        margin-left: 2%;
+    }
+
+    .publicacion{
+        margin-bottom: 70%;
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .publicacion .imagenpub{
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .imagenpub img{
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-left: 50.55%;
+    }
+    .tutulopublicar{
+        margin-bottom: 10px;
+        font-size: 70px !important;
+        font-weight: 600;
+    }
+    .publicont{
+        text-align: justify;
+        margin-top: 6px;
+        font-size: 65px !important;
+        margin-bottom:60px;
+
+    }
+    #botonpub{
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+        border: none;
+        font-size: 75px;
+        background: #0f70b7;
+        color: #fff;
+    }
+    #botonpub:hover{
+        background: #0f0f0f;
+        color: #fff;
+    }
+    #botongo{
+        margin-top: -10px;
+        width: 45%;
+        height: 200px;
+        border: none;
+        font-size: 75px;
+        background: #f29200;
+        color: #fff;
+    }
+    #botongo:hover{
+        background: #0f0f0f;
+        color: #fff;
+    }
 }
 
 @media only screen and (min-height: 2048px) and (max-height: 2560px)  and (max-width: 1536px) {
@@ -4284,6 +6207,135 @@ font-size:35px !important;
           color: #fff;
           font-size: 75px !important;
         }
+        /*Comentar*/
+        #comentario {
+          margin-top: 60px;
+      width: 100%;
+      height: 400px !important;
+      font-size: 59px;
+      margin-bottom: 30px;
+      padding: 10px 10px;
+      display: box;
+      box-orient: horizontal;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+      #botoncomentar{
+        width: 100%;
+        height:190px!important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 62px !important;
+      }
+      /*Perfil*/
+      .cajaperfil {
+        position: fixed;
+        width: 85%;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 255px;
+        float: left;
+        border: 2px solid grey;
+        margin-left: 7.5%;
+      }
+      .datoperfil {
+        width: 100%;
+        height: 14%;
+        box-sizing: border-box;
+        padding-left: 2%;
+      }
+      .tituloperfil {
+        margin-top: 2px;
+        font-size: 67px !important;
+        font-weight: 600;
+      }
+      .datop {
+        margin-top: 2px;
+        font-size: 65px !important;
+        color: grey;
+      }
+      .cajaperfil #botonmod {
+        width: 100%;
+        height: 15% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+      }
+      /*publicacion*/
+
+      .cajapublica{
+          position: fixed;
+          width: 95%;
+          height: 90%;
+          border-radius: 5px;
+          margin-top:260px;
+          float: left;
+          overflow: scroll;
+          margin-left: 2%;
+      }
+
+      .publicacion{
+          margin-bottom: 60%;
+          width: 100%;
+          height: 50%;
+          box-sizing: border-box;
+          padding-left: 2%;
+          padding-right: 2%;
+      }
+      .publicacion .imagenpub{
+          width: 50%;
+          height: 50%;
+          display: block;
+          margin-bottom: 20px;
+      }
+      .imagenpub img{
+          width: 100%;
+          height: 100%;
+          float: left;
+          margin-left: 50.55%;
+      }
+      .tutulopublicar{
+          margin-bottom: 15px;
+          font-size: 80px !important;
+          font-weight: 600;
+      }
+      .publicont{
+          text-align: justify;
+          margin-top: 6px;
+          font-size: 75px !important;
+          margin-bottom:60px;
+
+      }
+      #botonpub{
+          margin-top: 10px;
+          width: 100%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #0f70b7;
+          color: #fff;
+      }
+      #botonpub:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      #botongo{
+          margin-top: -10px;
+          width: 45%;
+          height: 200px;
+          border: none;
+          font-size: 75px;
+          background: #f29200;
+          color: #fff;
+      }
+      #botongo:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
 }
 
 @media only screen and (min-height: 2560px) and (max-width: 1600px) {
@@ -4477,4 +6529,166 @@ font-size:35px !important;
           .respuestax {
             padding: 20px 10px;
           }
+          /*Comentar*/
+          #comentario {
+            margin-top: 60px;
+        width: 100%;
+        height: 400px !important;
+        font-size: 69px;
+        margin-bottom: 30px;
+        padding: 10px 10px;
+        display: box;
+        box-orient: horizontal;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+        #botoncomentar{
+          width: 100%;
+          height:200px!important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 72px !important;
+        }
+        /*Perfil*/
+        .cajaperfil {
+          position: fixed;
+          width: 85%;
+          height: 80%;
+          border-radius: 5px;
+          margin-top: 355px;
+          float: left;
+          border: 2px solid grey;
+          margin-left: 7.5%;
+        }
+        .datoperfil {
+          width: 100%;
+          height: 14%;
+          box-sizing: border-box;
+          padding-left: 2%;
+        }
+        .tituloperfil {
+          margin-top: 2px;
+          font-size: 77px !important;
+          font-weight: 600;
+        }
+        .datop {
+          margin-top: 2px;
+          font-size: 75px !important;
+          color: grey;
+        }
+        .cajaperfil #botonmod {
+          width: 100%;
+          height: 15% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 78px !important;
+        }
+        .cajaformulario #botoncan {
+          width: 100%;
+          height: 200px !important;
+          border: none;
+          background: #e20612;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 88px !important;
+      }
+        .cajaformulario #botonmod {
+          width: 100%;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 88px !important;
+      }
+        .fomulaperfil {
+        position: fixed;
+        width: 95%;
+        height: 95%;
+        border-radius: 5px;
+        margin-top: 25%;
+        float: left;
+        overflow: scroll;
+        margin-left: 2%;
+      }
+        .fomulaperfil .datoxx {
+        width: 90%;
+        height: 165px!important;
+        font-size: 70px !important;
+      }
+      /*publicacion*/
+
+      .cajapublica{
+          position: fixed;
+          width: 95%;
+          height: 90%;
+          border-radius: 5px;
+          margin-top:330px;
+          float: left;
+          overflow: scroll;
+          margin-left: 2%;
+      }
+
+      .publicacion{
+          margin-bottom: 50%;
+          width: 100%;
+          height: 50%;
+          box-sizing: border-box;
+          padding-left: 2%;
+          padding-right: 2%;
+      }
+      .publicacion .imagenpub{
+          width: 50%;
+          height: 50%;
+          display: block;
+          margin-bottom: 20px;
+      }
+      .imagenpub img{
+          width: 100%;
+          height: 100%;
+          float: left;
+          margin-left: 50.55%;
+      }
+      .tutulopublicar{
+          margin-bottom: 15px;
+          font-size: 80px !important;
+          font-weight: 600;
+      }
+      .publicont{
+          text-align: justify;
+          margin-top: 6px;
+          font-size: 75px !important;
+          margin-bottom:60px;
+
+      }
+      #botonpub{
+          margin-top: 10px;
+          width: 100%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #0f70b7;
+          color: #fff;
+      }
+      #botonpub:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      #botongo{
+          margin-top: -10px;
+          width: 45%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #f29200;
+          color: #fff;
+      }
+      #botongo:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
 }
