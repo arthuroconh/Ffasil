@@ -104,9 +104,6 @@
                 var dato = $('#formulario').serialize();
 
 
-
-                                                          $("#cargando").removeClass('escondido');
-                                                          $("#cargando").addClass('visible');
                     $.ajax({
                             url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php',
                             type:'POST',
@@ -367,7 +364,7 @@
                 </datalist>
                 <input type="button" id="busq" value="ir" onclick="busca();">
                 <label>Filtrar por Departamento</label>
-                <select class="form-control" requied="required" name="departamento" id="departamento"><option value="cualquiera" selected="selected">Cualquiera</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
+                <select class="form-control brows" requied="required" name="departamento" id="departamento"><option value="cualquiera" selected="selected">Cualquiera</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
                 </form>
             </div>
             <div class="cajaresultado" id="resultados">

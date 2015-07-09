@@ -56,6 +56,9 @@ body {
     height: 100%;
     width: 100%;
 }
+.brows{
+  z-index: 90000000 !important;
+}
 .botngrande{
     background: #f29200;
     width: 90%;
@@ -105,9 +108,11 @@ body {
 }
 .cajaresultado{
     height: 60%;
+    padding-top:15%; 
     width: 100%;
     overflow: scroll;
     float: left;
+    z-index: 1 !important;
 }
 .dentrode{
     width: 90%;
