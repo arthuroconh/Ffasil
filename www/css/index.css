@@ -2470,6 +2470,42 @@ font-size:12px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+  #formularionuevoproducto label{
+    font-size: 15px !important;
+  }
+    #formularionuevoproducto input{
+      font-size: 15px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 75px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 110px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 70px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 @media only screen and (min-height: 480px) and (max-height: 800px) and (min-width: 320px) and (max-width: 640px) {
@@ -2726,6 +2762,42 @@ header nav ul li a {
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+  #formularionuevoproducto label{
+    font-size: 15px !important;
+  }
+    #formularionuevoproducto input{
+      font-size: 15px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 75px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 120px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 70px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 @media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
 .menu_bar {
@@ -3057,6 +3129,44 @@ font-size:27px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 240px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 @media only screen and (min-height: 800px) and (max-height: 960px)  and (max-width: 480px) {
@@ -3391,6 +3501,44 @@ font-size:23px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 200px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 @media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 641px) {
@@ -3731,6 +3879,45 @@ font-size:28px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 200px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 @media only screen and (min-height: 1024px) and (max-height: 1136px) and (min-width: 600px) and (max-width: 768px) {
 .menu_bar {
@@ -4066,6 +4253,45 @@ font-size:28px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 
@@ -4410,6 +4636,45 @@ font-size:35px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 205px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+     #formularionuevoproducto .botonimagen {
+      width: 100% !important;
+      height: 170px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 @media only screen and (max-height: 1280px) and (min-width: 720px){
@@ -4747,6 +5012,47 @@ font-size:35px !important;
     background: #0f0f0f;
     color: #fff;
 }
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 45px !important;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 40px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 205px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+     #formularionuevoproducto .botonimagen {
+      width: 100% !important;
+      height: 170px !important;
+      margin-bottom: 20px;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
 }
 
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
@@ -5102,6 +5408,47 @@ font-size:35px !important;
       background: #0f0f0f;
       color: #fff;
   }
+  /*Publicaciones*/
+  #formularionuevoproducto label {
+    font-size: 45px !important;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+      #formularionuevoproducto input, #formularionuevoproducto select{
+        font-size: 40px !important;
+        height: 75px !important;
+      }
+      .imagenpublicacion {
+        width: 43%;
+        height: 205px;
+        display: inline-block;
+        position: relative;
+      }
+      .imagenpublicacion2 {
+        width: 60%;
+        height: 300px;
+        display: inline-block;
+        position: relative;
+        left: 20%;
+      }
+       #formularionuevoproducto .botonimagen {
+        width: 100% !important;
+        height: 170px !important;
+        margin-bottom: 20px;
+      }
+      .btn-success {
+        background: #3caa37;
+      }
+      .btn {
+        border: none;
+        margin-top: 50px;
+        width: 40% !important;
+        margin-right: 5%;
+      }
+      .pagina {
+        margin-top:10px;
+      }
 }
 
 @media only screen and (min-height: 1280px) and (max-height: 1920px) and (min-width: 800px) and (max-width: 1080px)  {
@@ -5434,6 +5781,47 @@ font-size:35px !important;
                 background: #0f0f0f;
                 color: #fff;
             }
+            /*Publicaciones*/
+            #formularionuevoproducto label {
+              font-size: 45px !important;
+              height: 90px;
+              margin-top: 30px;
+              margin-bottom: 20px;
+            }
+                #formularionuevoproducto input, #formularionuevoproducto select{
+                  font-size: 40px !important;
+                  height: 75px !important;
+                }
+                .imagenpublicacion {
+                  width: 43%;
+                  height: 205px;
+                  display: inline-block;
+                  position: relative;
+                }
+                .imagenpublicacion2 {
+                  width: 60%;
+                  height: 350px;
+                  display: inline-block;
+                  position: relative;
+                  left: 20%;
+                }
+                 #formularionuevoproducto .botonimagen {
+                  width: 100% !important;
+                  height: 170px !important;
+                  margin-bottom: 20px;
+                }
+                .btn-success {
+                  background: #3caa37;
+                }
+                .btn {
+                  border: none;
+                  margin-top: 50px;
+                  width: 40% !important;
+                  margin-right: 5%;
+                }
+                .pagina {
+                  margin-top:10px;
+                }
 }
 
 @media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1200px) and (max-width: 1536px) {
@@ -5793,6 +6181,48 @@ font-size:35px !important;
               background: #0f0f0f;
               color: #fff;
           }
+          /*Publicaciones*/
+          #formularionuevoproducto label {
+            font-size: 65px !important;
+            height: 120px;
+            margin-top: 30px;
+            margin-bottom: 35px;
+          }
+              #formularionuevoproducto input, #formularionuevoproducto select{
+                font-size: 60px !important;
+                height: 100px !important;
+              }
+              .imagenpublicacion {
+                width: 43%;
+                height:435px;
+                display: inline-block;
+                position: relative;
+              }
+              .imagenpublicacion2 {
+                width: 60%;
+                height: 500px;
+                display: inline-block;
+                position: relative;
+                left: 20%;
+              }
+               #formularionuevoproducto .botonimagen {
+                width: 100% !important;
+                height: 170px !important;
+                margin-bottom: 20px;
+              }
+              .btn-success {
+                background: #3caa37;
+              }
+              .btn {
+                height: 160px;
+                border: none;
+                margin-top: 50px;
+                width: 40% !important;
+                margin-right: 5%;
+              }
+              .pagina {
+                margin-top:10px;
+              }
 }
 
 
@@ -6035,6 +6465,48 @@ font-size:35px !important;
         background: #0f0f0f;
         color: #fff;
     }
+    /*Publicaciones*/
+    #formularionuevoproducto label {
+      font-size: 65px !important;
+      height: 120px;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+        #formularionuevoproducto input, #formularionuevoproducto select{
+          font-size: 60px !important;
+          height: 100px !important;
+        }
+        .imagenpublicacion {
+          width: 43%;
+          height:435px;
+          display: inline-block;
+          position: relative;
+        }
+        .imagenpublicacion2 {
+          width: 60%;
+          height: 500px;
+          display: inline-block;
+          position: relative;
+          left: 20%;
+        }
+         #formularionuevoproducto .botonimagen {
+          width: 100% !important;
+          height: 190px !important;
+          margin-bottom: 20px;
+        }
+        .btn-success {
+          background: #3caa37;
+        }
+        .btn {
+          height: 160px;
+          border: none;
+          margin-top: 50px;
+          width: 40% !important;
+          margin-right: 5%;
+        }
+        .pagina {
+          margin-top:10px;
+        }
 }
 
 @media only screen and (min-height: 2048px) and (max-height: 2560px)  and (max-width: 1536px) {
@@ -6336,6 +6808,48 @@ font-size:35px !important;
           background: #0f0f0f;
           color: #fff;
       }
+      /*Publicaciones*/
+      #formularionuevoproducto label {
+        font-size: 65px !important;
+        height: 120px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+      }
+          #formularionuevoproducto input, #formularionuevoproducto select{
+            font-size: 60px !important;
+            height: 100px !important;
+          }
+          .imagenpublicacion {
+            width: 43%;
+            height:435px;
+            display: inline-block;
+            position: relative;
+          }
+          .imagenpublicacion2 {
+            width: 60%;
+            height:550px;
+            display: inline-block;
+            position: relative;
+            left: 20%;
+          }
+           #formularionuevoproducto .botonimagen {
+            width: 100% !important;
+            height: 190px !important;
+            margin-bottom: 20px;
+          }
+          .btn-success {
+            background: #3caa37;
+          }
+           #formularionuevoproducto .btn {
+            height: 160px !important;
+            border: none;
+            margin-top: 50px;
+            width: 40% !important;
+            margin-right: 5%;
+          }
+          .pagina {
+            margin-top:10px;
+          }
 }
 
 @media only screen and (min-height: 2560px) and (max-width: 1600px) {
@@ -6691,4 +7205,46 @@ font-size:35px !important;
           background: #0f0f0f;
           color: #fff;
       }
+      /*Publicaciones*/
+      #formularionuevoproducto label {
+        font-size: 85px !important;
+        height: 190px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+      }
+          #formularionuevoproducto input, #formularionuevoproducto select{
+            font-size: 80px !important;
+            height: 190px !important;
+          }
+          .imagenpublicacion {
+            width: 43%;
+            height:435px;
+            display: inline-block;
+            position: relative;
+          }
+          .imagenpublicacion2 {
+            width: 60%;
+            height: 550px;
+            display: inline-block;
+            position: relative;
+            left: 20%;
+          }
+           #formularionuevoproducto .botonimagen {
+            width: 100% !important;
+            height: 190px !important;
+            margin-bottom: 20px;
+          }
+          .btn-success {
+            background: #3caa37;
+          }
+           #formularionuevoproducto .btn {
+            height: 160px !important;
+            border: none;
+            margin-top: 50px;
+            width: 40% !important;
+            margin-right: 5%;
+          }
+          .pagina {
+            margin-top:10px;
+          }
 }
