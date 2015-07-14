@@ -109,11 +109,14 @@
                             type:'POST',
                             data:dato,
                             dataType:'json',
-                            error:function(jqXHR,text_status,strError){
-                            alert(strError);
-                            },
+                            error:function(jqXHR,text_status,strError){},
                             success:function(data){
+                              if (data=="OK") {
                               window.location.href = "iniciar.html";
+                              }
+                              else {
+                                alert(data);
+                              }
                             }
                         });
 
