@@ -109,7 +109,11 @@
                             type:'POST',
                             data:dato,
                             dataType:'json',
-                            error:function(jqXHR,text_status,strError){},
+                            error:function(jqXHR,text_status,strError){
+                              alert(jqXHR);
+                                alert(text_status);
+                                  alert(strError);
+                            },
                             success:function(data){
                               if (data=="OK") {
                               window.location.href = "iniciar.html";

@@ -118,7 +118,10 @@
                             type:'POST',
                             data:dato,
                             dataType:'json',
-                            error:function(jqXHR,text_status,strError){},
+                            error:function(jqXHR,text_status,strError){
+                              alert(jqXHR);
+                                alert(text_status);
+                                  alert(strError);},
                             success:function(data){
                             var usu=data[0];
                             var id = data[1];
