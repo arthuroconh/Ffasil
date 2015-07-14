@@ -105,19 +105,13 @@
         function iniciar(){
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/registrarmovil.php',
+                            url:'http://preview.ffasil.com/public/registro-app',
                             type:'POST',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){},
                             success:function(data){
-                            var usu=data[0];
-                            var id = data[1];
-                            window.localStorage.setItem("usuario", usu);
-                            window.localStorage.setItem("id", id);
-                                  usuario = window.localStorage.getItem("usuario");
-                                  clave = window.localStorage.getItem("id");
-                            window.location.href = "index.html";
+                            window.location.href = "iniciar.html";
                             }
                         });
 
@@ -240,7 +234,7 @@
             <label>Usuario</label>
               <input type="text" id="nombre1" name="usuario" required="required">
             <label>Contrase&ntilde;a</label>
-              <input type="password" id="contra1" name="contra" required="required">
+              <input type="password" id="contra1" name="contra1" required="required">
             <label>Repita Contrase&ntilde;a</label>
               <input type="password" id="contra1" name="contra" required="required">
             <label>Email</label>
@@ -248,15 +242,15 @@
             <label>Nombre</label>
               <input type="text" id="nombre1" name="nombre" required="required">
             <label>Apellido</label>
-              <input type="text" id="nombre1" name="nombre" required="required">
+              <input type="text" id="nombre1" name="apellido" required="required">
             <label>Carnet de Identidad</label>
               <input type="text" id="carnet1" name="carnet" required="required">
             <label>Nombre de empresa</label>
-              <input type="text" id="nombre1" name="nombre" required="required">
+              <input type="text" id="nombre1" name="nombrempresa" required="required">
             <label>NIT</label>
-              <input type="text" id="nombre1" name="nombre" required="required">
+              <input type="text" id="nombre1" name="nit" required="required">
             <label>Sexo:</label>
-              <input type="text" id="nombre1" name="nombre" required="required">
+              <input type="text" id="nombre1" name="sexo" required="required">
             <label>Departamento</label>
               <select class="form-control" requied="required" name="department"><option value="" selected="selected">Seleccione su departamento</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
               <input type="submit" value="Enviar" id="enviarr">

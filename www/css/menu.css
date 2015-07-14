@@ -103,6 +103,7 @@ header nav ul li a: {
 		text-decoration:none;
 		font-weight: bold;
 		font-size:30px;
+		padding-left: 2.5%;
 	}
 	.menu_bar .bt-menu:active {
 		color:#000;
@@ -149,6 +150,7 @@ header nav ul li a: {
 		text-decoration:none;
 		font-weight: bold;
 		font-size:60px;
+		padding-left: 2.5%;
 	}
 	.menu_bar .bt-menu:active {
 		background:#f59c34;
@@ -255,6 +257,7 @@ header nav ul li a: {
 		text-decoration:none;
 		font-weight: bold;
 		font-size:60px;
+		padding-left: 2.5%;
 	}
 	.menu_bar .bt-menu:active {
 		color:#000;
