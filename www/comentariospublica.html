@@ -124,12 +124,13 @@
                                                                   success:function(datos){
                                                                     if (datos[2]==null) {
                                                                   var a = "<section class='contienerespuestax'><section class='tiempo'>"+datos[1]+"</section><section class='comentariox'>"+datos[0]+"</section></section>";
-                                                                                          $("#page_effect").append(a);
+                                                                                          $("#todascomentarios").append(a);
 
                                                                     }else{
                                                                   var a = "<section class='contienerespuestax'><section class='tiempo'>"+datos[1]+"</section><section class='comentariox'>"+datos[0]+"</section><section class='respuestax'>"+datos[2]+"</section></section>";
-                                                                                          $("#page_effect").append(a);
+                                                                                          $("#todascomentarios").append(a);
                                                                   }
+                                                                  datos=0;
                                                                   }
 
                                                                 });
@@ -271,9 +272,11 @@
                 <input list="publicacionid" id="publicacionid" name="publicacionid" class="escondido">
                 <input list="comentarioid" id="comentarioid" name="comentarioid" class="escondido">
                 </form>
-          <section class="cajaccion" id="page_effect" style="display:none; overflow-y:scroll;">
+          <section class="cajaccion paddingcomentario" id="page_effect" style="display:none; overflow-y:scroll;">
             <section class="botonera" style="padding-top:0px !important; width:100% !important;">
                 <input type="button" id="no" value="Comentar" onclick="comentar();">
+            </section>
+            <section id="todascomentarios">
             </section>
           </section>
             <div id="deviceready" class="blink">

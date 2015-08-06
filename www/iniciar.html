@@ -112,17 +112,23 @@
         </script>
         <script type="text/javascript">
         function iniciar(){
+
+
+                                                                    $("#cargando").removeClass('escondido');
+                                                                    $("#cargando").addClass('visible');
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://preview.ffasil.com/public/inicio-app',
+                            url:'http://desarrollotricolor.com.ve/ffasil/inicio.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){
-                              alert(jqXHR);
-                                alert(text_status);
-                                  alert(strError);},
+                                                                                      $("#cargando").addClass('escondido');
+                                                                                      $("#cargando").removeClass('visible');
+                                                                                    alert('Usuario o Clave Incorrecto')},
                             success:function(data){
+                                                                                      $("#cargando").addClass('escondido');
+                                                                                      $("#cargando").removeClass('visible');
                             var usu=data[0];
                             var id = data[1];
                             window.localStorage.setItem("usuario", usu);
@@ -131,9 +137,10 @@
                                   clave = window.localStorage.getItem("id");
                             if (clave>0) {
                              window.location.href = "index.html";
+
                             }
                             else{
-                              alert('Usuario o Clave Incorrectos.')
+                              alert('Usuario o Clave Incorrectos.');
                             }
                             }
                         });
@@ -252,12 +259,15 @@
                               </nav>
         </header>
         <div style="clear:booth"></div>
-          <section class="cajaccion"  id="page_effect" style="display:none;">
-            <form id="formulario" name="formulario" method="post">
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section class="cajaccion"  id="page_effect" style="display:none; overflow:hidden !important;">
+            <form id="formulario" name="formulario" method="post" class="formularioiniciar">
             <label>Nombre de usuario</label>
-              <input type="text" id="" name="nombre" required="required">
+              <input type="text" name="nombre" required="required">
             <label>Contrase&ntilde;a</label>
-              <input type="password" id="" name="contra" required="required"><br>
+              <input type="password" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
               <button type="button" onclick="iniciar();" id="enviarrr">Enviar</button>
             </form>

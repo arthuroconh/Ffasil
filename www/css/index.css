@@ -37,6 +37,15 @@ gris dadada
     font-style: normal;
 
 }
+.abajo{
+    margin-top:20%;
+}
+#enviarrr {
+  color: rgb(255, 255, 255);
+}
+.bajado{
+  top: 5%;
+}
 body {
 
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -51,6 +60,9 @@ body {
     text-transform:uppercase;
     width:100%;
     overflow-x:hidden;
+}
+.subir{
+  margin-top:30px !important;
 }
 #contienecomprador{
     height: 100%;
@@ -112,6 +124,17 @@ body {
 }
 #sesionon1 article{
     height: 65px;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+}
+#sesionon1 i {
+  float: right;
+  margin-right: 5%;
+}
+#sesionoff i {
+  float: right;
+  margin-right: 5%;
 }
 .cajaresultado{
     height: 60%;
@@ -569,13 +592,8 @@ body {
     padding-top: 20%;
 }
 .botonrep:hover{
-    width:100%;
-    height:15%;
-    font-size: 200%;
     background: #000;
     color: #fff;
-    margin-top: 20%;
-    padding-top: 20%;
 }
 .botonrepp{
     width:100%;
@@ -788,7 +806,6 @@ body {
     color: #fff !important;
 }
 #procesarpagobotonn{
-    margin-top: -10px !important;
     width: 100% !important;
     border: none !important;
     font-size: 200% !important;
@@ -901,6 +918,7 @@ body {
     height: 100% !important;
     overflow-x:hidden;
     padding-bottom: 190px;
+    text-align: justify;
 }
 label{
     float: left;
@@ -911,8 +929,6 @@ label{
     margin-bottom: 3%;
     width: 90%;
     float: left;
-    font-size: 150% !important;
-    height: 50px !important;
 }
 #mensaje{
     margin-bottom: 3%;
@@ -932,11 +948,6 @@ label{
     margin-bottom: 150px;
 }
 #reset:hover{
-    font-size: 150% !important;
-    margin-top: 5%;
-    width: 40%;
-    height: 40px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -950,11 +961,6 @@ label{
     margin-right: 10px !important;
 }
 #enviarr:hover{
-    font-size: 150% !important;
-    margin-top: 5%;
-    width: 40%;
-    height: 40px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -967,11 +973,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 150% !important;
-    margin-top: 5%;
-    width: 40%;
-    height: 40px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1131,13 +1132,8 @@ h1 {
     padding-top: 20%;
 }
 .botonrep:hover{
-    width:100%;
-    height:15%;
-    font-size: 500%;
     background: #000;
     color: #fff;
-    margin-top: 20%;
-    padding-top: 20%;
 }
 
 
@@ -1242,8 +1238,6 @@ label{
     margin-bottom: 2%;
     width: 90%;
     float: left;
-    font-size: 150% !important;
-    height: 20px !important;
 }
 #mensaje{
     margin-bottom: 1%;
@@ -1261,11 +1255,6 @@ label{
     background: #3caa37;
 }
 #enviarr:hover{
-    font-size: 150% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 30px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1282,11 +1271,6 @@ label{
     margin-bottom: 150px;
 }
 #reset:hover{
-    font-size: 150% !important;
-    margin-top: 1%;
-    width: 40%;
-    height: 30px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1299,11 +1283,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 150% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 30px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1322,13 +1301,8 @@ label{
     padding-top: 20%;
 }
 .botonrep:hover{
-    width:100%;
-    height:15%;
-    font-size: 500%;
     background: #000;
     color: #fff;
-    margin-top: 20%;
-    padding-top: 20%;
 }
 
 .cajapublica{
@@ -1568,8 +1542,6 @@ label{
     margin-bottom: 2%;
     width: 90%;
     float: left;
-    font-size: 150% !important;
-    height: 90px !important;
 }
 #mensaje{
     margin-bottom: 1%;
@@ -1587,11 +1559,6 @@ label{
     background: #3caa37;
 }
 #enviarr:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 90px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1608,10 +1575,6 @@ label{
     margin-bottom: 150px;
 }
 #reset:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    height: 90px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1624,11 +1587,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 30px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -1642,11 +1600,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 190% !important;
-    margin-top: 7%;
-    width: 30%;
-    height: 80px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -2034,8 +1987,6 @@ label{
     margin-bottom: 2%;
     width: 90%;
     float: left;
-    font-size: 150% !important;
-    height: 90px !important;
 }
 #mensaje{
     margin-bottom: 1%;
@@ -2053,11 +2004,6 @@ label{
     background: #3caa37;
 }
 #enviarr:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 90px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -2074,11 +2020,6 @@ label{
     margin-bottom: 150px;
 }
 #reset:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    width: 40%;
-    height: 90px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -2091,11 +2032,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 180% !important;
-    margin-top: 1%;
-    width: 30%;
-    height: 30px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -2109,11 +2045,6 @@ label{
     background: #0f70b7;
 }
 #enviarrr:hover{
-    font-size: 190% !important;
-    margin-top: 7%;
-    width: 30%;
-    height: 80px !important;
-    border: none;
     color: #fff;
     background: #898989;
 }
@@ -2193,6 +2124,15 @@ label{
   text-decoration: none;
   font-weight: bold;
   font-size:20px !important;
+}
+.cajaccion {
+  width: 90% !important;
+  height: 95% !important;
+  margin-top: 0 !important;
+  float: left;
+  margin-left: 5% !important;
+  overflow: scroll !important;
+  position: fixed !important;
 }
 .cajaccion article{
   font-size: 120% !important;
@@ -2506,6 +2446,122 @@ font-size:12px !important;
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:30% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size: 100%;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 100% !important;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+
+    /*Calificar Vendedor*/
+    #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 15px;
+    color: #fff;
+    }
+    #contienecomprador section{
+      height: 19%;
+      width: 100%;
+    }
+    #contienecomprador label{
+      font-size: 20px !important;
+      margin-bottom: 20px;
+    }
+
+    #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 15px;
+    }
+
+    /*Reputacion*/
+
+    .botonrep{
+        width:100%;
+        height:15%;
+        font-size: 15px;
+        background: #dadada;
+        margin-top: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #posi, #nega{
+      font-size: 17px !important;
+    }
+    /*terminos*/
+
+    .cajaccion .terminos{
+      padding-top: 60px;
+        background: none !important;
+        padding-left: 5% !important;
+        font-size: 15px !important;
+        margin-bottom: 10% !important;
+        overflow: scroll;
+        height: 110% !important;
+        overflow-x:hidden;
+        padding-bottom: 290px;
+        text-align: justify;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      margin-top: 35px;
+      height: 80%;
+    }
+    .formularioiniciar input{
+      height: 30px;
+      width: 90%;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 65px;
+      height: 100%;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:65px !important;
+      height: 100%;
+      padding-bottom: 250px;
+    }
+    .formulariocontact input{
+      height: 30px;
+      width: 90%;
+    }
+    .formulariocontact #mensaje{
+      height: 80px !important;
+      width: 90%;
+    }
 }
 
 @media only screen and (min-height: 480px) and (max-height: 800px) and (min-width: 320px) and (max-width: 640px) {
@@ -2801,6 +2857,113 @@ header nav ul li a {
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size: 100%;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 100% !important;
+      float: right;
+      margin-right: 5%;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 25px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 17px !important;
+        }
+        /*terminos*/
+
+        .cajaccion .terminos{
+            margin-top: -40px;
+            background: none !important;
+            padding-left: 5% !important;
+            font-size: 25px !important;
+            margin-bottom: 10% !important;
+            overflow: scroll;
+            height: 110% !important;
+            overflow-x:hidden;
+            padding-bottom: 110px;
+            text-align: justify;
+        }
+        /*Iniciar Sesion*/
+        .formularioiniciar{
+          overflow: hidden !important;
+          height: 80%;
+        }
+        .formularioiniciar input{
+          height: 40px;
+          font-size: 25px !important;
+          width: 90%;
+        }
+        #enviarrr {
+            font-size: 25px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 40px !important;
+            border: none;
+            background: #0f70b7;
+        }
+        /*Registro*/
+        .formularioreg{
+          margin-top: 65px;
+          height: 100%;
+          font-size: 20px;
+        }
+        /*Contacto*/
+
+        .formulariocontact{
+          overflow: hidden !important;
+          margin-top:45px;
+          height: 100%;
+          padding-bottom: 150px;
+        }
+        .formulariocontact input{
+          height: 30px;
+          width: 90%;
+        }
+
+        .formulariocontact .texto{
+          margin-bottom: 10px !important;
+        }
+        .formulariocontact #mensaje{
+          height: 80px !important;
+          width: 90%;
+        }
 }
 @media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
 .menu_bar {
@@ -3202,6 +3365,152 @@ font-size:27px !important;
            font-size: 30px !important;
            height: 60px;
          }
+         /* Mis publicaciones */
+         .contenedorpublicacion{
+           position:relative;
+           width:95%!important;
+           height:20% !important;
+           background:#dadada;
+           box-sizing:border-box;
+           margin-bottom:50px;
+         }
+         .contenedorpublicacion img{
+           width:37%!important;
+           height:100% !important;
+           float:left;
+           box-sizing:border-box;
+         }
+         #formulario{
+           width:100%;
+           height: 100%;
+           overflow:scroll;
+         }
+         .infromacion {
+           font-size:28px;
+         }
+         #procesarpagobotonn {
+           padding-top: 5%;
+           padding-bottom: 5%;
+           width: 70% !important;
+           border: none !important;
+           font-size: 32px !important;
+           float: right;
+           margin-right: 5%;
+           background: #f29200 !important;
+           color: #fff !important;
+           overflow: hidden;
+         }
+         /*Calificar Vendedor*/
+       #contienecomprador .btn{
+         border: none !important;
+         margin-top: 0px !important;
+         height: 40% !important;
+         width: 40% !important;
+         margin-right: 5% !important;
+         font-size: 40px;
+         color: #fff;
+       }
+       #contienecomprador section{
+           height: 19%;
+           width: 100%;
+       }
+       #contienecomprador label{
+           font-size: 40px !important;
+           margin-bottom: 20px;
+       }
+
+       #contienecomprador #titulo,#comprador,#telefono,#correo{
+           font-size: 35px;
+       }
+           /*Reputacion*/
+
+           .botonrep{
+               width:100%;
+               height:15%;
+               font-size: 35px;
+               background: #dadada;
+               margin-top: 20%;
+               padding-top: 5%;
+               padding-bottom: 5%;
+           }
+           #posi, #nega{
+             font-size: 27px !important;
+           }
+    /*Comentarios*/
+    .contienecomentario{
+      font-size: 25px;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 35px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 95px;
+      height: 100%;
+      font-size: 40px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 60px;
+      font-size: 35px !important;
+    }
+    #enviarr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #f29200;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:85px;
+      height: 100%;
+      padding-bottom: 150px;
+    }
+    .formulariocontact input{
+      height: 50px;
+      width: 90%;
+      font-size: 30px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 50px !important;
+    }
+    .formulariocontact #mensaje{
+      height:120px !important;
+      width: 90%;
+      font-size: 30px !important;
+    }
 }
 
 @media only screen and (min-height: 800px) and (max-height: 960px)  and (max-width: 480px) {
@@ -3574,6 +3883,55 @@ font-size:23px !important;
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:20px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 20px !important;
+      float: right;
+      margin-right: 5%;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 29px !important;
+        }
 }
 
 @media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 641px) {
@@ -3953,6 +4311,166 @@ font-size:28px !important;
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:25px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 27px !important;
+      float: right;
+      margin-right: 5%;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+    /*Calificar Vendedor*/
+  #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 40px;
+    color: #fff;
+  }
+  #contienecomprador section{
+      height: 19%;
+      width: 100%;
+  }
+  #contienecomprador label{
+      font-size: 40px !important;
+      margin-bottom: 20px;
+  }
+
+  #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 35px;
+  }
+      /*Reputacion*/
+
+      .botonrep{
+          width:100%;
+          height:15%;
+          font-size: 35px;
+          background: #dadada;
+          margin-top: 20%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+      }
+      #posi, #nega{
+        font-size: 29px !important;
+      }
+    /*Comentarios*/
+    .contienecomentario{
+     font-size: 25px;
+    }
+    /*terminos*/
+
+    .cajaccion .terminos{
+        margin-top: -40px;
+        background: none !important;
+        padding-left: 5% !important;
+        font-size: 27px !important;
+        margin-bottom: 10% !important;
+        overflow: scroll;
+        height: 110% !important;
+        overflow-x:hidden;
+        padding-bottom: 150px;
+        text-align: justify;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 35px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 95px;
+      height: 100%;
+      font-size: 40px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 60px;
+      font-size: 35px !important;
+    }
+    #enviarr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #f29200;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:85px;
+      height: 100%;
+      padding-bottom: 150px;
+    }
+    .formulariocontact input{
+      height: 50px;
+      width: 90%;
+      font-size: 30px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 50px !important;
+    }
+    .formulariocontact #mensaje{
+      height:120px !important;
+      width: 90%;
+      font-size: 30px !important;
+    }
 }
 @media only screen and (min-height: 1024px) and (max-height: 1136px) and (min-width: 600px) and (max-width: 768px) {
 .menu_bar {
@@ -4327,6 +4845,107 @@ font-size:28px !important;
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:32px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 30px !important;
+      float: right;
+      margin-right: 5%;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 29px !important;
+        }
+        /*Registro*/
+        .formularioreg{
+          margin-top: 95px;
+          height: 100%;
+          font-size: 40px;
+        }
+        .formularioreg input, .formularioreg select{
+          height: 60px;
+          font-size: 35px !important;
+        }
+        #enviarr {
+            font-size: 35px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 60px !important;
+            border: none;
+            background: #3caa37;
+            margin-right: 10px !important;
+        }
+        #reset {
+            font-size: 35px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 60px !important;
+            border: none;
+            background: #f29200;
+            margin-right: 10px !important;
+            margin-top: 30px;
+            margin-bottom: 150px;
+        }
+        /*Contacto*/
+
+        .formulariocontact{
+          overflow: hidden !important;
+          margin-top:85px;
+          height: 100%;
+          padding-bottom: 150px;
+        }
+        .formulariocontact input{
+          height: 50px;
+          width: 90%;
+          font-size: 30px !important;
+        }
+
+        .formulariocontact .texto{
+          margin-bottom: 50px !important;
+        }
+        .formulariocontact #mensaje{
+          height:120px !important;
+          width: 90%;
+          font-size: 30px !important;
+        }
 }
 
 
@@ -4710,6 +5329,111 @@ font-size:35px !important;
     .pagina {
       margin-top:10px;
     }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:23% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:32px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 35px !important;
+      float: right;
+      margin-right: 5%;
+      background: #f29200 !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 2%;
+        }
+        #posi, #nega{
+          font-size: 35px !important;
+        }
+ /*Comentarios*/
+ .contienecomentario{
+   font-size: 28px;
+ }
+ /*Registro*/
+ .formularioreg{
+   margin-top: 125px;
+   height: 100%;
+   font-size: 40px;
+ }
+ .formularioreg input, .formularioreg select{
+   height: 60px;
+   font-size: 35px !important;
+ }
+ #enviarr {
+     font-size: 35px !important;
+     margin-top: 5%;
+     width: 40%;
+     height: 60px !important;
+     border: none;
+     background: #3caa37;
+     margin-right: 10px !important;
+ }
+ #reset {
+     font-size: 35px !important;
+     margin-top: 5%;
+     width: 40%;
+     height: 60px !important;
+     border: none;
+     background: #f29200;
+     margin-right: 10px !important;
+     margin-top: 30px;
+     margin-bottom: 150px;
+ }
+ /*Contacto*/
+
+ .formulariocontact{
+   overflow: hidden !important;
+   margin-top:100px;
+   height: 100%;
+   padding-bottom: 150px;
+ }
+ .formulariocontact input{
+   height: 50px;
+   width: 90%;
+   font-size: 30px !important;
+ }
+
+ .formulariocontact .texto{
+   margin-bottom: 50px !important;
+ }
+ .formulariocontact #mensaje{
+   height:120px !important;
+   width: 90%;
+   font-size: 30px !important;
+ }
 }
 
 @media only screen and (max-height: 1280px) and (min-width: 720px){
@@ -5088,6 +5812,100 @@ font-size:35px !important;
     .pagina {
       margin-top:10px;
     }
+    /*Calificar Vendedor*/
+  #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 40px !important;
+    color: #fff;
+  }
+  #contienecomprador section{
+      height: 19%;
+      width: 100%;
+  }
+  #contienecomprador label{
+      font-size: 40px !important;
+      margin-bottom: 20px;
+  }
+
+  #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 35px;
+  }
+  .infromacion {
+    font-size:35px;
+  }
+      /*Reputacion*/
+
+      .botonrep{
+          width:100%;
+          height:15%;
+          font-size: 45px;
+          background: #dadada;
+          margin-top: 20%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+      }
+      #posi, #nega{
+        font-size: 35px !important;
+      }
+      /*Registro*/
+      .formularioreg{
+        margin-top: 125px;
+        height: 100%;
+        font-size: 50px;
+      }
+      .formularioreg input, .formularioreg select{
+        height: 80px;
+        font-size: 45px !important;
+      }
+      #enviarr {
+          font-size: 55px !important;
+          margin-top: 5%;
+          width: 40%;
+          height: 90px !important;
+          border: none;
+          background: #3caa37;
+          margin-right: 10px !important;
+      }
+      #reset {
+          font-size: 55px !important;
+          margin-top: 5%;
+          width: 40%;
+          height: 90px !important;
+          border: none;
+          background: #f29200;
+          margin-right: 10px !important;
+          margin-top: 30px;
+          margin-bottom: 150px;
+      }
+      /*Contacto*/
+
+      .formulariocontact{
+        overflow: scroll !important;
+        margin-top:120px !important;
+        height: 100% !important;
+        padding-bottom: 300px !important;
+      }
+      .formulariocontact input{
+        height: 80px !important;
+        width: 90% !important;
+        font-size: 50px !important;
+      }
+
+      .formulariocontact .texto{
+        margin-bottom: 10px !important;
+      }
+      .formulariocontact #mensaje{
+        height:220px !important;
+        width: 90% !important;
+        font-size: 50px !important;
+      }
+      .formulariocontact #enviarr{
+        margin-bottom: 100px;
+      }
 }
 
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
@@ -5484,6 +6302,87 @@ font-size:35px !important;
       .pagina {
         margin-top:10px;
       }
+      #posi, #nega{
+        font-size: 35px !important;
+      }
+    /*Comentarios*/
+    .contienecomentario{
+     font-size: 30px;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 40px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 40px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 125px;
+      height: 100%;
+      font-size: 50px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 80px;
+      font-size: 45px !important;
+    }
+    #enviarr {
+        font-size: 55px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 90px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 55px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 90px !important;
+        border: none;
+        background: #f29200;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: scroll !important;
+      margin-top:120px !important;
+      height: 100% !important;
+      padding-bottom: 300px !important;
+    }
+    .formulariocontact input{
+      height: 80px !important;
+      width: 90% !important;
+      font-size: 40px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 80px !important;
+    }
+    .formulariocontact #mensaje{
+      height:220px !important;
+      width: 90% !important;
+      font-size: 40px !important;
+    }
+    .formulariocontact #enviarr{
+      margin-bottom: 100px;
+    }
 }
 
 @media only screen and (min-height: 1280px) and (max-height: 1920px) and (min-width: 800px) and (max-width: 1080px)  {
@@ -5857,6 +6756,32 @@ font-size:35px !important;
                 .pagina {
                   margin-top:10px;
                 }
+         /*Comentarios*/
+         .contienecomentario{
+           font-size: 34px;
+         }
+         .botngrande{
+           height: 80px;
+         }
+         /*Iniciar Sesion*/
+         .formularioiniciar{
+           overflow: hidden !important;
+           height: 80%;
+           font-size: 40px !important;
+         }
+         .formularioiniciar input{
+           height: 80px;
+           font-size: 50px !important;
+           width: 90%;
+         }
+         #enviarrr {
+             font-size: 50px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 80px !important;
+             border: none;
+             background: #0f70b7;
+         }
 }
 
 @media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1200px) and (max-width: 1536px) {
@@ -6258,6 +7183,126 @@ font-size:35px !important;
               .pagina {
                 margin-top:10px;
               }
+              /*Calificar Vendedor*/
+            #contienecomprador .btn{
+              border: none !important;
+              margin-top: 0px !important;
+              height: 40% !important;
+              width: 40% !important;
+              margin-right: 5% !important;
+              font-size: 50px !important;
+              color: #fff;
+            }
+            #contienecomprador section{
+                height: 19%;
+                width: 100%;
+            }
+            #contienecomprador label{
+                font-size: 60px !important;
+                margin-bottom: 20px;
+            }
+
+            #contienecomprador #titulo,#comprador,#telefono,#correo{
+                font-size: 50px;
+            }
+            .infromacion {
+              font-size:55px;
+            }
+                /*Reputacion*/
+
+                .botonrep{
+                    width:100%;
+                    height:15%;
+                    font-size: 65px;
+                    background: #dadada;
+                    margin-top: 20%;
+                    padding-top: 7%;
+                    padding-bottom: 5%;
+                }
+                #posi, #nega{
+                  font-size: 65px !important;
+                }
+         /*Comentarios*/
+         .contienecomentario{
+           font-size: 50px;
+         }
+         .botngrande{
+           height: 120px;
+         }
+         /*Iniciar Sesion*/
+         .formularioiniciar{
+           overflow: hidden !important;
+           height: 80%;
+           font-size: 40px !important;
+         }
+         .formularioiniciar input{
+           height: 130px;
+           font-size: 70px !important;
+           width: 90%;
+         }
+         #enviarrr {
+             font-size: 70px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 130px !important;
+             border: none;
+             background: #0f70b7;
+         }
+         /*Registro*/
+         .formularioreg{
+           margin-top: 225px;
+           height: 100%;
+           font-size: 50px;
+         }
+         .formularioreg input, .formularioreg select{
+           height: 150px !important;
+           font-size: 45px !important;
+         }
+         #enviarr {
+             font-size: 65px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 120px !important;
+             border: none;
+             background: #3caa37;
+             margin-right: 10px !important;
+         }
+         #reset {
+             font-size: 65px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 120px !important;
+             border: none;
+             background: #f29200;
+             margin-right: 10px !important;
+             margin-top: 30px;
+             margin-bottom: 150px;
+         }
+         /*Contacto*/
+
+         .formulariocontact{
+           overflow: hidden !important;
+           margin-top:160px !important;
+           height: 100% !important;
+           padding-bottom: 300px !important;
+         }
+         .formulariocontact input{
+           height: 80px !important;
+           width: 90% !important;
+           font-size: 60px !important;
+         }
+
+         .formulariocontact .texto{
+           margin-bottom: 80px !important;
+         }
+         .formulariocontact #mensaje{
+           height:220px !important;
+           width: 90% !important;
+           font-size: 60px !important;
+         }
+         .formulariocontact #enviarr{
+           margin-bottom: 100px;
+         }
 }
 
 
@@ -6542,6 +7587,137 @@ font-size:35px !important;
         .pagina {
           margin-top:10px;
         }
+        /*Calificar Vendedor*/
+      #contienecomprador .btn{
+        border: none !important;
+        margin-top: 0px !important;
+        height: 40% !important;
+        width: 40% !important;
+        margin-right: 5% !important;
+        font-size: 50px !important;
+        color: #fff;
+      }
+      #contienecomprador section{
+          height: 19%;
+          width: 100%;
+      }
+      #contienecomprador label{
+          font-size: 60px !important;
+          margin-bottom: 20px;
+      }
+
+      #contienecomprador #titulo,#comprador,#telefono,#correo{
+          font-size: 50px;
+      }
+      .infromacion {
+        font-size:55px;
+      }
+          /*Reputacion*/
+
+          .botonrep{
+              width:100%;
+              height:15%;
+              font-size: 65px;
+              background: #dadada;
+              margin-top: 20%;
+              padding-top: 7%;
+              padding-bottom: 5%;
+          }
+          #posi, #nega{
+            font-size: 65px !important;
+          }
+   /*Comentarios*/
+   .contienecomentario{
+     font-size: 50px;
+   }
+   .botngrande{
+     height: 120px;
+   }
+   /*Iniciar Sesion*/
+   .formularioiniciar{
+     overflow: hidden !important;
+     height: 80%;
+     font-size: 40px !important;
+   }
+   .formularioiniciar input{
+     height: 130px;
+     font-size: 70px !important;
+     width: 90%;
+   }
+   #enviarrr {
+       font-size: 70px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 130px !important;
+       border: none;
+       background: #0f70b7;
+   }
+   .formularioiniciar label{
+     height: 130px !important;;
+     font-size: 70px !important;
+     width: 90%;
+   }
+   /*Registro*/
+   .formularioreg{
+     margin-top: 225px;
+     height: 100%;
+     font-size: 50px;
+   }
+   .formularioreg input, .formularioreg select{
+     height: 150px !important;
+     font-size: 75px !important;
+   }
+   .formularioreg label{
+     height: 100px !important;
+     font-size: 75px !important;
+   }
+   #enviarr {
+       font-size: 75px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 120px !important;
+       border: none;
+       background: #3caa37;
+       margin-right: 10px !important;
+   }
+   #reset {
+       font-size: 75px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 120px !important;
+       border: none;
+       background: #f29200;
+       margin-right: 10px !important;
+       margin-top: 30px;
+       margin-bottom: 150px;
+   }
+   /*Contacto*/
+
+   .formulariocontact{
+     overflow: hidden !important;
+     margin-top:160px !important;
+     height: 100% !important;
+     padding-bottom: 300px !important;
+   }
+   .formulariocontact input{
+     margin-top: 15px;
+     height: 120px !important;
+     width: 90% !important;
+     font-size: 70px !important;
+   }
+
+   .formulariocontact .texto{
+     margin-bottom: 80px !important;
+   }
+   .formulariocontact #mensaje{
+     margin-top: 15px;
+     height:220px !important;
+     width: 90% !important;
+     font-size: 70px !important;
+   }
+   .formulariocontact #enviarr{
+     margin-bottom: 100px;
+   }
 }
 
 @media only screen and (min-height: 2048px) and (max-height: 2560px)  and (max-width: 1536px) {
@@ -6884,6 +8060,56 @@ font-size:35px !important;
           }
           .pagina {
             margin-top:10px;
+          }
+          /*Iniciar Sesion*/
+          .formularioiniciar{
+            overflow: hidden !important;
+            height: 80%;
+            font-size: 40px !important;
+          }
+          .formularioiniciar input{
+            height: 130px;
+            font-size: 70px !important;
+            width: 90%;
+          }
+          #enviarrr {
+              font-size: 70px !important;
+              margin-top: 5%;
+              width: 40%;
+              height: 130px !important;
+              border: none;
+              background: #0f70b7;
+          }
+          .formularioiniciar label{
+            font-size: 70px !important;
+            width: 90%;
+          }
+          /*Contacto*/
+
+          .formulariocontact{
+            overflow: scroll !important;
+            margin-top:160px !important;
+            height: 100% !important;
+            padding-bottom: 300px !important;
+          }
+          .formulariocontact input{
+            margin-top: 15px;
+            height: 120px !important;
+            width: 90% !important;
+            font-size: 70px !important;
+          }
+
+          .formulariocontact .texto{
+            margin-bottom: 80px !important;
+          }
+          .formulariocontact #mensaje{
+            margin-top: 15px;
+            height:220px !important;
+            width: 90% !important;
+            font-size: 70px !important;
+          }
+          .formulariocontact #enviarr{
+            margin-bottom: 200px;
           }
 }
 
@@ -7282,4 +8508,136 @@ font-size:35px !important;
           .pagina {
             margin-top:10px;
           }
+          /*Calificar Vendedor*/
+        #contienecomprador .btn{
+          border: none !important;
+          margin-top: 0px !important;
+          height: 40% !important;
+          width: 40% !important;
+          margin-right: 5% !important;
+          font-size: 65px !important;
+          color: #fff;
+        }
+        #contienecomprador section{
+            height: 19%;
+            width: 100%;
+        }
+        #contienecomprador label{
+            font-size: 75px !important;
+            margin-bottom: 20px;
+        }
+
+        #contienecomprador #titulo,#comprador,#telefono,#correo{
+            font-size: 70px;
+        }
+        .infromacion {
+          font-size:65px;
+        }
+            /*Reputacion*/
+
+            .botonrep{
+                width:100%;
+                height:15%;
+                font-size: 75px;
+                background: #dadada;
+                margin-top: 20%;
+                padding-top: 7%;
+                padding-bottom: 5%;
+            }
+            #posi, #nega{
+              font-size: 75px !important;
+            }
+     /*Comentarios*/
+     .contienecomentario{
+       font-size: 70px;
+     }
+     .botngrande{
+       height: 160px;
+     }
+     /*Iniciar Sesion*/
+     .formularioiniciar{
+       overflow: hidden !important;
+       height: 80%;
+       font-size: 40px !important;
+     }
+     .formularioiniciar input{
+       height: 130px;
+       font-size: 70px !important;
+       width: 90%;
+     }
+     #enviarrr {
+         font-size: 70px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 130px !important;
+         border: none;
+         background: #0f70b7;
+     }
+     .formularioiniciar label{
+       font-size: 70px !important;
+       width: 90%;
+     }
+     /*Registro*/
+     .formularioreg{
+       margin-top: 300px;
+       height: 100%;
+       font-size: 50px;
+     }
+     .formularioreg input, .formularioreg select{
+       height: 150px !important;
+       font-size: 75px !important;
+     }
+     .formularioreg label{
+       height: 100px !important;
+       font-size: 75px !important;
+     }
+     #enviarr {
+         font-size: 75px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 120px !important;
+         border: none;
+         background: #3caa37;
+         margin-right: 10px !important;
+     }
+     #reset {
+         font-size: 75px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 120px !important;
+         border: none;
+         background: #f29200;
+         margin-right: 10px !important;
+         margin-top: 30px;
+         margin-bottom: 150px;
+     }
+     /*Contacto*/
+
+     .formulariocontact{
+       overflow: scroll !important;
+       margin-top:250px !important;
+       height: 100% !important;
+       padding-bottom: 300px !important;
+     }
+     .formulariocontact input{
+       margin-top: 15px;
+       height: 120px !important;
+       width: 90% !important;
+       font-size: 75px !important;
+     }
+
+     .formulariocontact .texto{
+       margin-bottom: 80px !important;
+     }
+     .formulariocontact #mensaje{
+       margin-top: 15px;
+       height:290px !important;
+       width: 90% !important;
+       font-size: 75px !important;
+     }
+     .formulariocontact #enviarr{
+       margin-bottom: 200px;
+       height: 200px !important;
+       font-size: 75px !important;
+     }
 }

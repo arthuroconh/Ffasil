@@ -129,15 +129,15 @@
                                                                       var porcion = mensaje.substring(0,15);
                                                                     contador=contador+1;
                                                                     var a ="<p>";
-                                                                    var b ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:50px;'>";
-                                                                    var bb ="<section style='position:relative; width:95%!important; height:20% !important; background:#dadada; box-sizing:border-box; margin-bottom:70% !important;'>";
-                                                                    var c = "<img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+data[3]+"' style='width:37%!important; height:100% !important; float:left; box-sizing:border-box;'>";
+                                                                    var b ="<section class='contenedorpublicacion'>";
+                                                                    var bb ="<section class='contenedorpublicacion' style='margin-bottom:70% !important;'>";
+                                                                    var c = "<img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+data[3]+"' >";
                                                                     var d = "<section style='width:60%!important; height:95% !important; float:right; box-sizing:border-box; position:relative;'>";
                                                                     var e = "<section id='infromacion"+data[0]+"' style='padding-top:20px;' class='infromacion'>";
                                                                     var cerrarsec="</section>";
                                                                     var f = "</p>";
-                                                                    var fomulapago = "<form method='POST' id='formulario' style='height:100%; bottom:350px !important;''><input id='idusuario' type='text' name='id' class='escondido' value='"+data[0]+"'><input style='margin-top:5% !important; width:70% !important;' type='button' value='Pagar' name='enviarPub' id='procesarpagobotonn'  onclick='pagar("+data[0]+");'></form>";
-                                                                    var fomulapagado = "<form method='POST' id='formulario' style='height:100%; bottom:350px !important;''><input id='idusuario' type='text' name='id' class='escondido' value='"+data[0]+"'><input style='margin-top:5% !important; width:70% !important;' type='button' value='Ver' name='enviarPub' id='procesarpagobotonn'  onclick='ver();'></form>";
+                                                                    var fomulapago = "<form method='POST' id='formularioo' style='height:100%; bottom:350px !important;''><input id='idusuario' type='text' name='id' class='escondido' value='"+data[0]+"'><input type='button' value='Pagar' name='enviarPub' id='procesarpagobotonn'  onclick='pagar("+data[0]+");' class='bajado'></form>";
+                                                                    var fomulapagado = "<form method='POST'  id='formularioo' style='height:100%; bottom:350px !important;''><input id='idusuario' type='text' name='id' class='escondido' value='"+data[0]+"'><input type='button' value='Ver' name='enviarPub' id='procesarpagobotonn'  onclick='ver("+data[0]+");' class='bajado'></form>";
                                                                     var inputbusqueda = "<input id='idusuario' type='text' name='id' class='escondido' value='"+data[0]+"'>";
                                                                     if (contador==tutu) {
 
@@ -174,6 +174,11 @@
         function pagar(id) {
                             window.localStorage.setItem("publicacion", id);
                             location.href="pago.html";
+        }
+        function ver(id) {
+          window.localStorage.setItem("ultimabusqueda", $("#busqueda").val());
+          window.localStorage.setItem("publicacionaver", id);
+          location.href="mostrarpublicacion.html";
         }
         </script>
     </head>
@@ -291,9 +296,9 @@
         <div id="cargando" class="escondido">
             <img src="load.gif">
         </div>
-          <section id="sesionon" style="display:none; width: 95%; height: 95%; position: fixed; float: left; margin-left: 2%; ">
+          <section id="sesionon" style="display:none; width: 95%; height: 95%; position: fixed; float: left; margin-left: 2%; " class="abajo">
 
-          <div style="width:100%; height: 100%; overflow:scroll; margin-top:18%; "id="formulario">
+          <div id="formulario">
           <form method="POST" id="fo" class="escondido">
             <input id="idusuario" type="text" name="id" class="escondido">
             <input id="publicacionid" type="text" name="publicacionid" class="escondido">

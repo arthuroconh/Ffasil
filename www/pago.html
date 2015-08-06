@@ -159,7 +159,7 @@
 
                                 var dat =$('#formulario').serialize();
                                   $.ajax({
-                                    url:'http://desarrollotricolor.com.ve/ffasil/datosbanco.php',
+                                    url:'datosbanco.php',
                                     type:'POST',
                                     data:dat,
                                     dataType:'json',
@@ -197,7 +197,7 @@
                             $('#cargando').addClass('visible');
                             $('#cargando').removeClass('escondido');
                                   $.ajax({
-                                    url:'http://desarrollotricolor.com.ve/ffasil/registrapago.php',
+                                    url:'registrapago.php',
                                     type:'POST',
                                     data:dat,
                                     dataType:'json',
@@ -340,7 +340,7 @@
                 <option value="ahorro">Ahorro</option>
             </select>
             <section >
-              <article id="datos" style="clear:both; height:150px !important; width:90%; box-sizing:border-box;">
+              <article id="datos">
 
               </article>
             </section>

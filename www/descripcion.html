@@ -110,7 +110,7 @@
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){},
                             success:function(data){
-                              var a = "<section class='contienedesc'><section class='descrip'><b><label>Descripci&oacute;n</label></b>"+data[0]+"</section><section class='descrip'><b><label>Precio</label></b>"+data[2]+"&nbsp;"+data[1]+"</section><section class='descrip'><b><label>Ciudad</label></b>"+data[3]+"</section><section class='descrip'><b><label>Departamento</label></b>"+data[4]+"</section></section>";
+                              var a = "<section class='contienedesc'><section class='descrip'><b><label>Descripci&oacute;n</label></b>"+data[0]+"</section><section class='descrip'><b><label>Precio</label></b>"+data[2]+"&nbsp;"+data[1]+"</section><section class='descrip'><b><label>Ciudad</label></b>"+data[3]+"</section><section class='descrip depart'><b><label>Departamento</label></b>"+data[4]+"</section></section>";
                                   $("#page_effect").append(a);
 
                                                           $("#cargando").addClass('escondido');
