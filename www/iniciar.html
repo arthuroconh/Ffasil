@@ -35,6 +35,7 @@
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
+        <script type="text/javascript" src="js/iniciosesion.js"></script>
         <script type="text/javascript">
         var usuario;
         var clave;
@@ -269,13 +270,16 @@
             <label>Contrase&ntilde;a</label>
               <input type="password" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
+                <input type="text" name="regId" id="regId" readonly="readonly" placeholder="regId" style="display:none;">
               <button type="button" onclick="iniciar();" id="enviarrr">Enviar</button>
             </form>
           </section>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+          </center>
+
+          <div id="deviceready" class="blink" style="display:none !important;">
+              <p class="event listening">Connecting to Device</p>
+              <p class="event received">Device is Ready</p>
+          </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 
@@ -284,6 +288,7 @@
         app.initialize();
 
         </script>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     </body>
