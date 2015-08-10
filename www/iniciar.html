@@ -114,6 +114,9 @@
         <script type="text/javascript">
         function iniciar(){
 
+          var regId = document.getElementById('regId').value;
+        if (regId != "") {
+
 
                                                                     $("#cargando").removeClass('escondido');
                                                                     $("#cargando").addClass('visible');
@@ -145,6 +148,11 @@
                             }
                             }
                         });
+
+                    }
+                    else
+                        {alert('Esperando el Tu Id Personal, Conexion lenta');}
+                }
 
         }
         </script>
