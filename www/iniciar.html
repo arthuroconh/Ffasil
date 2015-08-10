@@ -35,7 +35,6 @@
         <link rel="stylesheet" href="css/menu.css">
         <script type="text/javascript" src="jquery.js"></script>
         <link rel="stylesheet" href="css/font-awesome.css">
-        <script type="text/javascript" src="js/iniciosesion.js"></script>
         <script type="text/javascript">
         var usuario;
         var clave;
@@ -113,9 +112,11 @@
         </script>
         <script type="text/javascript">
         function iniciar(){
+        //El registro al servicio de google lo hacemos automáticamente
+        app.initialize();
 
           var regId = document.getElementById('regId').value;
-        if (regId != "") {
+          if (regId != "") {
 
 
                                                                     $("#cargando").removeClass('escondido');
@@ -278,7 +279,7 @@
             <label>Contrase&ntilde;a</label>
               <input type="password" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
-                <input type="text" name="regId" id="regId" readonly="readonly" placeholder="regId" style="display:none;">
+                <input type="text" name="regId" id="regId" readonly="readonly">
               <button type="button" onclick="iniciar();" id="enviarrr">Enviar</button>
             </form>
           </section>
@@ -289,8 +290,8 @@
               <p class="event received">Device is Ready</p>
           </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
         //El registro al servicio de google lo hacemos automáticamente
         app.initialize();
