@@ -103,6 +103,8 @@
         </script>
         <script type="text/javascript">
         function iniciar(){
+                                                                            $("#cargando").removeClass('escondido');
+                                                                            $("#cargando").addClass('visible');
                 var dato = $('#formulario').serialize();
                     $.ajax({
                             url:'http://preview.ffasil.com/public/app/registro',
@@ -113,9 +115,13 @@
                             },
                             success:function(data){
                               if (data.ok=='Registro completo') {
+                                                                                        $("#cargando").addClass('escondido');
+                                                                                        $("#cargando").removeClass('visible');
                               window.location.href = "iniciar.html";
                               }
                               else {
+                                                                                        $("#cargando").addClass('escondido');
+                                                                                        $("#cargando").removeClass('visible');
                                 alert(data.danger);
                               }
                             }
