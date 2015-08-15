@@ -125,7 +125,7 @@
                 var dato = $('#formulario').serialize();
                     $.ajax({
                             url:'http://preview.ffasil.com/public/app/inicio',
-                            type:'GET',
+                            type:'POST',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){
