@@ -135,8 +135,8 @@
                             success:function(data){
                                                                                       $("#cargando").addClass('escondido');
                                                                                       $("#cargando").removeClass('visible');
-                            var usu=data[0];
-                            var id = data[1];
+                            var usu=data.usu;
+                            var id = data.cla;
                             window.localStorage.setItem("usuario", usu);
                             window.localStorage.setItem("id", id);
                                   usuario = window.localStorage.getItem("usuario");

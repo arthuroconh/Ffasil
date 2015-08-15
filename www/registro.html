@@ -106,16 +106,13 @@
                 var dato = $('#formulario').serialize();
                     $.ajax({
                             url:'http://preview.ffasil.com/public/app/registro',
-                            type:'POST',
+                            type:'GET',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){
-                              alert(jqXHR);
-                                alert(text_status);
-                                  alert(strError);
                             },
                             success:function(data){
-                              if (data=="OK") {
+                              if (data.ok=='Registro completo') {
                               window.location.href = "iniciar.html";
                               }
                               else {
