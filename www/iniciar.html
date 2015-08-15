@@ -125,7 +125,7 @@
                 var dato = $('#formulario').serialize();
                     $.ajax({
                             url:'http://preview.ffasil.com/public/app/inicio',
-                            type:'POST',
+                            type:'GET',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){
@@ -278,7 +278,7 @@
             <label>Contrase&ntilde;a</label>
               <input type="password" name="contra" required="required"><br>
             <label><a href="">&#191;Olvid&oacute; Contrase&ntilde;a?</a></label>
-                <input type="text" name="regId" id="regId" readonly="readonly">
+                <input type="text" name="regId" id="regId" readonly="readonly" style="display:none !important;">
               <button type="button" onclick="iniciar();" id="enviarrr">Enviar</button>
             </form>
           </section>
