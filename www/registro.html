@@ -106,7 +106,7 @@
                 var dato = $('#formulario').serialize();
                     $.ajax({
                             url:'http://preview.ffasil.com/public/app/registro',
-                            type:'GET',
+                            type:'POST',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){
@@ -238,21 +238,21 @@
           <section class="cajaccion" id="page_effect" style="display:none; overflow:scroll; margin-top:0px !important;">
             <form id="formulario" name="formulario" method="post" class="formularioreg">
             <label>Usuario</label>
-              <input type="text" id="nombre1" name="usuario" required="required">
+              <input type="text" id="nombre1" name="username" required="required">
             <label>Contrase&ntilde;a</label>
-              <input type="password" id="contra1" name="contra1" required="required">
+              <input type="password" id="contra1" name="pass" required="required">
             <label>Repita Contrase&ntilde;a</label>
-              <input type="password" id="contra1" name="contra" required="required">
+              <input type="password" id="contra1" name="pass_confirmation" required="required">
             <label>Email</label>
               <input type="email" id="email1" name="email" required="required">
             <label>Nombre</label>
-              <input type="text" id="nombre1" name="nombre" required="required">
+              <input type="text" id="nombre1" name="name" required="required">
             <label>Apellido</label>
-              <input type="text" id="nombre1" name="apellido" required="required">
+              <input type="text" id="nombre1" name="lastname" required="required">
             <label>Carnet de Identidad</label>
-              <input type="text" id="carnet1" name="carnet" required="required">
+              <input type="text" id="carnet1" name="id" required="required">
             <label>Nombre de empresa</label>
-              <input type="text" id="nombre1" name="nombrempresa" required="required">
+              <input type="text" id="nombre1" name="empresa" required="required">
             <label>NIT</label>
               <input type="text" id="nombre1" name="nit" required="required">
             <label>Sexo:</label>
