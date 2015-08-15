@@ -112,11 +112,11 @@
                             error:function(jqXHR,text_status,strError){
                             },
                             success:function(data){
-                              if (data.ok=='Registro completo') {
+                              if (data.ok!='') {
                               window.location.href = "iniciar.html";
                               }
                               else {
-                                alert(data);
+                                alert(data.danger);
                               }
                             }
                         });
