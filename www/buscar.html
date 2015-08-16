@@ -105,7 +105,7 @@
 
 
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php',
+                            url:'http://preview.ffasil.com/public/app/busquedaid.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
@@ -120,7 +120,7 @@
                                               $("#idpublicacion").val(data[i]);
                                                 var datd =$('#formulario').serialize();
                                                     $.ajax({
-                                                      url:'http://desarrollotricolor.com.ve/ffasil/busqueda.php',
+                                                      url:'http://preview.ffasil.com/public/app/busqueda.php',
                                                       type:'POST',
                                                       data:datd,
                                                       dataType:'json',
@@ -129,7 +129,7 @@
                                                       success:function(datos){
                                                                       var mensaje = datos[2];
                                                                       var porcion = mensaje.substring(0,20);
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
+                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.ffasil.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
                                                           $("#resultados").append(a);
                                                         }
                                                     });
@@ -155,7 +155,7 @@
                                                           $("#cargando").addClass('visible');
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/busquedaid.php',
+                            url:'http://preview.ffasil.com/public/app/busquedaid.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
@@ -170,7 +170,7 @@
                                               $("#idpublicacion").val(data[i]);
                                                 var datd =$('#formulario').serialize();
                                                     $.ajax({
-                                                      url:'http://desarrollotricolor.com.ve/ffasil/busqueda.php',
+                                                      url:'http://preview.ffasil.com/public/app/busqueda.php',
                                                       type:'POST',
                                                       data:datd,
                                                       dataType:'json',
@@ -179,7 +179,7 @@
                                                       success:function(datos){
                                                                       var mensaje = datos[2];
                                                                       var porcion = mensaje.substring(0,20);
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://desarrollotricolor.com.ve/ffasil/imagenes/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
+                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.ffasil.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
                                                           $("#resultados").append(a);
                                                         }
                                                     });
