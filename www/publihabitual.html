@@ -106,7 +106,7 @@
         function calculo() {
           var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/calculapago.php',
+                            url:'http://ffasil.com/app/calculapago.php',
                             type:'POST',
                             data:dat,
                             dataType:'json',
@@ -143,7 +143,7 @@
             var mm= [];
             var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/cargasub.php',
+                            url:'http://ffasil.com/app/cargasub.php',
                             type:'POST',
                             data:dat,
                             dataType:'json',
@@ -166,7 +166,7 @@
                                       if ($('#cate').val()=='34') {
 
                                           $.ajax({
-                                          url:'http://desarrollotricolor.com.ve/ffasil/cargamarca.php',
+                                          url:'http://ffasil.com/app/cargamarca.php',
                                           type:'POST',
                                           data:dat,
                                           dataType:'json',
@@ -191,7 +191,7 @@
                                      });
 
                                   $.ajax({
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidmarca.php',
+                                    url:'http://ffasil.com/app/cargaidmarca.php',
                                     type:'POST',
                                     data:dat,
                                     dataType:'json',
@@ -210,7 +210,7 @@
                                     }
 
                                   $.ajax({
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidsub.php',
+                                    url:'http://ffasil.com/app/cargaidsub.php',
                                     type:'POST',
                                     data:dat,
                                     dataType:'json',
@@ -239,7 +239,7 @@
 
 
                                           $.ajax({
-                                          url:'http://desarrollotricolor.com.ve/ffasil/cargamodelo.php',
+                                          url:'http://ffasil.com/app/cargamodelo.php',
                                           type:'POST',
                                           data:datos,
                                           dataType:'json',
@@ -262,7 +262,7 @@
 
 
                                   $.ajax({
-                                    url:'http://desarrollotricolor.com.ve/ffasil/cargaidmodelo.php',
+                                    url:'http://ffasil.com/app/cargaidmodelo.php',
                                     type:'POST',
                                     data:datos,
                                     dataType:'json',
@@ -290,7 +290,7 @@
             $('#cargando').addClass('visible');
             var dat = $('#formularionuevoproducto').serialize();
                     $.ajax({
-                            url:'http://desarrollotricolor.com.ve/ffasil/registrapublicacionhabitual.php',
+                            url:'http://ffasil.com/app/registrapublicacionhabitual.php',
                             type:'POST',
                             data:dat,
                             dataType:'json',

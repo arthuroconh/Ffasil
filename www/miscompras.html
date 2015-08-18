@@ -106,7 +106,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({
-                                        url:'http://desarrollotricolor.com.ve/ffasil/miscompras.php',
+                                        url:'http://ffasil.com/app/miscompras.php',
                                         type:'POST',
                                         data:dat,
                                         dataType:'json',
@@ -118,7 +118,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({
-                                                                  url:'http://desarrollotricolor.com.ve/ffasil/cargacompras.php',
+                                                                  url:'http://ffasil.com/app/cargacompras.php',
                                                                   type:'POST',
                                                                   data:dat,
                                                                   dataType:'json',

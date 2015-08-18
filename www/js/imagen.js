@@ -2,8 +2,8 @@
 // To capture photo
 function capturePhoto() {
     // Take picture using device camera and retrieve image as base64-encoded string
-    navigator.camera.getPicture(uploadPhoto, onFail, { 
-        quality: 50, destinationType: Camera.DestinationType.FILE_URI 
+    navigator.camera.getPicture(uploadPhoto, onFail, {
+        quality: 50, destinationType: Camera.DestinationType.FILE_URI
     });
 }
 
@@ -106,7 +106,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
@@ -137,8 +137,8 @@ function uploadPhoto2(imageURI) {
     params.userid = sessionStorage.loginuserid;
     options.params = params;
     options.chunkedMode = false;
-    var ft = new FileTransfer();    
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var ft = new FileTransfer();
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win22, fail, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
@@ -172,7 +172,7 @@ function uploadPhoto3(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win3, fail, options, true);
                             $('#cargando3').addClass('visible');
                             $('#cargando3').removeClass('escondido');
@@ -204,7 +204,7 @@ function uploadPhoto4(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win4, fail, options, true);
                             $('#cargando4').addClass('visible');
                             $('#cargando4').removeClass('escondido');
@@ -236,7 +236,7 @@ function uploadPhoto5(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win5, fail, options, true);
                             $('#cargando5').addClass('visible');
                             $('#cargando5').removeClass('escondido');
@@ -268,7 +268,7 @@ function uploadPhoto6(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win6, fail, options, true);
                             $('#cargando6').addClass('visible');
                             $('#cargando6').removeClass('escondido');
@@ -300,7 +300,7 @@ function uploadPhoto7(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win7, fail, options, true);
                             $('#cargando7').addClass('visible');
                             $('#cargando7').removeClass('escondido');
@@ -332,7 +332,7 @@ function uploadPhoto8(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win8, fail, options, true);
                             $('#cargando8').addClass('visible');
                             $('#cargando8').removeClass('escondido');
@@ -364,7 +364,7 @@ function uploadPhoto9(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win9, fail, options, true);
                             $('#cargando9').addClass('visible');
                             $('#cargando9').removeClass('escondido');
@@ -396,43 +396,43 @@ function uploadPhoto10(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win10, fail, options, true);
                             $('#cargando10').addClass('visible');
                             $('#cargando10').removeClass('escondido');
 }
 //Success callback
-function win(r) {    
+function win(r) {
                             $('#cargando2').removeClass('visible');
                             $('#cargando2').addClass('escondido');
 }
-function win22(r) {    
+function win22(r) {
                             $('#cargando22').removeClass('visible');
                             $('#cargando22').addClass('escondido');
 }
-function win3(r) {    
+function win3(r) {
                             $('#cargando3').removeClass('visible');
                             $('#cargando3').addClass('escondido');
 }
-function win4(r) {    
+function win4(r) {
                             $('#cargando4').removeClass('visible');
                             $('#cargando4').addClass('escondido');
-}function win5(r) {    
+}function win5(r) {
                             $('#cargando5').removeClass('visible');
                             $('#cargando5').addClass('escondido');
-}function win6(r) {    
+}function win6(r) {
                             $('#cargando6').removeClass('visible');
                             $('#cargando6').addClass('escondido');
-}function win7(r) {    
+}function win7(r) {
                             $('#cargando7').removeClass('visible');
                             $('#cargando7').addClass('escondido');
-}function win8(r) {    
+}function win8(r) {
                             $('#cargando8').removeClass('visible');
                             $('#cargando8').addClass('escondido');
-}function win9(r) {    
+}function win9(r) {
                             $('#cargando9').removeClass('visible');
                             $('#cargando9').addClass('escondido');
-}function win10(r) {    
+}function win10(r) {
                             $('#cargando10').removeClass('visible');
                             $('#cargando10').addClass('escondido');
 }
@@ -440,7 +440,7 @@ function win4(r) {
 function fail(error) {
 }
 // Called if something bad happens.
-// 
+//
 function onFail(message) {
-    
+
 }
