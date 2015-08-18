@@ -106,7 +106,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win, fail, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
@@ -138,7 +138,7 @@ function uploadPhoto2(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win22, fail, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
@@ -172,7 +172,7 @@ function uploadPhoto3(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win3, fail, options, true);
                             $('#cargando3').addClass('visible');
                             $('#cargando3').removeClass('escondido');
@@ -204,7 +204,7 @@ function uploadPhoto4(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win4, fail, options, true);
                             $('#cargando4').addClass('visible');
                             $('#cargando4').removeClass('escondido');
@@ -236,7 +236,7 @@ function uploadPhoto5(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win5, fail, options, true);
                             $('#cargando5').addClass('visible');
                             $('#cargando5').removeClass('escondido');
@@ -268,7 +268,7 @@ function uploadPhoto6(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win6, fail, options, true);
                             $('#cargando6').addClass('visible');
                             $('#cargando6').removeClass('escondido');
@@ -300,7 +300,7 @@ function uploadPhoto7(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win7, fail, options, true);
                             $('#cargando7').addClass('visible');
                             $('#cargando7').removeClass('escondido');
@@ -332,7 +332,7 @@ function uploadPhoto8(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win8, fail, options, true);
                             $('#cargando8').addClass('visible');
                             $('#cargando8').removeClass('escondido');
@@ -364,7 +364,7 @@ function uploadPhoto9(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win9, fail, options, true);
                             $('#cargando9').addClass('visible');
                             $('#cargando9').removeClass('escondido');
@@ -396,7 +396,7 @@ function uploadPhoto10(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://ffasil.com/app/subirimagen.php?carpeta="+userid;
+    var url = "http://preview.ffasil.com/public/app/subir-app/"+userid;
     ft.upload(imageURI, url, win10, fail, options, true);
                             $('#cargando10').addClass('visible');
                             $('#cargando10').removeClass('escondido');
