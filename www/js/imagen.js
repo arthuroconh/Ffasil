@@ -110,6 +110,7 @@ function uploadPhoto(imageURI) {
     ft.upload(imageURI, url, win, fail1, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto2(imageURI) {
     //If you wish to display image on your page in app
@@ -142,6 +143,7 @@ function uploadPhoto2(imageURI) {
     ft.upload(imageURI, url, win22, fail2, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 
 }
 
@@ -176,6 +178,7 @@ function uploadPhoto3(imageURI) {
     ft.upload(imageURI, url, win3, fail3, options, true);
                             $('#cargando3').addClass('visible');
                             $('#cargando3').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto4(imageURI) {
     //If you wish to display image on your page in app
@@ -208,6 +211,7 @@ function uploadPhoto4(imageURI) {
     ft.upload(imageURI, url, win4, fail4, options, true);
                             $('#cargando4').addClass('visible');
                             $('#cargando4').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto5(imageURI) {
     //If you wish to display image on your page in app
@@ -240,6 +244,7 @@ function uploadPhoto5(imageURI) {
     ft.upload(imageURI, url, win5, fail5, options, true);
                             $('#cargando5').addClass('visible');
                             $('#cargando5').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto6(imageURI) {
     //If you wish to display image on your page in app
@@ -272,6 +277,7 @@ function uploadPhoto6(imageURI) {
     ft.upload(imageURI, url, win6, fail6, options, true);
                             $('#cargando6').addClass('visible');
                             $('#cargando6').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto7(imageURI) {
     //If you wish to display image on your page in app
@@ -304,6 +310,7 @@ function uploadPhoto7(imageURI) {
     ft.upload(imageURI, url, win7, fail7, options, true);
                             $('#cargando7').addClass('visible');
                             $('#cargando7').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto8(imageURI) {
     //If you wish to display image on your page in app
@@ -336,6 +343,7 @@ function uploadPhoto8(imageURI) {
     ft.upload(imageURI, url, win8, fail8, options, true);
                             $('#cargando8').addClass('visible');
                             $('#cargando8').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto9(imageURI) {
     //If you wish to display image on your page in app
@@ -368,6 +376,7 @@ function uploadPhoto9(imageURI) {
     ft.upload(imageURI, url, win9, fail9, options, true);
                             $('#cargando9').addClass('visible');
                             $('#cargando9').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 function uploadPhoto10(imageURI) {
     //If you wish to display image on your page in app
@@ -400,39 +409,60 @@ function uploadPhoto10(imageURI) {
     ft.upload(imageURI, url, win10, fail10, options, true);
                             $('#cargando10').addClass('visible');
                             $('#cargando10').removeClass('escondido');
+                            alert('Espera a que se carge la imagen');
 }
 //Success callback
 function win(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando2').removeClass('visible');
                             $('#cargando2').addClass('escondido');
 }
 function win22(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando22').removeClass('visible');
                             $('#cargando22').addClass('escondido');
 }
 function win3(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando3').removeClass('visible');
                             $('#cargando3').addClass('escondido');
 }
 function win4(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando4').removeClass('visible');
                             $('#cargando4').addClass('escondido');
 }function win5(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando5').removeClass('visible');
                             $('#cargando5').addClass('escondido');
 }function win6(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando6').removeClass('visible');
                             $('#cargando6').addClass('escondido');
 }function win7(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando7').removeClass('visible');
                             $('#cargando7').addClass('escondido');
 }function win8(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando8').removeClass('visible');
                             $('#cargando8').addClass('escondido');
 }function win9(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando9').removeClass('visible');
                             $('#cargando9').addClass('escondido');
 }function win10(r) {
+
+  alert('Se ha cargado la imagen');
                             $('#cargando10').removeClass('visible');
                             $('#cargando10').addClass('escondido');
 }
@@ -441,54 +471,64 @@ function fail1(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 
 }
 function fail2(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail3(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 
 function fail4(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 
 function fail5(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail6(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail7(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail8(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail9(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 function fail10(error) {
 
   var a = JSON.stringify(error);
   alert(a);
+  $('#descripcion').val(a);
 }
 // Called if something bad happens.
 //
