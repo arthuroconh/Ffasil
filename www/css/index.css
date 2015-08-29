@@ -2139,7 +2139,7 @@ label{
 }
 
 .titulo {
-  margin-top: -40px;
+  margin-top: -25px;
   font-size: 100%;
 }
 .cajaccion article:hover {
@@ -2576,9 +2576,13 @@ font-size:12px !important;
   height: 2%;
   z-index: 90000;
 }
+.titulo {
+  font-size: 18px;
+  margin-top: -40px;
+}
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding: 10px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -2978,7 +2982,7 @@ header nav ul li a {
   z-index: 90000;
 }
 .titulo {
-  margin-top: -80px;
+  margin-top: -50px;
   font-size: 250%;
 }
 .menu_bar .bt-menu {
@@ -3526,12 +3530,12 @@ font-size:27px !important;
   z-index: 90000;
 }
 .titulo {
-  margin-top: -60px;
-  font-size: 260% !important;
+  margin-top: -55px;
+  font-size: 160% !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding: 20px  !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -3947,12 +3951,12 @@ font-size:23px !important;
   z-index: 90000;
 }
 .titulo {
-  margin-top: -80px;
-  font-size: 300% !important;
+  margin-top: -60px;
+  font-size: 200% !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding: 20px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -4967,7 +4971,7 @@ font-size:28px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding: 20px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -5454,7 +5458,7 @@ font-size:35px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding:20px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -5927,7 +5931,7 @@ font-size:35px !important;
   }
   .menu_bar .bt-menu {
     display: block;
-    padding: 5px;
+    padding: 24px !important;
     background: #f59c34;
     color: #fff;
     text-decoration: none;
@@ -6403,7 +6407,7 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 5px;
+      padding: 24px !important;
       background: #f59c34;
       color: #fff;
       text-decoration: none;
@@ -6800,12 +6804,12 @@ font-size:35px !important;
       z-index: 90000;
     }
     .titulo {
-      margin-top: -160px !important;
+      margin-top: -100px !important;
       font-size: 420% !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 5px;
+      padding: 47px !important;
       background: #f59c34;
       color: #fff;
       text-decoration: none;
@@ -7323,12 +7327,12 @@ font-size:35px !important;
       z-index: 90000;
     }
     .titulo {
-      margin-top: -160px !important;
+      margin-top: -150px !important;
       font-size: 420% !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 5px;
+      padding: 47px !important;
       background: #f59c34;
       color: #fff;
       text-decoration: none;
@@ -8135,7 +8139,7 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 5px;
+      padding: 74px !important;
       background: #f59c34;
       color: #fff;
       text-decoration: none;
