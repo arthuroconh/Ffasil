@@ -106,7 +106,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail1, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
@@ -413,6 +413,9 @@ function uploadPhoto10(imageURI) {
 }
 //Success callback
 function win(r) {
+
+  var a = JSON.stringify(r);
+  alert(a);
 
   alert('Se ha cargado la imagen');
                             $('#cargando2').removeClass('visible');
