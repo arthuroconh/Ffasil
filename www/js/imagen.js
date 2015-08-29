@@ -438,45 +438,56 @@ function win4(r) {
 }
 //Failure callback
 function fail1(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
+
 }
 function fail2(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail3(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 
 function fail4(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 
 function fail5(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail6(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail7(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail8(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail9(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 function fail10(error) {
-  var a=error.toString();
+
+  var a = JSON.stringify(error);
   alert(a);
 }
 // Called if something bad happens.
