@@ -94,7 +94,7 @@ function uploadPhoto(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -106,7 +106,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
+    var url = "http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win, fail1, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
@@ -127,7 +127,7 @@ function uploadPhoto2(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -139,7 +139,7 @@ function uploadPhoto2(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win22, fail2, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
@@ -162,7 +162,7 @@ function uploadPhoto3(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -174,7 +174,7 @@ function uploadPhoto3(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win3, fail3, options, true);
                             $('#cargando3').addClass('visible');
                             $('#cargando3').removeClass('escondido');
@@ -195,7 +195,7 @@ function uploadPhoto4(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -207,7 +207,7 @@ function uploadPhoto4(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win4, fail4, options, true);
                             $('#cargando4').addClass('visible');
                             $('#cargando4').removeClass('escondido');
@@ -228,7 +228,7 @@ function uploadPhoto5(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -240,7 +240,7 @@ function uploadPhoto5(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win5, fail5, options, true);
                             $('#cargando5').addClass('visible');
                             $('#cargando5').removeClass('escondido');
@@ -261,7 +261,7 @@ function uploadPhoto6(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -273,7 +273,7 @@ function uploadPhoto6(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win6, fail6, options, true);
                             $('#cargando6').addClass('visible');
                             $('#cargando6').removeClass('escondido');
@@ -294,7 +294,7 @@ function uploadPhoto7(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -306,7 +306,7 @@ function uploadPhoto7(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win7, fail7, options, true);
                             $('#cargando7').addClass('visible');
                             $('#cargando7').removeClass('escondido');
@@ -327,7 +327,7 @@ function uploadPhoto8(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -339,7 +339,7 @@ function uploadPhoto8(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win8, fail8, options, true);
                             $('#cargando8').addClass('visible');
                             $('#cargando8').removeClass('escondido');
@@ -360,7 +360,7 @@ function uploadPhoto9(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -372,7 +372,7 @@ function uploadPhoto9(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win9, fail9, options, true);
                             $('#cargando9').addClass('visible');
                             $('#cargando9').removeClass('escondido');
@@ -393,7 +393,7 @@ function uploadPhoto10(imageURI) {
 
     var options = new FileUploadOptions();
     options.fileKey = "file";
-    var userid = window.localStorage.getItem("usuario");;
+    var userid = window.localStorage.getItem("usuario");
     var imagefilename = userid + Number(new Date()) + ".jpg";
     var ruta = userid + "/" + imagefilename;
     options.fileName = imagefilename;
@@ -405,7 +405,7 @@ function uploadPhoto10(imageURI) {
     options.params = params;
     options.chunkedMode = false;
     var ft = new FileTransfer();
-    var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
+    var url ="http://www.desarrollotricolor.com.ve/ffasil/subirimagen.php?carpeta="+userid;
     ft.upload(imageURI, url, win10, fail10, options, true);
                             $('#cargando10').addClass('visible');
                             $('#cargando10').removeClass('escondido');
