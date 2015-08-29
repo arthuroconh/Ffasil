@@ -107,7 +107,7 @@ function uploadPhoto(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win, fail, options, true);
+    ft.upload(imageURI, url, win, fail1, options, true);
                             $('#cargando2').addClass('visible');
                             $('#cargando2').removeClass('escondido');
 }
@@ -139,7 +139,7 @@ function uploadPhoto2(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win22, fail, options, true);
+    ft.upload(imageURI, url, win22, fail2, options, true);
                             $('#cargando22').addClass('visible');
                             $('#cargando22').removeClass('escondido');
 
@@ -173,7 +173,7 @@ function uploadPhoto3(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win3, fail, options, true);
+    ft.upload(imageURI, url, win3, fail3, options, true);
                             $('#cargando3').addClass('visible');
                             $('#cargando3').removeClass('escondido');
 }
@@ -205,7 +205,7 @@ function uploadPhoto4(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win4, fail, options, true);
+    ft.upload(imageURI, url, win4, fail4, options, true);
                             $('#cargando4').addClass('visible');
                             $('#cargando4').removeClass('escondido');
 }
@@ -237,7 +237,7 @@ function uploadPhoto5(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win5, fail, options, true);
+    ft.upload(imageURI, url, win5, fail5, options, true);
                             $('#cargando5').addClass('visible');
                             $('#cargando5').removeClass('escondido');
 }
@@ -269,7 +269,7 @@ function uploadPhoto6(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win6, fail, options, true);
+    ft.upload(imageURI, url, win6, fail6, options, true);
                             $('#cargando6').addClass('visible');
                             $('#cargando6').removeClass('escondido');
 }
@@ -301,7 +301,7 @@ function uploadPhoto7(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win7, fail, options, true);
+    ft.upload(imageURI, url, win7, fail7, options, true);
                             $('#cargando7').addClass('visible');
                             $('#cargando7').removeClass('escondido');
 }
@@ -333,7 +333,7 @@ function uploadPhoto8(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win8, fail, options, true);
+    ft.upload(imageURI, url, win8, fail8, options, true);
                             $('#cargando8').addClass('visible');
                             $('#cargando8').removeClass('escondido');
 }
@@ -365,7 +365,7 @@ function uploadPhoto9(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win9, fail, options, true);
+    ft.upload(imageURI, url, win9, fail9, options, true);
                             $('#cargando9').addClass('visible');
                             $('#cargando9').removeClass('escondido');
 }
@@ -397,7 +397,7 @@ function uploadPhoto10(imageURI) {
     options.chunkedMode = false;
     var ft = new FileTransfer();
     var url = "http://preview.ffasil.com/public/app/subir-imagenes/"+userid;
-    ft.upload(imageURI, url, win10, fail, options, true);
+    ft.upload(imageURI, url, win10, fail10, options, true);
                             $('#cargando10').addClass('visible');
                             $('#cargando10').removeClass('escondido');
 }
@@ -437,7 +437,37 @@ function win4(r) {
                             $('#cargando10').addClass('escondido');
 }
 //Failure callback
-function fail(error) {
+function fail1(error) {
+  alert(error);
+}
+function fail2(error) {
+  alert(error);
+}
+function fail3(error) {
+  alert(error);
+}
+
+function fail4(error) {
+  alert(error);
+}
+
+function fail5(error) {
+  alert(error);
+}
+function fail6(error) {
+  alert(error);
+}
+function fail7(error) {
+  alert(error);
+}
+function fail8(error) {
+  alert(error);
+}
+function fail9(error) {
+  alert(error);
+}
+function fail10(error) {
+  alert(error);
 }
 // Called if something bad happens.
 //
