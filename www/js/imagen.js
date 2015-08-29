@@ -439,15 +439,15 @@ function win4(r) {
 //Failure callback
 function fail1(error) {
   alert(error);
-            displayDialogBox("Error", error.toString());
+            alert("Error", error.toString());
 }
 function fail2(error) {
   alert(error);
-            displayDialogBox("Error", error.toString());
+            alert("Error", error.toString());
 }
 function fail3(error) {
   alert(error);
-            displayDialogBox("Error", error.toString());
+            alert("Error", error.toString());
 }
 
 function fail4(error) {
