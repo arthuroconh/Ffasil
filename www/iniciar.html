@@ -131,7 +131,7 @@
                             error:function(jqXHR,text_status,strError){
                                                                                       $("#cargando").addClass('escondido');
                                                                                       $("#cargando").removeClass('visible');
-                                                                                    alert('Usuario o Clave Incorrecto')},
+                                                                                    alert(jqXHR);alert(text_status);alert(strError);},
                             success:function(data){
                                                                                       $("#cargando").addClass('escondido');
                                                                                       $("#cargando").removeClass('visible');
