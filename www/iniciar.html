@@ -131,7 +131,10 @@
                             error:function(jqXHR,text_status,strError){
                                                                                       $("#cargando").addClass('escondido');
                                                                                       $("#cargando").removeClass('visible');
-                                                                                    alert(jqXHR);alert(text_status);alert(strError);},
+                                                                                      obj1 = JSON.parse(jqXHR);
+                                                                                      obj2 = JSON.parse(text_status);
+                                                                                      obj3 = JSON.parse(strError);
+                                                                                    alert(obj1);alert(obj2);alert(obj3);},
                             success:function(data){
                                                                                       $("#cargando").addClass('escondido');
                                                                                       $("#cargando").removeClass('visible');
